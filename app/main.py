@@ -7,7 +7,8 @@ from pathlib import Path
 
 def build_if_needed(app_dir: Path, exe_path: Path) -> None:
     sources = sorted(app_dir.glob("*.cs"))
-    source_modified_at = max((source.stat().st_mtime_ns for source in sources), default=0)
+    impulses = sorted((app_dir / "irs").glob("*.wav"))
+    source_modified_at = max((path.stat().st_mtime_ns for path in [*sources, *impulses]), default=0)
     if exe_path.is_file() and exe_path.stat().st_mtime_ns >= source_modified_at:
         return
 
@@ -30,6 +31,7 @@ def build_if_needed(app_dir: Path, exe_path: Path) -> None:
                 str(compiler), "/nologo", "/target:winexe", "/optimize+",
                 "/platform:anycpu", "/codepage:65001", "/reference:System.Drawing.dll",
                 "/reference:System.Windows.Forms.dll", f"/out:{build_path}",
+                *(f"/resource:{path},ir:{path.name}" for path in impulses),
                 *(str(source) for source in sources),
             ],
             cwd=app_dir,

@@ -18,8 +18,9 @@ namespace ArchetypeGojiraX
         private readonly Func<GuitarSettings> getParameters;
         private readonly ComboBox input = new ComboBox(), output = new ComboBox(), channel = new ComboBox();
         private readonly Button start = new Button(), refresh = new Button();
-        private readonly Label status = new Label(), irName = new Label();
-        private readonly Button clearIr = new Button();
+        private readonly Label status = new Label();
+        private readonly ComboBox impulses = new ComboBox();
+        private bool fillingImpulses;
         private readonly Timer timer = new Timer();
         private string deviceError;
 
@@ -32,7 +33,7 @@ namespace ArchetypeGojiraX
             Text = "Áudio da guitarra";
             Font = new Font("Segoe UI", 9);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(492, 356);
+            ClientSize = new Size(492, 388);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = MinimizeBox = ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
@@ -50,27 +51,25 @@ namespace ArchetypeGojiraX
             output.AccessibleName = "Saída de áudio";
 
             AddLabel("Caixa (IR)", 191);
-            irName.Bounds = new Rectangle(18, 216, 240, 22);
-            irName.AutoEllipsis = true;
-            irName.AccessibleName = "IR da caixa em uso";
-            Controls.Add(irName);
-            ConfigureButton(new Button(), "Carregar IR...", 265, 118, 210, LoadImpulse);
-            ConfigureButton(clearIr, "Usar interna", 391, 83, 210, (sender, args) =>
-            {
-                CabinetIrLibrary.ClearCustom();
-                ApplyImpulse();
-            });
-            UpdateImpulseName();
+            AddList(impulses, 212);
+            impulses.AccessibleName = "IR da caixa";
+            impulses.SelectedIndexChanged += ImpulseChanged;
+            new ToolTip().SetToolTip(impulses, "IRs incluídas: Adventure Kid (adventurekid.se), licença CC BY 4.0.\n"
+                + "Detalhes em CREDITOS-IRS.md no repositório.");
+            ConfigureButton(new Button(), "Carregar de arquivo...", 18, 150, 245, LoadImpulse);
+            ConfigureButton(new Button(), "Abrir pasta Minhas IRs", 176, 160, 245, OpenUserFolder);
+            ConfigureButton(new Button(), "Atualizar IRs", 344, 130, 245, (sender, args) => FillImpulses());
+            FillImpulses();
 
-            status.Bounds = new Rectangle(18, 249, 456, 52);
+            status.Bounds = new Rectangle(18, 283, 456, 50);
             status.AccessibleName = "Status da monitoração";
             Controls.Add(status);
 
-            ConfigureButton(refresh, "Atualizar lista", 18, 112, 309, (sender, args) => RefreshDevices());
-            ConfigureButton(new Button(), "Inspecionar DSP", 136, 114, 309, (sender, args) => { DialogResult = DialogResult.Yes; });
-            ConfigureButton(start, "Ouvir guitarra", 265, 118, 309, ToggleMonitoring);
+            ConfigureButton(refresh, "Atualizar lista", 18, 112, 341, (sender, args) => RefreshDevices());
+            ConfigureButton(new Button(), "Inspecionar DSP", 136, 114, 341, (sender, args) => { DialogResult = DialogResult.Yes; });
+            ConfigureButton(start, "Ouvir guitarra", 265, 118, 341, ToggleMonitoring);
             var close = new Button { DialogResult = DialogResult.Cancel };
-            ConfigureButton(close, "Fechar", 391, 83, 309, null);
+            ConfigureButton(close, "Fechar", 391, 83, 341, null);
             CancelButton = close;
 
             input.SelectedIndexChanged += SelectionChanged;
@@ -101,6 +100,27 @@ namespace ArchetypeGojiraX
             Controls.Add(button);
         }
 
+        private void FillImpulses()
+        {
+            fillingImpulses = true;
+            try
+            {
+                IrChoice[] choices = CabinetIrLibrary.ListChoices();
+                impulses.Items.Clear();
+                impulses.Items.AddRange(choices);
+                string current = CabinetIrLibrary.Selected.Key;
+                impulses.SelectedIndex = Math.Max(0, Array.FindIndex(choices, choice => choice.Key == current));
+            }
+            finally { fillingImpulses = false; }
+        }
+
+        private void ImpulseChanged(object sender, EventArgs args)
+        {
+            var choice = impulses.SelectedItem as IrChoice;
+            if (fillingImpulses || choice == null || choice.Key == CabinetIrLibrary.Selected.Key) return;
+            UseImpulse(choice);
+        }
+
         private void LoadImpulse(object sender, EventArgs args)
         {
             using (var dialog = new OpenFileDialog())
@@ -108,33 +128,41 @@ namespace ArchetypeGojiraX
                 dialog.Title = "Escolha a IR da caixa";
                 dialog.Filter = "Resposta de impulso (*.wav)|*.wav";
                 if (dialog.ShowDialog(this) != DialogResult.OK) return;
-                try
-                {
-                    CabinetIrLibrary.LoadCustom(dialog.FileName);
-                }
-                catch (Exception ex)
-                {
-                    if (!(ex is System.IO.IOException || ex is System.IO.InvalidDataException || ex is UnauthorizedAccessException
-                        || ex is ArgumentException || ex is OverflowException || ex is OutOfMemoryException)) throw;
-                    MessageBox.Show(this, "Não foi possível usar esta IR: " + ex.Message, Text,
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                UseImpulse(CabinetIrLibrary.ChoiceForFile(dialog.FileName));
             }
-            ApplyImpulse();
         }
 
-        private void ApplyImpulse()
+        private void UseImpulse(IrChoice choice)
         {
+            try
+            {
+                CabinetIrLibrary.Select(choice);
+            }
+            catch (Exception ex)
+            {
+                if (!(ex is System.IO.IOException || ex is System.IO.InvalidDataException || ex is UnauthorizedAccessException
+                    || ex is ArgumentException || ex is OverflowException || ex is OutOfMemoryException)) throw;
+                MessageBox.Show(this, "Não foi possível usar esta IR: " + ex.Message, Text,
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             if (audio.Running || audio.Starting) audio.SetParameters(getParameters());
-            UpdateImpulseName();
+            FillImpulses();
         }
 
-        private void UpdateImpulseName()
+        // Pasta pessoal: o que estiver aqui aparece na lista, mas fica só neste computador.
+        private void OpenUserFolder(object sender, EventArgs args)
         {
-            string custom = CabinetIrLibrary.CustomName;
-            irName.Text = custom ?? "Interna (segue a caixa e os microfones do preset)";
-            clearIr.Enabled = custom != null;
+            try
+            {
+                System.IO.Directory.CreateDirectory(CabinetIrLibrary.UserFolder);
+                System.Diagnostics.Process.Start("explorer.exe", "\"" + CabinetIrLibrary.UserFolder + "\"");
+            }
+            catch (Exception ex)
+            {
+                if (!(ex is System.IO.IOException || ex is UnauthorizedAccessException || ex is System.ComponentModel.Win32Exception)) throw;
+                MessageBox.Show(this, "Não foi possível abrir a pasta: " + ex.Message, Text,
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void RefreshDevices()

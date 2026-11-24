@@ -27,9 +27,11 @@ jobs:
         run: |
           $csc = "$env:SystemRoot\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
           $src = (Get-ChildItem *.cs).Name
+          # IRs da pasta irs/ vão dentro do .exe (veja CREDITOS-IRS.md)
+          $irs = Get-ChildItem irs\*.wav -ErrorAction SilentlyContinue | ForEach-Object { "/resource:$($_.FullName),ir:$($_.Name)" }
           & $csc /nologo /target:winexe /optimize+ /platform:anycpu /codepage:65001 `
             /reference:System.Drawing.dll /reference:System.Windows.Forms.dll `
-            /out:appguitarra.exe $src
+            /out:appguitarra.exe @irs $src
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Publicar na release

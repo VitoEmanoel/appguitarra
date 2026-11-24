@@ -5,65 +5,155 @@ using System.Text;
 
 namespace ArchetypeGojiraX
 {
-    // Respostas de impulso (IR) da caixa: as internas são geradas por código a partir do
-    // tipo de caixa e dos microfones; o usuário também pode carregar qualquer IR em .wav.
+    // Uma opção de IR que aparece na lista da janela de áudio.
+    internal sealed class IrChoice
+    {
+        public const string Generated = "gerada", Embedded = "incluida", File = "arquivo";
+        public readonly string Kind, Source, Name;
+
+        public IrChoice(string kind, string source, string name)
+        {
+            Kind = kind; Source = source; Name = name;
+        }
+
+        public string Key { get { return Kind + "|" + Source; } }
+
+        public override string ToString()
+        {
+            if (Kind == Generated) return "Interna (segue a caixa e os microfones do preset)";
+            if (Kind == Embedded) return "Incluída: " + Name;
+            return "Minhas IRs: " + Name;
+        }
+    }
+
+    // Respostas de impulso (IR) da caixa. Há três origens:
+    //  - gerada por código a partir do tipo de caixa e dos microfones do preset;
+    //  - incluída no próprio .exe (IRs gratuitas com licença que permite redistribuir, ver CREDITOS-IRS.md);
+    //  - arquivo .wav do usuário (da pasta "Minhas IRs" ou de qualquer lugar), que nunca vai para o repositório.
     internal static class CabinetIrLibrary
     {
         public const int SampleRate = GuitarAudio.SampleRate;
         public const int Length = Convolver.MaxLength;
+        private const string ResourcePrefix = "ir:";
+
+        public static readonly IrChoice GeneratedChoice = new IrChoice(IrChoice.Generated, "", "Interna");
 
         private static readonly object sync = new object();
         private static volatile float[] custom;
-        private static string customName, cachedKey;
+        private static IrChoice selected = GeneratedChoice;
+        private static string cachedKey;
         private static float[] cachedIr;
 
         static CabinetIrLibrary()
         {
             try
             {
-                string saved = SettingsPath;
-                if (File.Exists(saved))
+                if (System.IO.File.Exists(SettingsPath))
                 {
-                    string path = File.ReadAllText(saved, Encoding.UTF8).Trim();
-                    if (File.Exists(path)) SetCustom(path);
+                    string saved = System.IO.File.ReadAllText(SettingsPath, Encoding.UTF8).Trim();
+                    int bar = saved.IndexOf('|');
+                    if (bar > 0)
+                    {
+                        string kind = saved.Substring(0, bar), source = saved.Substring(bar + 1);
+                        if (kind == IrChoice.Embedded || (kind == IrChoice.File && System.IO.File.Exists(source)))
+                            Apply(new IrChoice(kind, source, DisplayName(kind, source)));
+                    }
                 }
             }
-            catch (Exception) { custom = null; customName = null; }
+            catch (Exception) { custom = null; selected = GeneratedChoice; }
         }
 
         public static float[] Custom { get { return custom; } }
-        public static string CustomName { get { return customName; } }
+        public static IrChoice Selected { get { return selected; } }
 
-        public static void LoadCustom(string path)
+        // Pasta onde o usuário coloca as IRs dele (Documentos\appguitarra\Minhas IRs).
+        public static string UserFolder
         {
-            SetCustom(path);
+            get
+            {
+                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                    "appguitarra", "Minhas IRs");
+            }
+        }
+
+        public static IrChoice[] ListChoices()
+        {
+            var choices = new System.Collections.Generic.List<IrChoice> { GeneratedChoice };
+            var names = typeof(CabinetIrLibrary).Assembly.GetManifestResourceNames();
+            Array.Sort(names, StringComparer.OrdinalIgnoreCase);
+            foreach (string resource in names)
+                if (resource.StartsWith(ResourcePrefix, StringComparison.Ordinal))
+                    choices.Add(new IrChoice(IrChoice.Embedded, resource, DisplayName(IrChoice.Embedded, resource)));
+            try
+            {
+                if (Directory.Exists(UserFolder))
+                {
+                    var files = Directory.GetFiles(UserFolder, "*.wav", SearchOption.AllDirectories);
+                    Array.Sort(files, StringComparer.OrdinalIgnoreCase);
+                    foreach (string file in files)
+                        choices.Add(new IrChoice(IrChoice.File, file, DisplayName(IrChoice.File, file)));
+                }
+            }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+            IrChoice current = selected;
+            if (current.Kind == IrChoice.File && !choices.Exists(c => c.Key == current.Key)) choices.Add(current);
+            return choices.ToArray();
+        }
+
+        public static IrChoice ChoiceForFile(string path)
+        {
+            return new IrChoice(IrChoice.File, path, DisplayName(IrChoice.File, path));
+        }
+
+        // Troca a IR em uso e lembra a escolha para a próxima vez que o app abrir.
+        public static void Select(IrChoice choice)
+        {
+            Apply(choice);
             try
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(SettingsPath));
-                File.WriteAllText(SettingsPath, path, Encoding.UTF8);
+                if (choice.Kind == IrChoice.Generated) System.IO.File.Delete(SettingsPath);
+                else System.IO.File.WriteAllText(SettingsPath, choice.Key, Encoding.UTF8);
             }
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }
         }
 
-        public static void ClearCustom()
+        private static void Apply(IrChoice choice)
         {
-            custom = null;
-            customName = null;
-            try { if (File.Exists(SettingsPath)) File.Delete(SettingsPath); }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
-
-        private static void SetCustom(string path)
-        {
+            if (choice.Kind == IrChoice.Generated)
+            {
+                custom = null;
+                selected = GeneratedChoice;
+                return;
+            }
             int rate;
-            float[] samples = WavFile.ReadFirstChannel(path, out rate);
+            float[] samples;
+            if (choice.Kind == IrChoice.Embedded)
+            {
+                using (Stream stream = typeof(CabinetIrLibrary).Assembly.GetManifestResourceStream(choice.Source))
+                {
+                    if (stream == null) throw new FileNotFoundException("IR incluída não encontrada: " + choice.Name);
+                    samples = WavFile.ReadFirstChannel(stream, out rate);
+                }
+            }
+            else
+            {
+                using (Stream stream = System.IO.File.OpenRead(choice.Source))
+                    samples = WavFile.ReadFirstChannel(stream, out rate);
+            }
             float[] ir = Resample(samples, rate, SampleRate, Length);
             FadeOut(ir, Math.Min(256, ir.Length / 4));
             Normalize(ir);
             custom = ir;
-            customName = Path.GetFileName(path);
+            selected = choice;
+        }
+
+        private static string DisplayName(string kind, string source)
+        {
+            string name = kind == IrChoice.Embedded ? source.Substring(ResourcePrefix.Length) : Path.GetFileName(source);
+            return name.EndsWith(".wav", StringComparison.OrdinalIgnoreCase) ? name.Substring(0, name.Length - 4) : name;
         }
 
         private static string SettingsPath
@@ -71,7 +161,7 @@ namespace ArchetypeGojiraX
             get
             {
                 return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-                    "appguitarra", "ir-personalizada.txt");
+                    "appguitarra", "ir-escolhida.txt");
             }
         }
 
@@ -340,9 +430,9 @@ namespace ArchetypeGojiraX
     // Leitor de .wav: PCM 16/24/32 bits e ponto flutuante 32/64 bits; usa só o primeiro canal.
     internal static class WavFile
     {
-        public static float[] ReadFirstChannel(string path, out int sampleRate)
+        public static float[] ReadFirstChannel(Stream stream, out int sampleRate)
         {
-            using (var reader = new BinaryReader(File.OpenRead(path)))
+            using (var reader = new BinaryReader(stream))
             {
                 if (Tag(reader) != "RIFF") throw Invalid();
                 reader.ReadInt32();
