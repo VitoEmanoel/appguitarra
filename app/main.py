@@ -41,12 +41,12 @@ def build_if_needed(app_dir: Path, exe_path: Path) -> None:
             if not exe_path.is_file():
                 raise
             if exe_path.stat().st_mtime_ns < source_modified_at:
-                raise RuntimeError("Feche o Archetype Gojira X antes de atualizar o executável.") from None
+                raise RuntimeError("Feche o appguitarra antes de atualizar o executável.") from None
 
 
 def main() -> int:
     app_dir = Path(__file__).resolve().parent
-    exe_path = app_dir / "ArchetypeGojiraX.exe"
+    exe_path = app_dir / "appguitarra.exe"
     try:
         build_if_needed(app_dir, exe_path)
         return subprocess.run([str(exe_path), *sys.argv[1:]], cwd=app_dir).returncode

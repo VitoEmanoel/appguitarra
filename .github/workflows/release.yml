@@ -1,0 +1,45 @@
+# Compila o appguitarra.exe a partir do código em app/*.cs e anexa à release.
+# Como usar: crie uma tag nova (ex.: git tag v1.1.0 && git push origin v1.1.0)
+# ou rode manualmente em Actions > "Build e release" > Run workflow.
+name: Build e release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag da release que vai receber o .exe (ex.: v1.1.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compilar appguitarra.exe
+        shell: pwsh
+        working-directory: app
+        run: |
+          $csc = "$env:SystemRoot\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
+          $src = (Get-ChildItem *.cs).Name
+          & $csc /nologo /target:winexe /optimize+ /platform:anycpu /codepage:65001 `
+            /reference:System.Drawing.dll /reference:System.Windows.Forms.dll `
+            /out:appguitarra.exe $src
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Publicar na release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          gh release view $env:TAG *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $env:TAG --title "appguitarra $env:TAG" --generate-notes
+          }
+          gh release upload $env:TAG app/appguitarra.exe --clobber
