@@ -1,0 +1,45 @@
+{
+  "id": "ev_469cecd815af958e33851aea3da1bb8ce6d162ceb2bb10a04202fe47309625ca",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x539d60"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x539d60",
+    "function": "FUN_00539d60",
+    "pseudo_code": "\r\nundefined4 __fastcall FUN_00539d60(int param_1)\r\n\r\n{\r\n  int *piVar1;\r\n  char cVar2;\r\n  undefined1 uVar3;\r\n  uint uVar4;\r\n  int *piVar5;\r\n  int iVar6;\r\n  int iVar7;\r\n  undefined1 local_90 [12];\r\n  int local_84;\r\n  int local_80;\r\n  int local_70;\r\n  int local_40;\r\n  undefined4 local_3c;\r\n  undefined4 local_38;\r\n  undefined4 local_34;\r\n  undefined4 local_30;\r\n  undefined4 local_2c;\r\n  undefined2 local_28;\r\n  undefined2 local_20;\r\n  int local_1c;\r\n  int local_18;\r\n  int local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_0064df99;\r\n  local_10 = ExceptionList;\r\n  uVar4 = DAT_006fc024 ^ (uint)&stack0xfffffffc;\r\n  ExceptionList = &local_10;\r\n  local_14 = param_1;\r\n  FUN_00558830(param_1 + 0x10);\r\n  iVar7 = 1;\r\n  local_18 = 1;\r\n  do {\r\n    FUN_00539f80(uVar4);\r\n    local_3c = 0;\r\n    local_38 = 0;\r\n    local_34 = 0;\r\n    local_30 = 8;\r\n    local_2c = 8;\r\n    local_28 = 0;\r\n    local_20 = 0;\r\n    local_8 = 2;\r\n    cVar2 = FUN_00559830(iVar7,local_90);\r\n    if (cVar2 == '\\0') {\r\n      local_8 = 3;\r\n      FUN_00515390();\r\n      local_8 = 0xffffffff;\r\n      FUN_00514e20();\r\n      ExceptionList = local_10;\r\n      return 0;\r\n    }\r\n    iVar6 = *(int *)(local_40 + -0xc);\r\n    if (iVar6 != 0) {\r\n      if (iVar6 < 0) {\r\n                    /* WARNING: Subroutine does not return */\r\n        FUN_0040a9b0(0x80070057);\r\n      }\r\n      if (*(short *)(local_40 + iVar6 * 2) != 0x3b) {\r\n        FUN_00422290(&DAT_0067a3c8,1);\r\n      }\r\n    }\r\n    if ((local_80 == 1) || (local_80 == 2)) {\r\n      piVar5 = (int *)FUN_00540ab0(0);\r\n      local_8._0_1_ = 5;\r\n      iVar6 = *piVar5;\r\n      piVar5 = (int *)(local_84 + -0x10);\r\n      if ((int *)(iVar6 + -0x10) != piVar5) {\r\n        piVar1 = (int *)(local_84 + -4);\r\n        if ((*(int *)(local_84 + -4) < 0) || (*(int *)(iVar6 + -0x10) != *piVar5)) {\r\n          FUN_0040a830(iVar6,*(undefined4 *)(iVar6 + -0xc));\r\n        }\r\n        else {\r\n          iVar6 = FUN_0040a4e0();\r\n          LOCK();\r\n          iVar7 = *piVar1;\r\n          *piVar1 = *piVar1 + -1;\r\n          UNLOCK();\r\n          if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n            (**(code **)(*(int *)*piVar5 + 4))(piVar5);\r\n          }\r\n          local_84 = iVar6 + 0x10;\r\n          iVar7 = local_18;\r\n        }\r\n      }\r\n      local_8 = CONCAT31(local_8._1_3_,2);\r\n      LOCK();\r\n      piVar5 = (int *)(local_1c + -4);\r\n      iVar6 = *piVar5;\r\n      *piVar5 = *piVar5 + -1;\r\n      UNLOCK();\r\n      if (iVar6 == 1 || iVar6 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_1c + -0x10) + 4))((undefined4 *)(local_1c + -0x10));\r\n      }\r\n    }\r\n    if ((-1 < *(int *)(local_70 + -0xc)) &&\r\n       (iVar6 = FUN_005e172b(local_70,&DAT_006835b4), iVar6 != 0)) {\r\n      uVar3 = local_20._1_1_;\r\n      if (-1 < iVar6 - local_70 >> 1) {\r\n        uVar3 = 1;\r\n      }\r\n      local_20 = CONCAT11(uVar3,(undefined1)local_20);\r\n    }\r\n    FUN_0053b110(local_90);\r\n    iVar7 = iVar7 + 1;\r\n    local_8 = 7;\r\n    local_18 = iVar7;\r\n    FUN_00515390();\r\n    local_8 = 0xffffffff;\r\n    FUN_00514e20();\r\n  } while( true );\r\n}\r\n\r\n",
+    "signature": "undefined4 __fastcall FUN_00539d60(int param_1);"
+  },
+  "summary": "Pseudo-C for FUN_00539d60 from the Deep engine (119 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x539d60"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

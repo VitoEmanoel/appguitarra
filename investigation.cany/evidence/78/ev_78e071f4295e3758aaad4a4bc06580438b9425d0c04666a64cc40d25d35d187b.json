@@ -1,0 +1,55 @@
+{
+  "id": "ev_78e071f4295e3758aaad4a4bc06580438b9425d0c04666a64cc40d25d35d187b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Neural"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x71de8c",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Neural DSP"
+      },
+      {
+        "address": "0x71dfb4",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Copyright (C) 2024 Neural DSP"
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 strings match \"Neural\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

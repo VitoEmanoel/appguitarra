@@ -1,0 +1,475 @@
+{
+  "id": "ev_64af2a12af766a7cf70279968aadda0393525ea7923dc78825370d2f69e2e8a1",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 80,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Pedal"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x142346410",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalKnob_png"
+      },
+      {
+        "address": "0x142346420",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsActuatorOff_png"
+      },
+      {
+        "address": "0x142346438",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsActuatorOn_png"
+      },
+      {
+        "address": "0x142346450",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsLedOff_png"
+      },
+      {
+        "address": "0x142346468",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsLedOn_png"
+      },
+      {
+        "address": "0x142346480",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPitchSectionPedals_png"
+      },
+      {
+        "address": "0x1423465e0",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPostSectionPedals_png"
+      },
+      {
+        "address": "0x142346658",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPreSectionPedals_png"
+      },
+      {
+        "address": "0x142346e30",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e50",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e70",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e90",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalViewController_xml"
+      },
+      {
+        "address": "0x142346eb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalViewController_xml"
+      },
+      {
+        "address": "0x142346ed0",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalViewController_xml"
+      },
+      {
+        "address": "0x142346ef0",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalViewController_xml"
+      },
+      {
+        "address": "0x142346f10",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalViewController_xml"
+      },
+      {
+        "address": "0x142346fb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionViewController_xml"
+      },
+      {
+        "address": "0x1423470f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347110",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347130",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347150",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347170",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347190",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423472a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423473f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalView_xml"
+      },
+      {
+        "address": "0x142347408",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalView_xml"
+      },
+      {
+        "address": "0x142347420",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalView_xml"
+      },
+      {
+        "address": "0x142347438",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalView_xml"
+      },
+      {
+        "address": "0x142347450",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalView_xml"
+      },
+      {
+        "address": "0x142347460",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalView_xml"
+      },
+      {
+        "address": "0x142347478",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalView_xml"
+      },
+      {
+        "address": "0x142347490",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalView_xml"
+      },
+      {
+        "address": "0x142347508",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionView_xml"
+      },
+      {
+        "address": "0x1423478c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionIcon_svg"
+      },
+      {
+        "address": "0x142348890",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalKnob.png"
+      },
+      {
+        "address": "0x1423488a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsActuatorOff.png"
+      },
+      {
+        "address": "0x1423488b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsActuatorOn.png"
+      },
+      {
+        "address": "0x1423488d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsLedOff.png"
+      },
+      {
+        "address": "0x1423488e8",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPedalsLedOn.png"
+      },
+      {
+        "address": "0x142348900",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPitchSectionPedals.png"
+      },
+      {
+        "address": "0x142348a60",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPostSectionPedals.png"
+      },
+      {
+        "address": "0x142348ad8",
+        "references": [],
+        "section": ".rdata",
+        "text": "AGPreSectionPedals.png"
+      },
+      {
+        "address": "0x1423492b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalViewController.xml"
+      },
+      {
+        "address": "0x1423492d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalViewController.xml"
+      },
+      {
+        "address": "0x1423492f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalViewController.xml"
+      },
+      {
+        "address": "0x142349310",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalViewController.xml"
+      },
+      {
+        "address": "0x142349330",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalViewController.xml"
+      },
+      {
+        "address": "0x142349350",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalViewController.xml"
+      },
+      {
+        "address": "0x142349370",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalViewController.xml"
+      },
+      {
+        "address": "0x142349390",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalViewController.xml"
+      },
+      {
+        "address": "0x142349430",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionViewController.xml"
+      },
+      {
+        "address": "0x142349570",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349590",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349610",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349630",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349650",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349720",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349870",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalView.xml"
+      },
+      {
+        "address": "0x142349888",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalView.xml"
+      },
+      {
+        "address": "0x1423498a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalView.xml"
+      },
+      {
+        "address": "0x1423498b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalView.xml"
+      },
+      {
+        "address": "0x1423498d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalView.xml"
+      },
+      {
+        "address": "0x1423498e0",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalView.xml"
+      },
+      {
+        "address": "0x1423498f8",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalView.xml"
+      },
+      {
+        "address": "0x142349910",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalView.xml"
+      },
+      {
+        "address": "0x142349988",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionView.xml"
+      },
+      {
+        "address": "0x142349d30",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionIcon.svg"
+      }
+    ],
+    "total": 72
+  },
+  "summary": "72 strings match \"Pedal\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 72,
+    "total": 72
+  },
+  "locations": [],
+  "links": []
+}

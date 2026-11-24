@@ -1,0 +1,378 @@
+{
+  "id": "ev_fdae2fc4e37abae1e1d45e83432ca47b69a7f6df409f6c7d195cd78f3809c968",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Parameter"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x142346c78",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersMap_xml"
+      },
+      {
+        "address": "0x142347030",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347050",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347070",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347090",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347110",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347130",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347150",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347170",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347190",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "ampParametersModel_xml"
+      },
+      {
+        "address": "0x142347220",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabParametersModel_xml"
+      },
+      {
+        "address": "0x142347238",
+        "references": [],
+        "section": ".rdata",
+        "text": "eqParametersModel_xml"
+      },
+      {
+        "address": "0x142347250",
+        "references": [],
+        "section": ".rdata",
+        "text": "fixedParametersModel_xml"
+      },
+      {
+        "address": "0x142347270",
+        "references": [],
+        "section": ".rdata",
+        "text": "fxParametersModel_xml"
+      },
+      {
+        "address": "0x142347288",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersModel_xml"
+      },
+      {
+        "address": "0x1423472a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423472c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pitchParametersModel_xml"
+      },
+      {
+        "address": "0x142347e78",
+        "references": [],
+        "section": ".rdata",
+        "text": "metronomeParametersModel_xml"
+      },
+      {
+        "address": "0x142347ed0",
+        "references": [],
+        "section": ".rdata",
+        "text": "tunerParametersModel_xml"
+      },
+      {
+        "address": "0x1423490f8",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersMap.xml"
+      },
+      {
+        "address": "0x1423494b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanAmpParametersModel.xml"
+      },
+      {
+        "address": "0x1423494d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadAmpParametersModel.xml"
+      },
+      {
+        "address": "0x1423494f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmAmpParametersModel.xml"
+      },
+      {
+        "address": "0x142349510",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanEQParametersModel.xml"
+      },
+      {
+        "address": "0x142349530",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadEQParametersModel.xml"
+      },
+      {
+        "address": "0x142349550",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmEQParametersModel.xml"
+      },
+      {
+        "address": "0x142349570",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349590",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalParametersModel.xml"
+      },
+      {
+        "address": "0x1423495f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349610",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349630",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349650",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349670",
+        "references": [],
+        "section": ".rdata",
+        "text": "ampParametersModel.xml"
+      },
+      {
+        "address": "0x1423496a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabParametersModel.xml"
+      },
+      {
+        "address": "0x1423496b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "eqParametersModel.xml"
+      },
+      {
+        "address": "0x1423496d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "fixedParametersModel.xml"
+      },
+      {
+        "address": "0x1423496f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "fxParametersModel.xml"
+      },
+      {
+        "address": "0x142349708",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersModel.xml"
+      },
+      {
+        "address": "0x142349720",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalParametersModel.xml"
+      },
+      {
+        "address": "0x142349740",
+        "references": [],
+        "section": ".rdata",
+        "text": "pitchParametersModel.xml"
+      },
+      {
+        "address": "0x14234a1c8",
+        "references": [],
+        "section": ".rdata",
+        "text": "metronomeParametersModel.xml"
+      },
+      {
+        "address": "0x14234a208",
+        "references": [],
+        "section": ".rdata",
+        "text": "tunerParametersModel.xml"
+      },
+      {
+        "address": "0x14234a410",
+        "references": [
+          {
+            "from": "0x14056fca9",
+            "function": "sub_14056fc86"
+          }
+        ],
+        "section": ".rdata",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.1.0\">\r\n  <EDITOR WINDOW_W=\"1793\" WINDOW_H=\"917\" VIEWPORT_X=\"0\" VIEWPORT_Y=\"0\"\r\n          macroControlsOpen=\"1\" parameterConnectionsOpen=\"0\" CURRENT_FILE_PATH=\"D:\\NeuralDSP\\archetype_gojira_x\\Product\\Kone\\Workbench\\StereoToStereoSummed.xml\"/>\r\n  <GRAPH INPUT_BUSES=\"Mono+Mono+Mono+Mono\" OUTPUT_BUSES=\"Mono+Mono+Mono+Mono\">\r\n    <NODES>\r\n      <NODE NODE_ID=\"2631325431\" TYPE_ID=\"gain_mono\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"gain\" VALUE=\"-6.0\"/>\r\n          <PARAM ID=\"mode\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"435\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"InputCompGain\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"104\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"2354949349\" TYPE_ID=\"gojira_od\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"overdrive\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"tone\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"level\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"odBypass\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"387\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraOD\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"104\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"616\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3784033603\" TYPE_ID=\"graphic_eq_9_band_combo_3_hpf_lpf_stereo\"\r\n            MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"band1EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQA\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQA\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band1EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQB\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQB\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band1EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQC\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQC\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"eqSelect\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"bypassEQ\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraEQStereo\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"296\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"848\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"2741033146\" TYPE_ID=\"gojira_phsr\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"rate\" VALUE=\"0.60999995470047\"/>\r\n          <PARAM ID=\"phsrBypass\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"425\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraPHSR\"/>\r\n          <PR"
+      },
+      {
+        "address": "0x142351920",
+        "references": [],
+        "section": ".rdata",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.1.0\">\r\n  <EDITOR WINDOW_W=\"1793\" WINDOW_H=\"917\" VIEWPORT_X=\"0\" VIEWPORT_Y=\"0\"\r\n          macroControlsOpen=\"1\" parameterConnectionsOpen=\"0\" CURRENT_FILE_PATH=\"D:\\NeuralDSP\\archetype_gojira_x\\Product\\Kone\\Workbench\\MonoToMono.xml\"/>\r\n  <GRAPH INPUT_BUSES=\"Mono+Mono+Mono+Mono\" OUTPUT_BUSES=\"Mono+Mono+Mono+Mono\">\r\n    <NODES>\r\n      <NODE NODE_ID=\"3081304490\" TYPE_ID=\"transpose\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"semitones\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"TransposeMono\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"288\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4247088700\" TYPE_ID=\"graphic_eq_9_band_combo_3_hpf_lpf\"\r\n            MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"band1EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQA\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQA\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQA\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band1EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQB\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQB\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQB\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band1EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band2EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band3EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band4EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band5EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band6EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band7EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band8EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"band9EQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"hpfEQC\" VALUE=\"20.0\"/>\r\n          <PARAM ID=\"lpfEQC\" VALUE=\"20000.0\"/>\r\n          <PARAM ID=\"bypassEQC\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"eqSelect\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"bypassEQ\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraEQMono\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"296\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"848\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3353998329\" TYPE_ID=\"plugin_adaptive_gate_sidechain_on\"\r\n            MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"threshold\" VALUE=\"0.1000000014901161\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"600\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"Gate\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"192\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"345\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"2560887050\" TYPE_ID=\"gain_mono\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"gain\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mode\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"InputGainMono\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"376\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"435\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4122917192\" TYPE_ID=\"transport_metronome\" MUTED=\"0\"\r\n            BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM"
+      },
+      {
+        "address": "0x142358300",
+        "references": [],
+        "section": ".rdata",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.1.0\">\r\n  <EDITOR WINDOW_W=\"1793\" WINDOW_H=\"917\" VIEWPORT_X=\"0\" VIEWPORT_Y=\"0\"\r\n          macroControlsOpen=\"1\" parameterConnectionsOpen=\"0\" CURRENT_FILE_PATH=\"D:\\NeuralDSP\\archetype_gojira_x\\Product\\Kone\\Workbench\\StereoToStereoDual.xml\"/>\r\n  <GRAPH INPUT_BUSES=\"Mono+Mono+Mono+Mono\" OUTPUT_BUSES=\"Mono+Mono+Mono+Mono\">\r\n    <NODES>\r\n      <NODE NODE_ID=\"2298483582\" TYPE_ID=\"gojira_oct\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"level\" VALUE=\"1.0\"/>\r\n          <PARAM ID=\"oct1\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"oct2\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"octBypass\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"387\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraOCTRight\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"208\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"880\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3186219700\" TYPE_ID=\"gojira_combo_3_cabsim\" MUTED=\"0\"\r\n            BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"linkedState\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"cabSelectLinked\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"cabSelectUnlinked\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"activeL\" VALUE=\"1.0\"/>\r\n          <PARAM ID=\"mic0L\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mic1L\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mic2L\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"levelL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"panL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"distanceL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"positionL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"phaseL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"stereoL\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"activeR\" VALUE=\"1.0\"/>\r\n          <PARAM ID=\"mic0R\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mic1R\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mic2R\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"levelR\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"panR\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"distanceR\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"positionR\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"phaseR\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"stereoR\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"73\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraCabsRight\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"208\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1312\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3976478497\" TYPE_ID=\"gojira_combo_amp\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"cleanGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBass\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanTreble\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBright\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"cleanOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"rhythmGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmLow\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmHigh\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmPresence\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmDepth\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmMaster\" VALUE=\"0.300000011920929\"/>\r\n          <PARAM ID=\"rhythmOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"leadGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadLow\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadHigh\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadPresence\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadDepth\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadMaster\" VALUE=\"0.300000011920929\"/>\r\n          <PARAM ID=\"leadOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"ampSelect\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"83\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraAmpsRight\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"112\"/>\r\n          <PROPERTY KEY=\"graph_pos"
+      },
+      {
+        "address": "0x142360ea0",
+        "references": [],
+        "section": ".rdata",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.1.0\">\r\n  <EDITOR WINDOW_W=\"1793\" WINDOW_H=\"917\" VIEWPORT_X=\"0\" VIEWPORT_Y=\"0\"\r\n          macroControlsOpen=\"1\" parameterConnectionsOpen=\"0\" CURRENT_FILE_PATH=\"D:\\NeuralDSP\\archetype_gojira_x\\Product\\Kone\\Workbench\\MonoToStereo.xml\"/>\r\n  <GRAPH INPUT_BUSES=\"Mono+Mono+Mono+Mono\" OUTPUT_BUSES=\"Mono+Mono+Mono+Mono\">\r\n    <NODES>\r\n      <NODE NODE_ID=\"3353998329\" TYPE_ID=\"plugin_adaptive_gate_sidechain_on\"\r\n            MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"threshold\" VALUE=\"0.1000000014901161\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"Gate\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"600\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"192\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"345\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3673940198\" TYPE_ID=\"tuner\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"enabled\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"tuner_mute\" VALUE=\"1.0\"/>\r\n          <PARAM ID=\"tuner_reference_frequency\" VALUE=\"440.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"Tuner\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"104\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4122917192\" TYPE_ID=\"transport_metronome\" MUTED=\"0\"\r\n            BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"time_signature\" VALUE=\"2.0\"/>\r\n          <PARAM ID=\"note_length\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"sound\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"volume\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"pan\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"active\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step1\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step2\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step3\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step4\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step5\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step6\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step7\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step8\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step9\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step10\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step11\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step12\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"step13\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1080\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"Metronome\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"600\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"480\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"53\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"2560887050\" TYPE_ID=\"gain_mono\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"gain\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mode\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"176\"/>\r\n          <PROPERTY KEY=\"name\" VALUE=\"InputGainMono\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"376\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"435\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4069128560\" TYPE_ID=\"meter\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"release\" VALUE=\"500.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"OutputMeter\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"392\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1080\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4208282256\" TYPE_ID=\"gojira_combo_amp\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"cleanGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBass\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanTreble\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBright\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"cleanOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"rhythmGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmLow"
+      },
+      {
+        "address": "0x1423680f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.1.0\">\r\n  <EDITOR WINDOW_W=\"1793\" WINDOW_H=\"917\" VIEWPORT_X=\"0\" VIEWPORT_Y=\"0\"\r\n          macroControlsOpen=\"1\" parameterConnectionsOpen=\"0\" CURRENT_FILE_PATH=\"D:\\NeuralDSP\\archetype_gojira_x\\Product\\Kone\\Workbench\\StereoToMono.xml\"/>\r\n  <GRAPH INPUT_BUSES=\"Mono+Mono+Mono+Mono\" OUTPUT_BUSES=\"Mono+Mono+Mono+Mono\">\r\n    <NODES>\r\n      <NODE NODE_ID=\"4226429552\" TYPE_ID=\"gain_mono\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"gain\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"mode\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"OutputGainMono\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"104\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1304\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"3601635851\" TYPE_ID=\"gojira_chr\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"rate\" VALUE=\"0.4099999964237213\"/>\r\n          <PARAM ID=\"depth\" VALUE=\"0.7000000476837158\"/>\r\n          <PARAM ID=\"feedback\" VALUE=\"0.2000000029802322\"/>\r\n          <PARAM ID=\"mix\" VALUE=\"1.0\"/>\r\n          <PARAM ID=\"chrBypass\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraCHR\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"616\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"384\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"353\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4208282256\" TYPE_ID=\"gojira_combo_amp\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"cleanGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBass\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanTreble\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"cleanBright\" VALUE=\"0.0\"/>\r\n          <PARAM ID=\"cleanOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"rhythmGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmLow\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmHigh\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmPresence\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmDepth\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"rhythmMaster\" VALUE=\"0.300000011920929\"/>\r\n          <PARAM ID=\"rhythmOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"leadGain\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadLow\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadMid\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadHigh\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadPresence\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadDepth\" VALUE=\"0.5\"/>\r\n          <PARAM ID=\"leadMaster\" VALUE=\"0.300000011920929\"/>\r\n          <PARAM ID=\"leadOutput\" VALUE=\"3.814697265625e-6\"/>\r\n          <PARAM ID=\"ampSelect\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"GojiraAmps\"/>\r\n          <PROPERTY KEY=\"editor_pos_x\" VALUE=\"840\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"848\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"104\"/>\r\n          <PROPERTY KEY=\"editor_pos_y\" VALUE=\"83\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4069128560\" TYPE_ID=\"meter\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"release\" VALUE=\"500.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"name\" VALUE=\"OutputMeter\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1304\"/>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"200\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"4047713524\" TYPE_ID=\"output\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"gain\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY KEY=\"graph_pos_y\" VALUE=\"376\"/>\r\n          <PROPERTY KEY=\"graph_pos_x\" VALUE=\"1304\"/>\r\n        </PROPERTIES>\r\n      </NODE>\r\n      <NODE NODE_ID=\"2741033146\" TYPE_ID=\"gojira_phsr\" MUTED=\"0\" BYPASSED=\"0\">\r\n        <PARAMS>\r\n          <PARAM ID=\"rate\" VALUE=\"0.60999995470047\"/>\r\n          <PARAM ID=\"phsrBypass\" VALUE=\"0.0\"/>\r\n        </PARAMS>\r\n        <PROPERTIES>\r\n          <PROPERTY"
+      }
+    ],
+    "total": 55
+  },
+  "summary": "55 strings match \"Parameter\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 55,
+    "total": 55
+  },
+  "locations": [],
+  "links": []
+}

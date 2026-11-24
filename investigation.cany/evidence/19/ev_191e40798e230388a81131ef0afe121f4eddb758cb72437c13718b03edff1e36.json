@@ -1,0 +1,42 @@
+{
+  "id": "ev_191e40798e230388a81131ef0afe121f4eddb758cb72437c13718b03edff1e36",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_bytes_show",
+  "params": {
+    "address": "0x142346c00",
+    "length": 512
+  },
+  "result": {
+    "address": "0x142346c00",
+    "ascii": "nRhythmPowerSwitchOff_png.......GojiraXCabSectionRhythmPowerSwitchOn_png........configuration_xml.......customData_xml..parametersMap_xml.......cleanAmpViewController_xml......leadAmpViewController_xml.......rhythmAmpViewController_xml.....cleanCabViewController_xml......leadCabViewController_xml.......leftCabPanelViewController_xml..leftMicViewController_xml.......rhythmCabViewController_xml.....rightCabPanelViewController_xml.rightMicViewController_xml......cleanEQViewController_xml.......leadEQViewContro",
+    "file_offset": 36983808,
+    "hex": "6e52687974686d506f7765725377697463684f66665f706e6700000000000000476f6a6972615843616253656374696f6e52687974686d506f7765725377697463684f6e5f706e670000000000000000636f6e66696775726174696f6e5f786d6c00000000000000637573746f6d446174615f786d6c0000706172616d65746572734d61705f786d6c00000000000000636c65616e416d7056696577436f6e74726f6c6c65725f786d6c0000000000006c656164416d7056696577436f6e74726f6c6c65725f786d6c0000000000000072687974686d416d7056696577436f6e74726f6c6c65725f786d6c0000000000636c65616e43616256696577436f6e74726f6c6c65725f786d6c0000000000006c65616443616256696577436f6e74726f6c6c65725f786d6c000000000000006c65667443616250616e656c56696577436f6e74726f6c6c65725f786d6c00006c6566744d696356696577436f6e74726f6c6c65725f786d6c0000000000000072687974686d43616256696577436f6e74726f6c6c65725f786d6c0000000000726967687443616250616e656c56696577436f6e74726f6c6c65725f786d6c0072696768744d696356696577436f6e74726f6c6c65725f786d6c000000000000636c65616e455156696577436f6e74726f6c6c65725f786d6c000000000000006c656164455156696577436f6e74726f",
+    "length": 512
+  },
+  "summary": "512 bytes at 0x142346c00.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 512,
+    "total": 512
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x142346c00"
+    }
+  ],
+  "links": []
+}

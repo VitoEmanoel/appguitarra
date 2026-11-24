@@ -1,0 +1,18 @@
+{
+  "id": "unk_7bb87bddfd83bb3b",
+  "revision": 2,
+  "question": "What are the exact UI sections, window dimensions, parameter IDs, value ranges, default values, and DSP node graph of ArchetypeGojiraX.exe?",
+  "severity": "high",
+  "domain": "ui_and_parameters",
+  "status": "resolved",
+  "probes": [
+    "Inspect .rdata strings and embedded XML descriptors inside ArchetypeGojiraX.exe."
+  ],
+  "evidence_for": [
+    "ev_3d91dc524b4d26fa006cdcc25bd08bd3e4a392e82b94893c4742943eeaa33783",
+    "ev_fdae2fc4e37abae1e1d45e83432ca47b69a7f6df409f6c7d195cd78f3809c968",
+    "ev_191e40798e230388a81131ef0afe121f4eddb758cb72437c13718b03edff1e36"
+  ],
+  "evidence_against": [],
+  "resolution": "Extracted all 122 uncompressed MVC XML descriptors (configuration.xml at 0x146562e30, customData.xml at 0x146563d70, parametersMap.xml at 0x146567590, all *ParametersModel.xml, *View.xml, styles.xml at 0x1465a5c40, archetypeStyles.xml at 0x14671ab90) and 5 Kone Workbench DSP graphs (0x14234a410..0x1423680f0) from .rdata of ArchetypeGojiraX.exe, giving exact window size (1024x782), scaling factors (0.715..2.0), color palette, and every parameter's min, max, skew, default, and unit."
+}

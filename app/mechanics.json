@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "values": [
+    {
+      "name": "bootstrapper entry point",
+      "group": "installer",
+      "value": "0x5e0862",
+      "source": "function 0x5e0862"
+    },
+    {
+      "name": "sfx stream chunk size",
+      "group": "installer",
+      "value": 65536,
+      "unit": "bytes",
+      "source": "function 0x550ce0"
+    },
+    {
+      "name": "sfx header xor invert length",
+      "group": "installer",
+      "value": 512,
+      "unit": "bytes",
+      "source": "function 0x5709d0"
+    },
+    {
+      "name": "embedded cab file count",
+      "group": "installer",
+      "value": 328,
+      "unit": "files",
+      "source": "function 0x413640"
+    },
+    {
+      "name": "window width",
+      "group": "window",
+      "value": 1024,
+      "unit": "px",
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "window height",
+      "group": "window",
+      "value": 782,
+      "unit": "px",
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "section canvas height",
+      "group": "window",
+      "value": 750,
+      "unit": "px",
+      "source": "address 0x1465a3970"
+    },
+    {
+      "name": "top bar height",
+      "group": "window",
+      "value": 190,
+      "unit": "px",
+      "source": "address 0x1465a3970"
+    },
+    {
+      "name": "bottom bar height",
+      "group": "window",
+      "value": 32,
+      "unit": "px",
+      "source": "address 0x1465a3970"
+    },
+    {
+      "name": "scale small factor",
+      "group": "window",
+      "value": 0.715,
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "scale medium factor",
+      "group": "window",
+      "value": 1.0,
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "scale large factor",
+      "group": "window",
+      "value": 1.3,
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "scale x-large factor",
+      "group": "window",
+      "value": 1.6,
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "scale maximum factor",
+      "group": "window",
+      "value": 2.0,
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "double click timeout",
+      "group": "controls",
+      "value": 200,
+      "unit": "ms",
+      "source": "address 0x146562e30"
+    },
+    {
+      "name": "input gain min",
+      "group": "global_audio",
+      "value": -24.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "input gain max",
+      "group": "global_audio",
+      "value": 24.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "output gain min",
+      "group": "global_audio",
+      "value": -24.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "output gain max",
+      "group": "global_audio",
+      "value": 24.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "gate threshold min",
+      "group": "global_audio",
+      "value": -96.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "gate threshold max",
+      "group": "global_audio",
+      "value": 0.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "gate threshold default",
+      "group": "global_audio",
+      "value": -80.0,
+      "unit": "dB",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "transpose min",
+      "group": "global_audio",
+      "value": -12,
+      "unit": "st",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "transpose max",
+      "group": "global_audio",
+      "value": 12,
+      "unit": "st",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "doubler spread min",
+      "group": "global_audio",
+      "value": 3.0,
+      "unit": "ms",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "doubler spread max",
+      "group": "global_audio",
+      "value": 20.0,
+      "unit": "ms",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "doubler spread default",
+      "group": "global_audio",
+      "value": 6.0,
+      "unit": "ms",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "meter release time",
+      "group": "global_audio",
+      "value": 500.0,
+      "unit": "ms",
+      "source": "address 0x142351920"
+    },
+    {
+      "name": "wow fatso pitch min",
+      "group": "pitch",
+      "value": -12,
+      "unit": "st",
+      "source": "address 0x14658c510"
+    },
+    {
+      "name": "wow blade2 pitch max",
+      "group": "pitch",
+      "value": 24,
+      "unit": "st",
+      "source": "address 0x14658c510"
+    },
+    {
+      "name": "phaser rate min",
+      "group": "pre_fx",
+      "value": 0.12,
+      "unit": "Hz",
+      "source": "address 0x14658bfd0"
+    },
+    {
+      "name": "phaser rate max",
+      "group": "pre_fx",
+      "value": 10.0,
+      "unit": "Hz",
+      "source": "address 0x14658bfd0"
+    },
+    {
+      "name": "phaser rate default",
+      "group": "pre_fx",
+      "value": 0.614,
+      "unit": "Hz",
+      "source": "address 0x14658bfd0"
+    },
+    {
+      "name": "chorus rate min",
+      "group": "pre_fx",
+      "value": 0.12,
+      "unit": "Hz",
+      "source": "address 0x14658b580"
+    },
+    {
+      "name": "chorus rate max",
+      "group": "pre_fx",
+      "value": 10.0,
+      "unit": "Hz",
+      "source": "address 0x14658b580"
+    },
+    {
+      "name": "chorus rate default",
+      "group": "pre_fx",
+      "value": 0.41,
+      "unit": "Hz",
+      "source": "address 0x14658b580"
+    },
+    {
+      "name": "default selected section",
+      "group": "amp",
+      "value": 2,
+      "source": "address 0x14658cb30"
+    },
+    {
+      "name": "default selected amp",
+      "group": "amp",
+      "value": 2,
+      "source": "address 0x14658cb30"
+    },
+    {
+      "name": "cab mic level min",
+      "group": "cab",
+      "value": -40.0,
+      "unit": "dB",
+      "source": "address 0x14658d670"
+    },
+    {
+      "name": "cab mic level max",
+      "group": "cab",
+      "value": 6.0,
+      "unit": "dB",
+      "source": "address 0x14658d670"
+    },
+    {
+      "name": "cab mic position default",
+      "group": "cab",
+      "value": 0.3,
+      "source": "address 0x14658d670"
+    },
+    {
+      "name": "cab pan range",
+      "group": "cab",
+      "value": 50.0,
+      "source": "address 0x14658d670"
+    },
+    {
+      "name": "eq band gain range",
+      "group": "eq",
+      "value": 12.0,
+      "unit": "dB",
+      "source": "address 0x1465888f0"
+    },
+    {
+      "name": "eq hpf min",
+      "group": "eq",
+      "value": 20.0,
+      "unit": "Hz",
+      "source": "address 0x1465888f0"
+    },
+    {
+      "name": "eq hpf max",
+      "group": "eq",
+      "value": 500.0,
+      "unit": "Hz",
+      "source": "address 0x1465888f0"
+    },
+    {
+      "name": "eq lpf min",
+      "group": "eq",
+      "value": 1000.0,
+      "unit": "Hz",
+      "source": "address 0x1465888f0"
+    },
+    {
+      "name": "eq lpf max",
+      "group": "eq",
+      "value": 20000.0,
+      "unit": "Hz",
+      "source": "address 0x1465888f0"
+    },
+    {
+      "name": "delay time min",
+      "group": "post_fx",
+      "value": 7.0,
+      "unit": "ms",
+      "source": "address 0x14658a370"
+    },
+    {
+      "name": "delay time max",
+      "group": "post_fx",
+      "value": 3000.0,
+      "unit": "ms",
+      "source": "address 0x14658a370"
+    },
+    {
+      "name": "delay time default",
+      "group": "post_fx",
+      "value": 400.0,
+      "unit": "ms",
+      "source": "address 0x14658a370"
+    },
+    {
+      "name": "reverb decay min",
+      "group": "post_fx",
+      "value": 250.0,
+      "unit": "ms",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "reverb decay max",
+      "group": "post_fx",
+      "value": 10000.0,
+      "unit": "ms",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "reverb high pass filter min",
+      "group": "post_fx",
+      "value": 50.0,
+      "unit": "Hz",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "reverb high pass filter max",
+      "group": "post_fx",
+      "value": 700.0,
+      "unit": "Hz",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "reverb low pass filter min",
+      "group": "post_fx",
+      "value": 1000.0,
+      "unit": "Hz",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "reverb low pass filter max",
+      "group": "post_fx",
+      "value": 10000.0,
+      "unit": "Hz",
+      "source": "address 0x146563d70"
+    },
+    {
+      "name": "tempo min",
+      "group": "utility",
+      "value": 40.0,
+      "unit": "BPM",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "tempo max",
+      "group": "utility",
+      "value": 240.0,
+      "unit": "BPM",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "tempo default",
+      "group": "utility",
+      "value": 120.0,
+      "unit": "BPM",
+      "source": "address 0x14658fa90"
+    },
+    {
+      "name": "tuner reference pitch default",
+      "group": "utility",
+      "value": 440.0,
+      "unit": "Hz",
+      "source": "address 0x1467195b0"
+    },
+    {
+      "name": "amp tube saturation and cabinet ir dsp curves",
+      "group": "dsp",
+      "value": "cascaded waveshaper + biquad cabinet model",
+      "estimated": true
+    }
+  ]
+}

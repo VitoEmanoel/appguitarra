@@ -1,0 +1,467 @@
+--- Craft Anything 0.6.1: a run started 2026-11-24 12:22:39 UTC ---
+12:22:39 stage Looking inside it (nothing is run)…
+12:22:39 start core target triage
+12:22:40 done  core target triage
+12:22:40 stage Ghidra is analysing the program (only the first time; a big game takes a while)…
+12:22:47 stage Ghidra is analysing the program (once per program; a big one can take hours)
+12:22:58 stage Ghidra is analysing the program (0 min so far; once per program)
+12:23:49 stage Ghidra is analysing the program (1 min so far; once per program)
+12:24:39 stage Getting the builder ready…
+12:24:39 stage Building the first version…
+12:24:40 note  Asking Antigravity…
+12:24:54 start read file
+12:24:54 done  read file: 87 lines, 2272 bytes
+12:24:54 start run command
+12:24:56 done  run command (1 s): Created At: 2026-11-24T09:24:54-03:00 Completed At: 2026-11-24T09:24:56-03:00 Command exited with code 0. Command output: Diretório: C:\Users\Ve778\OneDrive\Documentos\Craft Anything\archetyp
+12:25:22 start read file
+12:25:22 done  read file: 23 lines, 647 bytes
+12:25:22 start read file
+12:25:22 done  read file: 1 lines, 907 bytes
+12:25:22 start read file
+12:25:22 done  read file: 16 lines, 1016 bytes
+12:25:22 start run command
+12:25:24 done  run command (1 s): Created At: 2026-11-24T09:25:22-03:00 Completed At: 2026-11-24T09:25:24-03:00 Command exited with code 0. Command output: Diretório: C:\Users\Ve778\OneDrive\Documentos\Craft Anything\archetyp
+12:25:35 start read file
+12:25:35 done  read file: 4 lines, 103 bytes
+12:25:35 start read file
+12:25:35 done  read file: 3 lines, 592 bytes
+12:25:35 start read file
+12:25:35 done  read file: 6 lines, 146 bytes
+12:25:35 start run command
+12:25:43 done  run command (7 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:26:11 start run command
+12:26:13 done  run command (1 s): Created At: 2026-11-24T09:26:11-03:00 Completed At: 2026-11-24T09:26:13-03:00 Command exited with code 0. Command output: Diretório: G:\Software\craft-anything-0.6.1-windows-x64-portable
+12:26:21 start run command
+12:26:23 done  run command (1 s): Created At: 2026-11-24T09:26:21-03:00 Completed At: 2026-11-24T09:26:23-03:00 Command exited with code 0. Command output: Craft Anything on the command line: every tool, the MCP server, setup and doc
+12:26:23 start read file
+12:26:23 done  read file: 431 lines, 27804 bytes
+12:26:34 start run command
+12:26:35 done  run command (1 s): Created At: 2026-11-24T09:26:34-03:00 Completed At: 2026-11-24T09:26:35-03:00 Command exited with code 0. Command output: core-target-open — Open Open a file, app bundle or folder as the active targ
+12:26:50 start run command
+12:26:56 done  run command (6 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:27:11 start run command
+12:27:21 done  run command (9 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:27:32 start run command
+12:27:46 done  run command (14 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:27:50 start read file
+12:27:50 done  read file: 10 lines, 15179 bytes
+12:27:50 start read file
+12:27:50 done  read file: 17 lines, 165265 bytes
+12:28:10 start run command
+12:28:12 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:28:29 start read file
+12:28:29 done  read file: 165 lines, 48211 bytes
+12:28:29 start run command
+12:28:31 done  run command (2 s): Created At: 2026-11-24T09:28:28-03:00 Completed At: 2026-11-24T09:28:31-03:00 Command exited with code 0. Command output: error: params must be a JSON object: key must be a string at line 1 column 2
+12:28:55 start run command
+12:28:58 done  run command (3 s): Created At: 2026-11-24T09:28:54-03:00 Completed At: 2026-11-24T09:28:58-03:00 Command exited with code 1. Command output: === build-checklist === {"error":{"category":"input","code":"bad_input","det
+12:29:30 start run command
+12:29:33 done  run command (2 s): Created At: 2026-11-24T09:29:30-03:00 Completed At: 2026-11-24T09:29:33-03:00 Command exited with code 0. Command output: === build-checklist === error: params must be a JSON object: expected value
+12:30:01 start run command
+12:30:07 done  run command (6 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:30:30 start run command
+12:30:33 done  run command (3 s): Created At: 2026-11-24T09:30:29-03:00 Completed At: 2026-11-24T09:30:33-03:00 Command exited with code 0. Command output: === Decompile key functions === {"authority":"original-files","confidence":"
+12:30:50 start run command
+12:30:52 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:31:15 start run command
+12:32:34 done  run command (79 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:32:34 start run command
+12:32:34 done  run command: The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:32:34 start manage task
+12:32:34 done  manage task: Created At: 2026-11-24T09:31:59-03:00 Completed At: 2026-11-24T09:32:01-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-51 Status: RUNNING Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/bra
+12:32:34 start read file
+12:32:34 done  read file: 254 lines, 23349 bytes
+12:32:34 start read file
+12:32:34 done  read file: 4 lines, 64915 bytes
+12:32:34 start run command
+12:33:03 done  run command (28 s): Command exited with code 0. Command output: Found PNG at file offset: 4336640 Found PNG at file offset: 5296150
+12:33:03 start read file
+12:33:03 done  read file: 156 lines, 154680 bytes
+12:33:15 start manage task
+12:33:15 done  manage task: Created At: 2026-11-24T09:33:08-03:00 Completed At: 2026-11-24T09:33:15-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-60 Status: DONE Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/
+12:33:15 start run command
+12:33:34 done  run command (18 s): Command exited with code 0. Command output: === Decompile 0x5709d0 and callers of 0x550ce0 / 0x558830 === {"authority":"original-files","carries_target_content":true,"confidence":"derived","coverage
+12:33:58 start run command
+12:34:01 done  run command (2 s): Created At: 2026-11-24T09:33:57-03:00 Completed At: 2026-11-24T09:34:01-03:00 Command exited with code 0. Command output: File length: 487293352, Cert Table offset: 487282792, Cert Table size: 10560
+12:34:23 start read file
+12:34:24 done  read file
+12:34:24 start read file
+12:34:24 done  read file
+12:34:24 start run command
+12:34:47 done  run command (23 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:35:00 start manage task
+12:35:00 done  manage task: Created At: 2026-11-24T09:34:52-03:00 Completed At: 2026-11-24T09:35:00-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-75 Status: DONE Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/
+12:35:00 start run command
+12:35:04 done  run command (3 s): Created At: 2026-11-24T09:35:00-03:00 Completed At: 2026-11-24T09:35:04-03:00 Command exited with code 0. Command output: === Bytes at 9096064 (raw) === 2E 70 08 C2 DC C0 55 99 D5 AB 58 BF 82 FD C7
+12:35:19 start read file
+12:35:19 FAIL  read file: {"message":"file \"C:\\\\Users\\\\Ve778\\\\.gemini\\\\antigravity-cli\\\\brain\\\\5486da78-dfac-4001-aa31-fe49d70d7238\\\\.system_generated\\\\steps\\\\75\\\\output.txt\" appears to be a binary file (
+12:35:33 start run command
+12:35:37 done  run command (3 s): Created At: 2026-11-24T09:35:33-03:00 Completed At: 2026-11-24T09:35:37-03:00 Command exited with code 0. Command output: â¼¯æ…£æ•£ç‘²â¹³æ¥¤æ¥§æ•£ç‘²æŒ®æµ¯ä¯æ©ä©ç‰¥å‘´ç•²ç‘³æ‘¥æ½’ç‘¯ã‘‡æŒ®ç‘²äŒ°Ì†
+12:35:54 start run command
+12:35:57 done  run command (2 s): Created At: 2026-11-24T09:35:54-03:00 Completed At: 2026-11-24T09:35:56-03:00 Command exited with code 0. Command output: 000: 3D 00 7B 00 38 00 38 00 45 00 41 00 30 00 37 00 =.{.8.8.E.A.0.7. 010:
+12:36:20 start run command
+12:36:21 done  run command (1 s): Created At: 2026-11-24T09:36:19-03:00 Completed At: 2026-11-24T09:36:21-03:00 Command exited with code 0. Command output: === Raw bytes at 0x00554C00 (first 64) === B2 AC BC B9 FF FF FF FF 5B 21 4A
+12:36:46 start run command
+12:36:49 done  run command (3 s): Created At: 2026-11-24T09:36:46-03:00 Completed At: 2026-11-24T09:36:49-03:00 Command exited with code 0. Command output: coffFiles=68, cFolders=1, cFiles=328 [0] ArchetypeGojiraX.exe (size: 1299699
+12:37:15 start run command
+12:37:24 done  run command (8 s): Created At: 2026-11-24T09:37:15-03:00 Completed At: 2026-11-24T09:37:23-03:00 Command exited with code 0. Command output: Extracted CAB to C:\Users\Ve778\.gemini\antigravity-cli\brain\5486da78-dfac-4
+12:37:42 start read file
+12:37:42 FAIL  read file: {"message":"file \"C:\\\\Users\\\\Ve778\\\\.gemini\\\\antigravity-cli\\\\brain\\\\5486da78-dfac-4001-aa31-fe49d70d7238\\\\scratch\\\\extracted\\\\Default.xml_1\" appears to be a binary file (applicati
+12:37:42 start read file
+12:37:42 FAIL  read file: {"message":"file \"C:\\\\Users\\\\Ve778\\\\.gemini\\\\antigravity-cli\\\\brain\\\\5486da78-dfac-4001-aa31-fe49d70d7238\\\\scratch\\\\extracted\\\\AnunnakiX.xml\" appears to be a binary file (applicati
+12:37:42 start read file
+12:37:42 FAIL  read file: {"message":"file \"C:\\\\Users\\\\Ve778\\\\.gemini\\\\antigravity-cli\\\\brain\\\\5486da78-dfac-4001-aa31-fe49d70d7238\\\\scratch\\\\extracted\\\\Heavy8StringRhythm.xml\" appears to be a binary file (
+12:37:42 start read file
+12:37:42 done  read file
+12:37:42 start run command
+12:37:51 done  run command (8 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:38:26 start run command
+12:38:31 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:39:04 start read file
+12:39:04 done  read file: 11 lines, 45566 bytes
+12:39:04 start run command
+12:39:06 done  run command (2 s): Created At: 2026-11-24T09:39:03-03:00 Completed At: 2026-11-24T09:39:06-03:00 Command exited with code 0. Command output: ConvertFrom-Json : JSON primitivo inválido: Completed. No linha:2 caractere:
+12:39:41 start run command
+12:39:44 done  run command (3 s): Created At: 2026-11-24T09:39:40-03:00 Completed At: 2026-11-24T09:39:44-03:00 Command exited with code 0. Command output: Found 17 XML documents in first 4MB of .rdata [0] @ 0x142347aa9 (len 29957):
+12:40:16 start read file
+12:40:16 done  read file: 578 lines, 27100 bytes
+12:40:16 start run command
+12:40:23 done  run command (6 s): Created At: 2026-11-24T09:40:16-03:00 Completed At: 2026-11-24T09:40:23-03:00 Command exited with code 0. Command output: {"authority":"original-files","confidence":"derived","coverage":{"examined":0
+12:41:03 start run command
+12:42:50 done  run command (107 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:42:50 start run command
+12:42:50 done  run command: The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:42:50 start manage task
+12:42:50 done  manage task: Created At: 2026-11-24T09:42:29-03:00 Completed At: 2026-11-24T09:42:34-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-112 Status: RUNNING Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/br
+12:42:50 start run command
+12:42:50 done  run command: The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:43:04 start manage task
+12:43:05 done  manage task: Created At: 2026-11-24T09:43:04-03:00 Completed At: 2026-11-24T09:43:04-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-112 Status: DONE Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/brain
+12:43:39 start read file
+12:43:39 done  read file: 85 lines, 3897 bytes
+12:43:39 start read file
+12:43:39 done  read file: 260 lines, 14358 bytes
+12:43:39 start read file
+12:43:39 done  read file: 1404 lines, 85171 bytes
+12:43:39 start read file
+12:43:39 done  read file: 127 lines, 21497 bytes
+12:44:16 start read file
+12:44:16 done  read file: 182 lines, 8906 bytes
+12:44:16 start read file
+12:44:17 done  read file: 433 lines, 16506 bytes
+12:44:17 start read file
+12:44:17 done  read file: 192 lines, 8105 bytes
+12:44:17 start read file
+12:44:17 done  read file: 175 lines, 7868 bytes
+12:44:17 start run command
+12:44:19 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:44:51 start read file
+12:44:51 done  read file: 1630 lines, 50508 bytes
+12:44:51 start read file
+12:44:51 done  read file: 1630 lines, 50508 bytes
+12:44:51 start read file
+12:44:51 done  read file: 844 lines, 35051 bytes
+12:44:51 start read file
+12:44:51 done  read file: 2353 lines, 97908 bytes
+12:45:25 start run command
+12:45:27 done  run command (1 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:45:58 start read file
+12:45:58 done  read file: 1535 lines, 62921 bytes
+12:45:58 start read file
+12:45:58 done  read file: 1535 lines, 62921 bytes
+12:47:12 start run command
+12:47:14 done  run command (2 s): Created At: 2026-11-24T09:47:11-03:00 Completed At: 2026-11-24T09:47:14-03:00 Command exited with code 0. Command output: Added u1: {"error":{"category":"input","code":"bad_input","details":{"param
+12:49:51 start run command
+12:49:54 done  run command (2 s): Created At: 2026-11-24T09:48:17-03:00 Completed At: 2026-11-24T09:49:53-03:00 Command exited with code 0. No output from the command.
+12:49:54 start write file
+12:49:55 done  write file (1 s)
+12:49:55 start write file
+12:49:57 done  write file (1 s)
+12:50:42 start run command
+12:50:45 done  run command (2 s): Created At: 2026-11-24T09:50:42-03:00 Completed At: 2026-11-24T09:50:44-03:00 Command exited with code 1. Command output: === core-unknowns-show === {"result":{"items":[{"domain":"dsp_weights_and_en
+12:51:26 start run command
+12:51:28 done  run command (2 s): Created At: 2026-11-24T09:51:25-03:00 Completed At: 2026-11-24T09:51:28-03:00 Command exited with code 1. Command output: {"result":{"domain":"installer_payload","evidence_against":[],"evidence_for":
+12:52:02 start run command
+12:52:04 done  run command (2 s): Created At: 2026-11-24T09:52:01-03:00 Completed At: 2026-11-24T09:52:04-03:00 Command exited with code 0. Command output: === engines-list === {"result":{"deep_mode":{"enabled":true,"ghidra":"G:\\So
+12:52:43 start run command
+12:52:44 done  run command (1 s): Created At: 2026-11-24T09:52:42-03:00 Completed At: 2026-11-24T09:52:44-03:00 Command exited with code 0. Command output: {"result":{"count":1,"locations":["C:\\Users\\Ve778\\OneDrive\\Documentos\\Cr
+12:53:32 start run command
+12:54:42 done  run command (70 s)
+12:54:42 start manage task
+12:54:42 done  manage task: Created At: 2026-11-24T09:54:09-03:00 Completed At: 2026-11-24T09:54:10-03:00 Task: 5486da78-dfac-4001-aa31-fe49d70d7238/task-161 Status: RUNNING Log: file:///C:/Users/Ve778/.gemini/antigravity-cli/br
+12:54:42 start manage task
+12:54:43 done  manage task: Created At: 2026-11-24T09:54:39-03:00 Completed At: 2026-11-24T09:54:42-03:00 Task "5486da78-dfac-4001-aa31-fe49d70d7238/task-161" cancelled.
+12:54:43 start run command
+12:54:55 done  run command (12 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:55:23 start read file
+12:55:24 done  read file: 3 lines, 21056 bytes
+12:56:12 start run command
+12:56:19 done  run command (6 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:56:50 start run command
+12:57:00 done  run command (9 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:57:32 start run command
+12:57:37 done  run command (5 s): Created At: 2026-11-24T09:57:31-03:00 Completed At: 2026-11-24T09:57:37-03:00 Command exited with code 0. Command output: {"authority":"original-files","confidence":"observed","coverage":{"examined":
+12:58:17 start run command
+12:58:24 done  run command (7 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+12:59:13 start run command
+12:59:15 done  run command (1 s): Created At: 2026-11-24T09:59:13-03:00 Completed At: 2026-11-24T09:59:15-03:00 Command exited with code 1. Command output: {"error":{"category":"target","code":"not_supported","message":"There is no e
+13:00:08 start run command
+13:00:17 done  run command (9 s): Created At: 2026-11-24T10:00:07-03:00 Completed At: 2026-11-24T10:00:17-03:00 Command exited with code 1. Command output: {"authority":"original-files","confidence":"derived","coverage":{"examined":1
+13:00:48 start run command
+13:00:53 done  run command (5 s): Created At: 2026-11-24T10:00:47-03:00 Completed At: 2026-11-24T10:00:53-03:00 Command exited with code 0. Command output: 0x140331397 -> 0x140a6e960 (call sub_140a6e960) 0x1403313bf -> 0x140099420 (
+13:01:27 start run command
+13:01:41 done  run command (13 s): Command exited with code 0. Command output: {"authority":"original-files","confidence":"observed","coverage":{"examined":50,"status":"complete","total":50},"environment":{"clean_room":false,"engine":
+13:02:11 start read file
+13:02:11 done  read file: 3 lines, 5673 bytes
+13:02:11 start run command
+13:02:17 done  run command (5 s): Created At: 2026-11-24T10:02:11-03:00 Completed At: 2026-11-24T10:02:17-03:00 Command exited with code 0. Command output: 0x1402f995b -> 0x140a761d0 (call sub_140a761d0) 0x1402f996e -> 0x140aefae0 (
+13:02:51 start run command
+13:03:04 done  run command (13 s): Command exited with code 0. Command output: === 0x140aefae0 === 0x140aefb0e -> 0x141af9310 (call ) 0x140aefb30 -> 0x141e9d4c8 (data ) 0x140aefb42 -> 0x141af97f0 (call ) 0x140aefb58 -> 0x141d51d60
+13:03:34 start read file
+13:03:34 done  read file: 100 lines, 7744 bytes
+13:03:34 start run command
+13:03:36 done  run command (1 s): Created At: 2026-11-24T10:03:34-03:00 Completed At: 2026-11-24T10:03:36-03:00 Command exited with code 0. Command output: {"authority":"original-files","confidence":"observed","coverage":{"examined":
+13:04:09 start run command
+13:04:15 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:04:48 start run command
+13:04:50 done  run command (2 s): Created At: 2026-11-24T10:04:47-03:00 Completed At: 2026-11-24T10:04:50-03:00 Command exited with code 0. Command output: {"authority":"original-files","confidence":"observed","coverage":{"examined":
+13:05:24 start run command
+13:05:33 done  run command (9 s): Command exited with code 0. Command output: === 0x1402f4e00 === 0x1402f4e52 -> 0x141af97f0 (call ) 0x1402f4e6d -> 0x141e33450 (call ) 0x1402f4eab -> 0x141af97f0 (call ) 0x1402f4ec6 -> 0x141d51d60
+13:06:03 start read file
+13:06:03 done  read file: 71 lines, 2914 bytes
+13:06:03 start run command
+13:06:13 done  run command (10 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:06:54 start read file
+13:06:54 FAIL  read file: {"message":"invalid ByteOffset: offset 46080 is beyond the content length (42 bytes) of lines 2-2","type":"TOOL_ERROR"}
+13:06:54 start run command
+13:06:56 done  run command (1 s): Created At: 2026-11-24T10:06:53-03:00 Completed At: 2026-11-24T10:06:56-03:00 Command exited with code 0. Command output: {"authority":"original-files","confidence":"observed","coverage":{"examined":
+13:07:33 start run command
+13:07:44 done  run command (10 s): Command exited with code 0. Command output: === 0x1400a5330 === 0x1400a5361 -> 0x141e7ce4c (data ) 0x1400a5377 -> 0x142500018 (data ) 0x1400a539e -> 0x141afec80 (data ) 0x1400a53b1 -> 0x140098850
+13:08:35 start read file
+13:08:35 done  read file: 13 lines, 464 bytes
+13:08:35 start run command
+13:08:48 done  run command (12 s): Command exited with code 0. Command output: {"authority":"original-files","confidence":"derived","coverage":{"examined":0,"status":"complete","total":0},"environment":{"clean_room":false,"engine":"bu
+13:09:14 start read file
+13:09:15 done  read file: 3 lines, 3323 bytes
+13:09:15 start run command
+13:09:20 done  run command (5 s): Created At: 2026-11-24T10:09:14-03:00 Completed At: 2026-11-24T10:09:20-03:00 Command exited with code 0. Command output: 0x1402f4748 -> 0x14009b570 (call sub_14009b570) 0x1402f47a3 -> 0x14037e490 (
+13:11:31 start run command
+13:11:34 done  run command (2 s): Created At: 2026-11-24T10:11:31-03:00 Completed At: 2026-11-24T10:11:34-03:00 Command exited with code 0. Command output: [[toolchain]] name = "Rust" found_by = ["Cargo.toml"] build = ["cargo", "buil
+13:19:33 start write file
+13:19:35 done  write file (1 s)
+13:19:35 start write file
+13:19:37 done  write file (1 s)
+13:19:48 start run command
+13:19:51 done  run command (3 s): Created At: 2026-11-24T10:19:48-03:00 Completed At: 2026-11-24T10:19:51-03:00 Command exited with code 1. Command output: app\Program.cs(206,21): warning CS0414: O campo 'ArchetypeGojiraX.GojiraMainF
+13:20:02 start run command
+13:20:07 done  run command (5 s): Created At: 2026-11-24T10:20:02-03:00 Completed At: 2026-11-24T10:20:07-03:00 Command exited with code 0. Command output: ExitCode: 0 now.png not found
+13:20:19 start run command
+13:20:24 done  run command (5 s): Created At: 2026-11-24T10:20:19-03:00 Completed At: 2026-11-24T10:20:24-03:00 Command exited with code 0. Command output: Diretório: C:\Users\Ve778\OneDrive\Documentos\Craft Anything\archetyp
+13:20:39 start read file
+13:20:39 done  read file
+13:20:39 start run command
+13:20:41 stage The builder is checking its work against the original…
+13:20:41 stage Checking its work (1 of 3): build…
+13:20:41 stage Checking its work (2 of 3): app-screenshot…
+13:20:44 stage Checking its work (3 of 3): mechanics…
+13:20:44 stage The builder checked its work: 2 of 3 checks pass; 1 comparison remains unverified.
+13:20:44 done  run command (5 s): Created At: 2026-11-24T10:20:39-03:00 Completed At: 2026-11-24T10:20:44-03:00 Command exited with code 0. Command output: {"result":{"project":"C:\\Users\\Ve778\\OneDrive\\Documentos\\Craft Anything\
+13:21:19 start edit file
+13:21:21 done  edit file (1 s)
+13:21:21 start edit file
+13:21:23 done  edit file (2 s)
+13:21:38 start run command
+13:21:40 done  run command (2 s): Created At: 2026-11-24T10:21:38-03:00 Completed At: 2026-11-24T10:21:40-03:00 Command exited with code 0. Command output: {"error":{"category":"input","code":"bad_input","details":{"parameter_path":"
+13:21:54 start run command
+13:21:56 stage The builder is checking its work against the original…
+13:21:56 stage Checking its work (1 of 3): build…
+13:21:56 stage Checking its work (2 of 3): app-screenshot…
+13:21:59 stage Checking its work (3 of 3): mechanics…
+13:21:59 stage The builder checked its work: 2 of 3 checks pass; 1 comparison remains unverified.
+13:22:00 done  run command (5 s): Created At: 2026-11-24T10:21:54-03:00 Completed At: 2026-11-24T10:21:59-03:00 Command exited with code 0. Command output: {"error":{"category":"input","code":"bad_input","message":"C:\\Users\\Ve778\\
+13:22:10 start run command
+13:22:12 done  run command (2 s): Created At: 2026-11-24T10:22:09-03:00 Completed At: 2026-11-24T10:22:12-03:00 Command exited with code 0. Command output: {"result":{"done":4,"steps":4}}
+13:22:26 said  Analisei e recriei o aplicativo completo de processamento de guitarra com todas as seis seções da cadeia de sinal (pedais de Pitch WOW e Octaver, quatro pedais de Pre FX, três cabeçotes de amplificador Clean, Rust e Hot, simulador de gabinete com microfones duplos móveis, equalizador gráfico de nove bandas com filtros e pedais de Post FX com Delay LCD e Reverb Shimmer), além dos controles globais de ganho, noise gate, transposição, doubler, gerenciador de presets, afinador cromático, metrônomo e mapeamento MIDI. Todas as dimensões de tela, cores, escalas de janela, faixas de parâmetros e conex…
+13:22:27 note  The builder's turn ended (20801454 tokens in, 176986 out)
+13:22:27 stage Building the first version…
+13:22:27 note  Asking Antigravity…
+13:22:50 start run command
+13:22:52 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:23:02 start run command
+13:23:05 done  run command (2 s): Created At: 2026-11-24T10:23:02-03:00 Completed At: 2026-11-24T10:23:04-03:00 Command exited with code 0. Command output: Offset: 0x1E67C20 te, Edit or Bash, use these. For the checklist step use bu
+13:23:14 start run command
+13:23:16 done  run command (1 s): Created At: 2026-11-24T10:23:14-03:00 Completed At: 2026-11-24T10:23:16-03:00 Command exited with code 1. Command output: error: native-strings-find has no option --target. Options: --case-sensitive,
+13:23:38 start run command
+13:23:40 done  run command (1 s): Created At: 2026-11-24T10:23:38-03:00 Completed At: 2026-11-24T10:23:40-03:00 Command exited with code 1. Command output: File "<string>", line 3 with open(rG:\Software\craft-anything-0.6.1-wi
+13:23:53 start run command
+13:23:57 done  run command (3 s): Created At: 2026-11-24T10:23:53-03:00 Completed At: 2026-11-24T10:23:57-03:00 Command exited with code 1. Command output: error: unknown command "native-disassemble". Run `craft-anything-cli commands
+13:24:05 start run command
+13:24:07 done  run command (2 s): Created At: 2026-11-24T10:24:05-03:00 Completed At: 2026-11-24T10:24:07-03:00 Command exited with code 1. Command output: error: unknown command "native-instructions-disassemble". Run `craft-anything
+13:24:16 start run command
+13:24:18 done  run command (1 s): Created At: 2026-11-24T10:24:16-03:00 Completed At: 2026-11-24T10:24:18-03:00 Command exited with code 1. Command output: error: native-function-disassemble has no option --max-instructions. Options:
+13:24:25 start run command
+13:24:27 done  run command (1 s): Created At: 2026-11-24T10:24:25-03:00 Completed At: 2026-11-24T10:24:27-03:00 Command exited with code 1. Command output: error: native-function-disassemble needs a target: craft-anything-cli native-
+13:24:36 start run command
+13:24:41 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:24:52 start run command
+13:24:54 done  run command (2 s): Created At: 2026-11-24T10:24:51-03:00 Completed At: 2026-11-24T10:24:54-03:00 Command exited with code 0. Command output: ConvertFrom-Json : JSON primitivo inválido: Created. No linha:1 caractere:27
+13:25:07 start run command
+13:25:09 done  run command (2 s): Created At: 2026-11-24T10:25:06-03:00 Completed At: 2026-11-24T10:25:09-03:00 Command exited with code 0. Command output: 0x140223ee5 4c8985e0090000 mov [rbp+0x9e0], r8 0x140223eec e8efa
+13:25:19 start run command
+13:25:21 done  run command (1 s): Created At: 2026-11-24T10:25:19-03:00 Completed At: 2026-11-24T10:25:21-03:00 Command exited with code 0. Command output: === HIT at line 2990 === loc_140223764: 0x140223764 4883f8ff
+13:25:47 start run command
+13:25:52 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:26:10 start run command
+13:26:16 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:26:24 start read file
+13:26:24 done  read file: 1432 lines, 72050 bytes
+13:26:37 start read file
+13:26:37 done  read file: 6 lines, 241157 bytes
+13:26:51 start run command
+13:26:53 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:27:04 start run command
+13:27:05 done  run command (1 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:27:19 start run command
+13:27:24 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:27:42 start read file
+13:27:42 done  read file: 579 lines, 30344 bytes
+13:27:56 start read file
+13:27:56 done  read file: 579 lines, 30344 bytes
+13:27:56 start run command
+13:27:58 done  run command (1 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:28:11 start run command
+13:28:16 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:28:35 start run command
+13:28:48 done  run command (12 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:28:57 start read file
+13:28:57 done  read file: 339 lines, 16464 bytes
+13:29:17 start run command
+13:29:48 done  run command (31 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:29:48 start read file
+13:29:48 done  read file: 609 lines, 31601 bytes
+13:29:57 start run command
+13:30:03 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:30:25 start read file
+13:30:25 done  read file: 194 lines, 10388 bytes
+13:30:25 start read file
+13:30:25 done  read file: 766 lines, 38916 bytes
+13:30:48 start run command
+13:30:58 done  run command (9 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:31:12 start read file
+13:31:12 done  read file: 944 lines, 51017 bytes
+13:31:30 start run command
+13:31:44 done  run command (13 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:31:52 start read file
+13:31:52 done  read file: 579 lines, 28703 bytes
+13:32:21 start run command
+13:32:30 done  run command (9 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:32:44 start read file
+13:32:44 done  read file: 930 lines, 50471 bytes
+13:32:44 start run command
+13:32:50 done  run command (6 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:33:03 start read file
+13:33:03 done  read file: 930 lines, 50471 bytes
+13:33:22 start run command
+13:33:27 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:33:43 start run command
+13:33:49 done  run command (6 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:34:10 start run command
+13:34:15 done  run command (5 s): Created At: 2026-11-24T10:34:10-03:00 Completed At: 2026-11-24T10:34:15-03:00 Command exited with code 0. Command output: Table at 0x141f1985c: 0x14083e327 488d8dc0030000 lea rcx, [rbp+0x3c
+13:34:32 start run command
+13:34:38 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:34:54 start run command
+13:35:00 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:35:19 start run command
+13:35:25 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:35:54 start run command
+13:35:57 done  run command (2 s): Created At: 2026-11-24T10:35:54-03:00 Completed At: 2026-11-24T10:35:57-03:00 Command exited with code 0. Command output: antigravity ['0x1e65edb', '0x1e87255', '0x1f6b578', '0x1f72267'] native_func
+13:36:17 start run command
+13:36:29 done  run command (12 s): Created At: 2026-11-24T10:36:16-03:00 Completed At: 2026-11-24T10:36:29-03:00 Command exited with code 0. Command output: === 0x1e65edb === A   [       A      i��A   [       q     ���A       
+13:36:49 start run command
+13:36:56 done  run command (7 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:37:11 start read file
+13:37:11 done  read file: 6473 lines, 776591 bytes
+13:37:30 start read file
+13:37:30 done  read file: 9 lines, 352 bytes
+13:37:30 start read file
+13:37:30 done  read file: 109 lines, 5598 bytes
+13:37:44 start read file
+13:37:44 done  read file: 93 lines, 3378 bytes
+13:37:44 start run command
+13:37:52 done  run command (7 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:38:03 start read file
+13:38:03 done  read file: 6678 lines, 791138 bytes
+13:38:17 start read file
+13:38:17 done  read file: 15 lines, 369 bytes
+13:38:17 start read file
+13:38:17 done  read file: 5 lines, 87 bytes
+13:38:32 start run command
+13:38:34 done  run command (2 s): Created At: 2026-11-24T10:38:32-03:00 Completed At: 2026-11-24T10:38:34-03:00 Command exited with code 0. Command output: s set up by hand. skill:� The Craft Anything skill isn't installed here.craf
+13:38:52 start run command
+13:38:53 done  run command (1 s): Created At: 2026-11-24T10:38:51-03:00 Completed At: 2026-11-24T10:38:53-03:00 Command exited with code 0. Command output: {"checks":[{"message":"craft-anything-cli is at G:\\Software\\craft-anything-
+13:39:07 start run command
+13:39:09 done  run command (2 s): Created At: 2026-11-24T10:39:07-03:00 Completed At: 2026-11-24T10:39:09-03:00 Command exited with code 0. Command output: ProcessId : 8304 ParentProcessId : 12056 Name : craft-
+13:39:24 start run command
+13:39:26 done  run command (2 s): Created At: 2026-11-24T10:39:23-03:00 Completed At: 2026-11-24T10:39:26-03:00 Command exited with code 0. Command output: Name Value
+13:39:43 start run command
+13:39:45 done  run command (2 s): Created At: 2026-11-24T10:39:43-03:00 Completed At: 2026-11-24T10:39:45-03:00 Command exited with code 0. Command output: stream-json 0x1e6d538 ger available. Reload the models on this computer and
+13:40:00 start run command
+13:40:01 done  run command (1 s): Created At: 2026-11-24T10:39:59-03:00 Completed At: 2026-11-24T10:40:01-03:00 Command exited with code 0. Command output: stream-json--append-system-prompt--no-session-persistence--strict-mcp-config-
+13:40:17 start run command
+13:40:19 done  run command (2 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:40:39 start run command
+13:40:49 done  run command (10 s): Created At: 2026-11-24T10:40:39-03:00 Completed At: 2026-11-24T10:40:49-03:00 Command exited with code 0. Command output: stream-json RVA: 0x1e6e538
+13:41:09 start run command
+13:41:27 done  run command (17 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:41:46 said  Estou verificando a configuração interna de descompilação e aguardando a conclusão da leitura dos registros.
+13:42:26 start read file
+13:42:26 done  read file: 331 lines, 16597 bytes
+13:42:46 start run command
+13:42:52 done  run command (5 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:43:09 start run command
+13:43:19 done  run command (10 s): Created At: 2026-11-24T10:43:08-03:00 Completed At: 2026-11-24T10:43:19-03:00 Command exited with code 0. Command output: dangerously-skip-permissions raw: 0x1e77f3a                                 
+13:43:43 start run command
+13:44:07 done  run command (24 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:44:18 start read file
+13:44:19 done  read file: 1016 lines, 49841 bytes
+13:45:31 start update steps
+13:45:31 done  update steps: Created At: 2026-11-24T10:45:25-03:00 Completed At: 2026-11-24T10:45:30-03:00 OK
+13:45:31 start read file
+13:45:31 done  read file: 183 lines, 15060 bytes
+13:45:31 start read file
+13:45:31 done  read file: 421 lines, 9256 bytes
+13:45:31 start read file
+13:45:31 done  read file: 2957 lines, 150360 bytes
+13:45:31 start run command
+13:45:34 done  run command (3 s): Created At: 2026-11-24T10:45:30-03:00 Completed At: 2026-11-24T10:45:34-03:00 Command exited with code 1. Command output: {"error":{"category":"input","code":"bad_input","message":"{location:C:\\\\Us
+13:45:49 start read file
+13:45:49 done  read file: 2957 lines, 150360 bytes
+13:45:49 start run command
+13:45:52 done  run command (2 s): Created At: 2026-11-24T10:45:49-03:00 Completed At: 2026-11-24T10:45:52-03:00 Command exited with code 1. Command output: {"error":{"category":"input","code":"bad_input","details":{"parameter_path":"
+13:46:02 start run command
+13:46:53 done  run command (51 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:46:53 start read file
+13:46:53 done  read file: 2957 lines, 150360 bytes
+13:46:53 start read file
+13:46:53 done  read file: 2957 lines, 150360 bytes
+13:46:53 start read file
+13:46:53 done  read file: 2957 lines, 150360 bytes
+13:47:06 start read file
+13:47:06 done  read file: 7 lines, 61516 bytes
+13:47:26 start read file
+13:47:26 done  read file: 7 lines, 61516 bytes
+13:47:26 start run command
+13:47:40 out   root agent idle; waiting for 1 background task(s) to finish
+13:47:49 done  run command (23 s): The tool's output was truncated due to being too long. You can find the full output in a file at file:///C:/Users/Ve778/.gemini/antigravity-cli/brain/5486da78-dfac-4001-aa31-fe49d70d7238/.system_gener
+13:47:52 out   error: Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m53s. (response may be truncated)
+13:47:52 out   AGY_ERROR: {"short_error":"RESOURCE_EXHAUSTED (code 429): Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m53s.","status":"RESOURCE_EXHAUSTED","error_code":429,"code_kind":"http","retryable":true,"error_id":"57ec45d2-abe9-4d32-b6cf-0f38c58b816b-449"}
+13:47:52 note  Antigravity replied, yet still reports an earlier error of the conversation: Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m53s.
+13:47:52 note  The details are in G:\Software\craft-anything-0.6.1-windows-x64-portable\CraftAnythingData\logs\agent-2026-11-24-134752-8304-0.log
+13:47:52 note  The builder's turn ended (42085727 tokens in, 231002 out)
+13:47:52 stage Checking the build against the original…
+13:47:52 note  Nothing the check looks at has changed since it last worked, so its results stand.
+13:47:52 done  Check build: `python3 -m compileall -q -f -x [\\/](\.?venv|node_modules|\.git)[\\/] .` passed.
+13:47:52 done  Check app-screenshot: The program starts and draws (1024×782).
+13:47:52 done  Check mechanics: app/mechanics.json has 61 values (60 with a source, 1 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.
+13:47:52 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.
+13:47:52 stage Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.

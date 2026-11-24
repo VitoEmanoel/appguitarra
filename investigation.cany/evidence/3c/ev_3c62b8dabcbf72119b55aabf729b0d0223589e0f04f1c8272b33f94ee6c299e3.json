@@ -1,0 +1,45 @@
+{
+  "id": "ev_3c62b8dabcbf72119b55aabf729b0d0223589e0f04f1c8272b33f94ee6c299e3",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x54e4a0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x54e4a0",
+    "function": "FUN_0054e4a0",
+    "pseudo_code": "\r\n/* WARNING: Removing unreachable block (ram,0x0054e53f) */\r\n\r\nvoid __thiscall FUN_0054e4a0(int param_1,LPCWSTR param_2)\r\n\r\n{\r\n  LPCWSTR pWVar1;\r\n  short sVar2;\r\n  int iVar3;\r\n  short *psVar4;\r\n  undefined1 uVar5;\r\n  char cVar6;\r\n  int iVar7;\r\n  int *piVar8;\r\n  int iVar9;\r\n  BOOL BVar10;\r\n  short *psVar11;\r\n  int iVar12;\r\n  int local_20;\r\n  int local_1c;\r\n  int local_18 [2];\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  uint local_8;\r\n  \r\n  puStack_c = &LAB_00652897;\r\n  local_10 = ExceptionList;\r\n  ExceptionList = &local_10;\r\n  local_18[1] = 0;\r\n  local_8._0_1_ = 0;\r\n  local_8._1_3_ = 0;\r\n  cVar6 = FUN_00415ac0(DAT_006fc024 ^ (uint)&stack0xfffffffc);\r\n  if (cVar6 == '\\0') {\r\n    iVar7 = FUN_0052c760();\r\n    if ((-1 < iVar7) && (cVar6 = FUN_005272e0(), cVar6 != '\\0')) {\r\n      piVar8 = (int *)FUN_0040acf0();\r\n      if (piVar8 == (int *)0x0) {\r\n                    /* WARNING: Subroutine does not return */\r\n        FUN_0040a9b0(0x80004005);\r\n      }\r\n      local_18[0] = (**(code **)(*piVar8 + 0xc))();\r\n      local_18[0] = local_18[0] + 0x10;\r\n      local_8._0_1_ = 1;\r\n      FUN_0040a830(L\"[WindowsVolume]\",0xf);\r\n      local_8._0_1_ = 2;\r\n      FUN_00540ab0(0);\r\n      local_8._0_1_ = 4;\r\n      LOCK();\r\n      piVar8 = (int *)(local_18[0] + -4);\r\n      iVar9 = *piVar8;\r\n      *piVar8 = *piVar8 + -1;\r\n      UNLOCK();\r\n      if (iVar9 == 1 || iVar9 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_18[0] + -0x10) + 4))((undefined4 *)(local_18[0] + -0x10));\r\n      }\r\n      local_8._0_1_ = 6;\r\n      iVar9 = FUN_0040a4e0();\r\n      local_18[0] = iVar9 + 0x10;\r\n      local_8._0_1_ = 6;\r\n      uVar5 = (undefined1)local_8;\r\n      local_8._0_1_ = 6;\r\n      iVar9 = *(int *)(iVar9 + 4);\r\n      local_18[1] = 1;\r\n      if (0 < iVar9) {\r\n        iVar12 = iVar9 + -1;\r\n        if ((iVar12 < 0) || (uVar5 = (undefined1)local_8, iVar9 < iVar12)) {\r\nLAB_0054e85e:\r\n          local_8._0_1_ = uVar5;\r\n                    /* WARNING: Subroutine does not return */\r\n          FUN_0040a9b0(0x80070057);\r\n        }\r\n        if (*(short *)(local_18[0] + iVar12 * 2) != 0x5c) {\r\n          FUN_00422c90(0x5c);\r\n        }\r\n      }\r\n      if (iVar7 < *(int *)(param_2 + -6)) {\r\n        do {\r\n          uVar5 = (undefined1)local_8;\r\n          if ((iVar7 < 0) || (*(int *)(param_2 + -6) < iVar7)) goto LAB_0054e85e;\r\n        } while ((param_2[iVar7] == L'\\\\') && (iVar7 = iVar7 + 1, iVar7 < *(int *)(param_2 + -6)));\r\n      }\r\n      local_8._0_1_ = 8;\r\n      FUN_00415f50(&local_1c,iVar7,*(int *)(param_2 + -6) - iVar7);\r\n      local_18[1] = 3;\r\n      FUN_00422290(local_1c,*(undefined4 *)(local_1c + -0xc));\r\n      local_18[1] = 1;\r\n      local_8._0_1_ = 6;\r\n      LOCK();\r\n      piVar8 = (int *)(local_1c + -4);\r\n      iVar7 = *piVar8;\r\n      *piVar8 = *piVar8 + -1;\r\n      UNLOCK();\r\n      if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_1c + -0x10) + 4))((undefined4 *)(local_1c + -0x10));\r\n      }\r\n      FUN_00422b70(local_18);\r\n      local_18[1] = 0;\r\n      local_8._0_1_ = 4;\r\n      LOCK();\r\n      piVar8 = (int *)(local_18[0] + -4);\r\n      iVar7 = *piVar8;\r\n      *piVar8 = *piVar8 + -1;\r\n      UNLOCK();\r\n      if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_18[0] + -0x10) + 4))((undefined4 *)(local_18[0] + -0x10));\r\n      }\r\n      local_8._0_1_ = 0;\r\n      LOCK();\r\n      piVar8 = (int *)(local_20 + -4);\r\n      iVar7 = *piVar8;\r\n      *piVar8 = *piVar8 + -1;\r\n      UNLOCK();\r\n      if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_20 + -0x10) + 4))((undefined4 *)(local_20 + -0x10));\r\n      }\r\n    }\r\n    iVar7 = *(int *)(param_1 + 0x7c);\r\n    iVar9 = 0;\r\n    if (0 < iVar7) {\r\n      iVar12 = 0;\r\n      do {\r\n        if ((iVar12 < 0) || (*(int *)(param_1 + 0x7c) <= iVar9)) {\r\nLAB_0054e868:\r\n                    /* WARNING: Subroutine does not return */\r\n          FUN_0040a9b0(0x8000000b);\r\n        }\r\n        if (*(char *)(*(int *)(param_1 + 0x78) + 0x1c + iVar12) != '\\0') {\r\n          local_18[0] = FUN_0040a4e0();\r\n          local_18[0] = local_18[0] + 0x10;\r\n          local_8._0_1_ = 0xd;\r\n          if (*(int *)(param_1 + 0x7c) <= iVar9) goto LAB_0054e868;\r\n          iVar3 = *(int *)(*(int *)(param_1 + 0x78) + 0x18 + iVar12);\r\n          FUN_00422290(iVar3,*(undefined4 *)(iVar3 + -0xc));\r\n          FUN_00529ea0(local_18);\r\n          local_8._0_1_ = 0;\r\n          LOCK();\r\n          piVar8 = (int *)(local_18[0] + -4);\r\n          iVar3 = *piVar8;\r\n          *piVar8 = *piVar8 + -1;\r\n          UNLOCK();\r\n          if (iVar3 == 1 || iVar3 + -1 < 0) {\r\n            (**(code **)(**(int **)(local_18[0] + -0x10) + 4))((undefined4 *)(local_18[0] + -0x10));\r\n          }\r\n        }\r\n        if (*(int *)(param_1 + 0x7c) <= iVar9) goto LAB_0054e868;\r\n        iVar9 = iVar9 + 1;\r\n        *(undefined1 *)(*(int *)(param_1 + 0x78) + 0x1c + iVar12) = 0;\r\n        iVar12 = iVar12 + 0x20;\r\n      } while (iVar9 < iVar7);\r\n    }\r\n    FUN_0040a600();\r\n    BVar10 = PathIsUNCW(param_2);\r\n    if (BVar10 != 1) {\r\n      FUN_0040a830(&DAT_00678150,4);\r\n    }\r\n    FUN_00422290(param_2,*(undefined4 *)(param_2 + -6));\r\n    if (DAT_007016e4 != '\\0') {\r\n      piVar8 = (int *)FUN_0040acf0();\r\n      if (piVar8 == (int *)0x0) {\r\n                    /* WARNING: Subroutine does not return */\r\n        FUN_0040a9b0(0x80004005);\r\n      }\r\n      local_18[0] = (**(code **)(*piVar8 + 0xc))();\r\n      local_18[0] = local_18[0] + 0x10;\r\n      local_8 = CONCAT31(local_8._1_3_,0x11);\r\n      FUN_00422290(L\"Extraction path set to:\",0x17);\r\n      psVar4 = *(short **)(param_1 + 0x68);\r\n      if (psVar4 != (short *)0x0) {\r\n        psVar11 = psVar4;\r\n        do {\r\n          sVar2 = *psVar11;\r\n          psVar11 = psVar11 + 1;\r\n        } while (sVar2 != 0);\r\n        FUN_00422290(psVar4,(int)psVar11 - (int)(psVar4 + 1) >> 1);\r\n      }\r\n      FUN_00560070(local_18);\r\n      local_8 = local_8 & 0xffffff00;\r\n      LOCK();\r\n      piVar8 = (int *)(local_18[0] + -4);\r\n      iVar7 = *piVar8;\r\n      *piVar8 = *piVar8 + -1;\r\n      UNLOCK();\r\n      if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n        (**(code **)(**(int **)(local_18[0] + -0x10) + 4))((undefined4 *)(local_18[0] + -0x10));\r\n      }\r\n    }\r\n  }\r\n  local_8 = 0xffffffff;\r\n  LOCK();\r\n  pWVar1 = param_2 + -2;\r\n  iVar7 = *(int *)pWVar1;\r\n  *(int *)pWVar1 = *(int *)pWVar1 + -1;\r\n  UNLOCK();\r\n  if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n    (**(code **)(**(int **)(param_2 + -8) + 4))(param_2 + -8);\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n",
+    "signature": "void __thiscall FUN_0054e4a0(int param_1,LPCWSTR param_2);"
+  },
+  "summary": "Pseudo-C for FUN_0054e4a0 from the Deep engine (200 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x54e4a0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

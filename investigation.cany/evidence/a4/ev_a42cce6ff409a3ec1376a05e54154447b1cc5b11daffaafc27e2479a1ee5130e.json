@@ -1,0 +1,1439 @@
+{
+  "id": "ev_a42cce6ff409a3ec1376a05e54154447b1cc5b11daffaafc27e2479a1ee5130e",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 100,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Install"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x6774bc",
+        "references": [
+          {
+            "from": "0x40bfc2",
+            "function": "sub_40bf50"
+          },
+          {
+            "from": "0x677760",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": ".appinstaller"
+      },
+      {
+        "address": "0x679f22",
+        "references": [
+          {
+            "from": "0x598fb0",
+            "function": "sub_5988a0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AAdvanced Installer"
+      },
+      {
+        "address": "0x67bb38",
+        "references": [
+          {
+            "from": "0x43c719",
+            "function": "sub_43c690"
+          },
+          {
+            "from": "0x67779c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "SELECT `Data` FROM `Binary` WHERE `Name` = 'InstallerAnalytics.dll'"
+      },
+      {
+        "address": "0x6818a4",
+        "references": [
+          {
+            "from": "0x4761fa",
+            "function": "sub_476080"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Install"
+      },
+      {
+        "address": "0x683284",
+        "references": [
+          {
+            "from": "0x495dc5",
+            "function": "sub_495d70"
+          },
+          {
+            "from": "0x4e24bb",
+            "function": "sub_4e2240"
+          }
+        ],
+        "section": ".rdata",
+        "text": "PrereqInstalled"
+      },
+      {
+        "address": "0x6832a4",
+        "references": [
+          {
+            "from": "0x495eb5",
+            "function": "sub_495d70"
+          },
+          {
+            "from": "0x4e257b",
+            "function": "sub_4e2240"
+          }
+        ],
+        "section": ".rdata",
+        "text": "PrereqInstallAction"
+      },
+      {
+        "address": "0x6832cc",
+        "references": [
+          {
+            "from": "0x495fab",
+            "function": "sub_495d70"
+          },
+          {
+            "from": "0x4e265c",
+            "function": "sub_4e2240"
+          }
+        ],
+        "section": ".rdata",
+        "text": "PrereqMandatoryInstallAction"
+      },
+      {
+        "address": "0x683e08",
+        "references": [
+          {
+            "from": "0x4ab105",
+            "function": "sub_4aae40"
+          },
+          {
+            "from": "0x4f9c71",
+            "function": "sub_4f9c20"
+          },
+          {
+            "from": "0x4faa90",
+            "function": "sub_4fa720"
+          },
+          {
+            "from": "0x500e3e",
+            "function": "sub_500ab0"
+          },
+          {
+            "from": "0x677858",
+            "function": null
+          },
+          {
+            "from": "0x677a40",
+            "function": null
+          },
+          {
+            "from": "0x677ab4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "MsiSelectionTreeInstallingChildrenCount"
+      },
+      {
+        "address": "0x68762c",
+        "references": [
+          {
+            "from": "0x5424ce",
+            "function": "sub_542490"
+          },
+          {
+            "from": "0x548494",
+            "function": "sub_548170"
+          },
+          {
+            "from": "0x678084",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\"
+      },
+      {
+        "address": "0x687664",
+        "references": [
+          {
+            "from": "0x54265a",
+            "function": "sub_5425a0"
+          },
+          {
+            "from": "0x5426fb",
+            "function": "sub_5425a0"
+          },
+          {
+            "from": "0x678080",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_InstallLanguage"
+      },
+      {
+        "address": "0x689dd0",
+        "references": [
+          {
+            "from": "0x6fd58c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallCondition"
+      },
+      {
+        "address": "0x68a20c",
+        "references": [
+          {
+            "from": "0x403631",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x506bc4",
+            "function": "sub_5069d0"
+          },
+          {
+            "from": "0x588887",
+            "function": "sub_5885f0"
+          },
+          {
+            "from": "0x5aa5d9",
+            "function": "sub_5aa360"
+          },
+          {
+            "from": "0x678540",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallValidate"
+      },
+      {
+        "address": "0x68d8e4",
+        "references": [
+          {
+            "from": "0x513686",
+            "function": "sub_513610"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Advanced Installer Enhanced UI"
+      },
+      {
+        "address": "0x68ddcc",
+        "references": [
+          {
+            "from": "0x519240",
+            "function": "sub_518f00"
+          },
+          {
+            "from": "0x546513",
+            "function": "sub_5463c0"
+          },
+          {
+            "from": "0x677f2c",
+            "function": null
+          },
+          {
+            "from": "0x6780fc",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "/uninstall"
+      },
+      {
+        "address": "0x68dfa8",
+        "references": [
+          {
+            "from": "0x51a466",
+            "function": "sub_519df0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Unable to start installation error code: %u"
+      },
+      {
+        "address": "0x690028",
+        "references": [
+          {
+            "from": "0x53905c",
+            "function": "sub_538fc0"
+          },
+          {
+            "from": "0x678008",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Prerequisite selected for install:"
+      },
+      {
+        "address": "0x690108",
+        "references": [
+          {
+            "from": "0x53a8c9",
+            "function": "sub_53a4c0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "No acceptable version found. It must be installed from package."
+      },
+      {
+        "address": "0x690238",
+        "references": [
+          {
+            "from": "0x53a8e5",
+            "function": "sub_53a4c0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "No acceptable version found. It is already downloaded and it will be installed."
+      },
+      {
+        "address": "0x69042c",
+        "references": [
+          {
+            "from": "0x53a8f3",
+            "function": "sub_53a4c0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Not selected for install."
+      },
+      {
+        "address": "0x690598",
+        "references": [
+          {
+            "from": "0x53cd4d",
+            "function": "sub_53c560"
+          },
+          {
+            "from": "0x53db75",
+            "function": "sub_53d810"
+          },
+          {
+            "from": "0x678074",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": " REINSTALL=ALL REINSTALLMODE=vomus "
+      },
+      {
+        "address": "0x690910",
+        "references": [
+          {
+            "from": "0x53dfd6",
+            "function": "sub_53def0"
+          },
+          {
+            "from": "0x678030",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "User selected to maintain an installed instance:"
+      },
+      {
+        "address": "0x690974",
+        "references": [
+          {
+            "from": "0x53d5db",
+            "function": "sub_53d2e0"
+          },
+          {
+            "from": "0x67802c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Instance found installed:"
+      },
+      {
+        "address": "0x690a58",
+        "references": [
+          {
+            "from": "0x53d459",
+            "function": "sub_53d2e0"
+          },
+          {
+            "from": "0x53d475",
+            "function": "sub_53d2e0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallLocation"
+      },
+      {
+        "address": "0x6911cc",
+        "references": [
+          {
+            "from": "0x54251a",
+            "function": "sub_542490"
+          },
+          {
+            "from": "0x542545",
+            "function": "sub_542490"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstalledLanguage"
+      },
+      {
+        "address": "0x691378",
+        "references": [
+          {
+            "from": "0x6780d8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "No prerequisite must be installed."
+      },
+      {
+        "address": "0x691518",
+        "references": [
+          {
+            "from": "0x6780b4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Starting installing prerequisites in basic UI mode."
+      },
+      {
+        "address": "0x6918c8",
+        "references": [
+          {
+            "from": "0x5424ba",
+            "function": "sub_542490"
+          },
+          {
+            "from": "0x548480",
+            "function": "sub_548170"
+          },
+          {
+            "from": "0x678094",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Software\\Caphyon\\Advanced Installer\\"
+      },
+      {
+        "address": "0x69364c",
+        "references": [
+          {
+            "from": "0x6fce6c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "/uninstallinst"
+      },
+      {
+        "address": "0x693790",
+        "references": [
+          {
+            "from": "0x55fd8f",
+            "function": "sub_55fca0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "\r\n<< Advanced Installer (x86) Log >>\r\n"
+      },
+      {
+        "address": "0x693ba8",
+        "references": [
+          {
+            "from": "0x564196",
+            "function": "sub_564120"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AdvancedInstaller"
+      },
+      {
+        "address": "0x694378",
+        "references": [
+          {
+            "from": "0x5689cb",
+            "function": "sub_568830"
+          },
+          {
+            "from": "0x6781f8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "User accepted to install a newer version."
+      },
+      {
+        "address": "0x6943d0",
+        "references": [
+          {
+            "from": "0x5689d4",
+            "function": "sub_568830"
+          },
+          {
+            "from": "0x6781f4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "User refused to install a newer version."
+      },
+      {
+        "address": "0x6959d4",
+        "references": [
+          {
+            "from": "0x6fcef8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "ReinstallMode"
+      },
+      {
+        "address": "0x695a54",
+        "references": [
+          {
+            "from": "0x6fcf00",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Reinstall"
+      },
+      {
+        "address": "0x695ae4",
+        "references": [
+          {
+            "from": "0x6fcf20",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "SetInstallLevel"
+      },
+      {
+        "address": "0x695c90",
+        "references": [
+          {
+            "from": "0x58f6a7",
+            "function": "sub_58f550"
+          },
+          {
+            "from": "0x678418",
+            "function": null
+          },
+          {
+            "from": "0x6fcfc0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AiInstallTextLog"
+      },
+      {
+        "address": "0x695d48",
+        "references": [
+          {
+            "from": "0x58f700",
+            "function": "sub_58f550"
+          },
+          {
+            "from": "0x678420",
+            "function": null
+          },
+          {
+            "from": "0x6fcfc8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AiInstallDataLog"
+      },
+      {
+        "address": "0x696224",
+        "references": [
+          {
+            "from": "0x678a5c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "REINSTALLMODE"
+      },
+      {
+        "address": "0x696240",
+        "references": [
+          {
+            "from": "0x678a58",
+            "function": null
+          },
+          {
+            "from": "0x6fd6ec",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "REINSTALL"
+      },
+      {
+        "address": "0x6963cc",
+        "references": [
+          {
+            "from": "0x592432",
+            "function": "sub_592290"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallingPackage"
+      },
+      {
+        "address": "0x6963f0",
+        "references": [
+          {
+            "from": "0x59243c",
+            "function": "sub_592290"
+          }
+        ],
+        "section": ".rdata",
+        "text": "UnInstallingPackage"
+      },
+      {
+        "address": "0x6965ce",
+        "references": [
+          {
+            "from": "0x597f95",
+            "function": "sub_597f60"
+          }
+        ],
+        "section": ".rdata",
+        "text": "XMsiBaseInstaller"
+      },
+      {
+        "address": "0x696660",
+        "references": [
+          {
+            "from": "0x59ebee",
+            "function": "sub_59e2e0"
+          },
+          {
+            "from": "0x6783a8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\"
+      },
+      {
+        "address": "0x6967c8",
+        "references": [],
+        "section": ".rdata",
+        "text": "C:\\ReleaseAI\\stubs\\setup\\eventsystem\\MsiBaseInstaller.cpp"
+      },
+      {
+        "address": "0x69683c",
+        "references": [
+          {
+            "from": "0x406be0",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x59ae91",
+            "function": "sub_59ae50"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_InstallPrerequisite"
+      },
+      {
+        "address": "0x696898",
+        "references": [
+          {
+            "from": "0x59afde",
+            "function": "sub_59ae50"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallPrereq"
+      },
+      {
+        "address": "0x696978",
+        "references": [
+          {
+            "from": "0x59b697",
+            "function": "sub_59b180"
+          },
+          {
+            "from": "0x59b70c",
+            "function": "sub_59b180"
+          },
+          {
+            "from": "0x5aae22",
+            "function": "sub_5aad20"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_UNINSTALLER"
+      },
+      {
+        "address": "0x696a10",
+        "references": [
+          {
+            "from": "0x59c198",
+            "function": "sub_59b180"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallMessage"
+      },
+      {
+        "address": "0x696ab8",
+        "references": [
+          {
+            "from": "0x59e295",
+            "function": "sub_59e260"
+          },
+          {
+            "from": "0x5a72f1",
+            "function": "sub_5a5eb0"
+          },
+          {
+            "from": "0x5b2041",
+            "function": "sub_5b1f90"
+          },
+          {
+            "from": "0x5b2348",
+            "function": "sub_5b1f90"
+          },
+          {
+            "from": "0x5b26d4",
+            "function": "sub_5b2640"
+          },
+          {
+            "from": "0x5b2d4c",
+            "function": "sub_5b2cd0"
+          },
+          {
+            "from": "0x5b6d90",
+            "function": "sub_5b6c60"
+          },
+          {
+            "from": "0x5b6dd3",
+            "function": "sub_5b6c60"
+          },
+          {
+            "from": "0x5b76c0",
+            "function": "sub_5b7640"
+          },
+          {
+            "from": "0x5b7705",
+            "function": "sub_5b7640"
+          },
+          {
+            "from": "0x6788d4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "INSTALL"
+      },
+      {
+        "address": "0x696b68",
+        "references": [
+          {
+            "from": "0x59faa5",
+            "function": "sub_59f8b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FASTOEM denied: Per User Installation"
+      },
+      {
+        "address": "0x696bb4",
+        "references": [
+          {
+            "from": "0x59f03d",
+            "function": "sub_59eee0"
+          },
+          {
+            "from": "0x5a6be8",
+            "function": "sub_5a5eb0"
+          },
+          {
+            "from": "0x5a70b6",
+            "function": "sub_5a5eb0"
+          },
+          {
+            "from": "0x678b24",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "MSIINSTALLPERUSER"
+      },
+      {
+        "address": "0x696cb0",
+        "references": [
+          {
+            "from": "0x59fae3",
+            "function": "sub_59f8b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FASTOEM denied: Not FirstTime Install"
+      },
+      {
+        "address": "0x696d00",
+        "references": [
+          {
+            "from": "0x59fbe4",
+            "function": "sub_59f8b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FASTOEM denied: Install On other drive than extract drive"
+      },
+      {
+        "address": "0x696d74",
+        "references": [
+          {
+            "from": "0x5a0058",
+            "function": "sub_5a0050"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_INSTALL"
+      },
+      {
+        "address": "0x696e08",
+        "references": [
+          {
+            "from": "0x59fc53",
+            "function": "sub_59f8b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FASTOEM denied: Some isolated components are being installed"
+      },
+      {
+        "address": "0x69710c",
+        "references": [
+          {
+            "from": "0x5a451d",
+            "function": "sub_5a44e0"
+          },
+          {
+            "from": "0x5ab039",
+            "function": "sub_5aaee0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Installed"
+      },
+      {
+        "address": "0x697336",
+        "references": [
+          {
+            "from": "0x5a55c5",
+            "function": "sub_5a5590"
+          }
+        ],
+        "section": ".rdata",
+        "text": "[MsiInstaller"
+      },
+      {
+        "address": "0x697354",
+        "references": [
+          {
+            "from": "0x51a86c",
+            "function": "sub_51a820"
+          },
+          {
+            "from": "0x5b0065",
+            "function": "sub_5afff0"
+          },
+          {
+            "from": "0x5b1b3b",
+            "function": "sub_5b1b20"
+          },
+          {
+            "from": "0x6783dc",
+            "function": null
+          },
+          {
+            "from": "0x6788c8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallUISequence"
+      },
+      {
+        "address": "0x6973fc",
+        "references": [
+          {
+            "from": "0x5a610c",
+            "function": "sub_5a5eb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_UNINSTALLER_CTP"
+      },
+      {
+        "address": "0x6976f0",
+        "references": [
+          {
+            "from": "0x406c66",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x5a7ce9",
+            "function": "sub_5a5eb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_InstallPostPrerequisite"
+      },
+      {
+        "address": "0x697748",
+        "references": [
+          {
+            "from": "0x5a7fa8",
+            "function": "sub_5a5eb0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\TempPackages"
+      },
+      {
+        "address": "0x6979ac",
+        "references": [
+          {
+            "from": "0x5a8be4",
+            "function": "sub_5a82d0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "FinishPrereqInstall"
+      },
+      {
+        "address": "0x697a88",
+        "references": [
+          {
+            "from": "0x5aab5b",
+            "function": "sub_5aab10"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Caphyon\\Advanced Installer\\[ProductCode]\\[AI_EXTERNALUIUNINSTALLERNAME]"
+      },
+      {
+        "address": "0x697b48",
+        "references": [
+          {
+            "from": "0x5aad5a",
+            "function": "sub_5aad20"
+          },
+          {
+            "from": "0x5aaf32",
+            "function": "sub_5aaee0"
+          },
+          {
+            "from": "0x5ac070",
+            "function": "sub_5ac030"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_EXTERNALUIUNINSTALLERNAME"
+      },
+      {
+        "address": "0x697c44",
+        "references": [
+          {
+            "from": "0x5ac122",
+            "function": "sub_5ac030"
+          }
+        ],
+        "section": ".rdata",
+        "text": " AI_UNINSTALLER=\""
+      },
+      {
+        "address": "0x697d80",
+        "references": [
+          {
+            "from": "0x5ae404",
+            "function": "sub_5ae260"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallingPrereq"
+      },
+      {
+        "address": "0x697ef4",
+        "references": [
+          {
+            "from": "0x5b04aa",
+            "function": "sub_5b0460"
+          }
+        ],
+        "section": ".rdata",
+        "text": "UninstallMsg"
+      },
+      {
+        "address": "0x697fb2",
+        "references": [
+          {
+            "from": "0x5b0b85",
+            "function": "sub_5b0b50"
+          }
+        ],
+        "section": ".rdata",
+        "text": "[InstallMonitor"
+      },
+      {
+        "address": "0x698028",
+        "references": [
+          {
+            "from": "0x5b2137",
+            "function": "sub_5b1f90"
+          },
+          {
+            "from": "0x6788d8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallExecuteSequence"
+      },
+      {
+        "address": "0x698058",
+        "references": [
+          {
+            "from": "0x5b2ed4",
+            "function": "sub_5b2cd0"
+          },
+          {
+            "from": "0x5b4dd6",
+            "function": "sub_5b4ce0"
+          },
+          {
+            "from": "0x678890",
+            "function": null
+          },
+          {
+            "from": "0x6788c4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallExecute"
+      },
+      {
+        "address": "0x698078",
+        "references": [
+          {
+            "from": "0x5b2f44",
+            "function": "sub_5b2cd0"
+          },
+          {
+            "from": "0x6788c0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallExecuteAgain"
+      },
+      {
+        "address": "0x6980cc",
+        "references": [
+          {
+            "from": "0x4069da",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x5b2e0b",
+            "function": "sub_5b2cd0"
+          },
+          {
+            "from": "0x67844c",
+            "function": null
+          },
+          {
+            "from": "0x678550",
+            "function": null
+          },
+          {
+            "from": "0x67891c",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallInitialize"
+      },
+      {
+        "address": "0x69812c",
+        "references": [
+          {
+            "from": "0x406a57",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x5b2fc0",
+            "function": "sub_5b2cd0"
+          },
+          {
+            "from": "0x6788a0",
+            "function": null
+          },
+          {
+            "from": "0x6788bc",
+            "function": null
+          },
+          {
+            "from": "0x678920",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallFinalize"
+      },
+      {
+        "address": "0x6986a0",
+        "references": [
+          {
+            "from": "0x405aef",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x6786f0",
+            "function": null
+          },
+          {
+            "from": "0x67892c",
+            "function": null
+          },
+          {
+            "from": "0x6789a0",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallFiles"
+      },
+      {
+        "address": "0x698870",
+        "references": [
+          {
+            "from": "0x4063ad",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x406433",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x4064b9",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x6787c0",
+            "function": null
+          },
+          {
+            "from": "0x6789d4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallODBC"
+      },
+      {
+        "address": "0x6988f0",
+        "references": [
+          {
+            "from": "0x4066c8",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x678800",
+            "function": null
+          },
+          {
+            "from": "0x6789e4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallServices"
+      },
+      {
+        "address": "0x698ce0",
+        "references": [
+          {
+            "from": "0x4066ee",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "ServiceInstall"
+      },
+      {
+        "address": "0x698dcc",
+        "references": [
+          {
+            "from": "0x406cec",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x406d69",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_XmlInstall"
+      },
+      {
+        "address": "0x698df4",
+        "references": [
+          {
+            "from": "0x406e63",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x678a10",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_UninstallAccounts"
+      },
+      {
+        "address": "0x698e40",
+        "references": [
+          {
+            "from": "0x406de6",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_GxInstall"
+      },
+      {
+        "address": "0x698e6c",
+        "references": [
+          {
+            "from": "0x406f5d",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_UninstallTasks"
+      },
+      {
+        "address": "0x698e90",
+        "references": [
+          {
+            "from": "0x406fda",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_GxUninstall"
+      },
+      {
+        "address": "0x698eb0",
+        "references": [
+          {
+            "from": "0x406ee0",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x678a14",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_UninstallGroups"
+      },
+      {
+        "address": "0x698f68",
+        "references": [],
+        "section": ".rdata",
+        "text": "C:\\ReleaseAI\\stubs\\setup\\eventsystem\\InstallMonitor.cpp"
+      },
+      {
+        "address": "0x699018",
+        "references": [
+          {
+            "from": "0x40724b",
+            "function": "sub_403000"
+          },
+          {
+            "from": "0x4072d1",
+            "function": "sub_403000"
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_XmlUninstall"
+      },
+      {
+        "address": "0x6991ac",
+        "references": [
+          {
+            "from": "0x5b6bb5",
+            "function": "sub_5b6b80"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstallLogGenerator"
+      },
+      {
+        "address": "0x6994c8",
+        "references": [
+          {
+            "from": "0x5b9d44",
+            "function": "sub_5b96b0"
+          },
+          {
+            "from": "0x5b9de7",
+            "function": "sub_5b96b0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "InstalledProductName"
+      },
+      {
+        "address": "0x69973c",
+        "references": [
+          {
+            "from": "0x678ac4",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "INSTALLLEVEL"
+      },
+      {
+        "address": "0x6998a4",
+        "references": [
+          {
+            "from": "0x678b28",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "AI_INSTALL_MODE"
+      },
+      {
+        "address": "0x71b1c2",
+        "references": [],
+        "section": ".rsrc",
+        "text": "This archive is corrupted.(This archive has an unsupported version.'Windows Installer could not be started.)An error occurred while reading the file.#An error occurred while extracting."
+      },
+      {
+        "address": "0x71b4d2",
+        "references": [],
+        "section": ".rsrc",
+        "text": "\rInstalling %s"
+      },
+      {
+        "address": "0x71b4f4",
+        "references": [],
+        "section": ".rsrc",
+        "text": "8Press the Finish button to install the main application."
+      },
+      {
+        "address": "0x71b6ec",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Extracting file to %s0The %s file can't be unpacked. Error message: %saThe Java Runtime Environment version 1.5 or later must be installed in order to unpack JAR files.-Another instance of setup is already running."
+      },
+      {
+        "address": "0x71bbe8",
+        "references": [],
+        "section": ".rsrc",
+        "text": "You must reboot your computer in order to continue the installation. Press Yes to restart now or press No to abort the installation and manually restart later."
+      },
+      {
+        "address": "0x71bd42",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Unpacking file:%syThere is not enough space in folder:%s\r\nPlease free some space and press Retry or press Cancel to abort the installation."
+      },
+      {
+        "address": "0x71bed4",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Searching for prerequisites...$<instance_id> - install new instance7<instance_product_code> - upgrade an installed instance8<instance_product_code> - maintain an installed instanceI<new_instance_name> - change the instance Product Name when installing it>- sets the password needed to install an AES encrypted package"
+      },
+      {
+        "address": "0x71c208",
+        "references": [],
+        "section": ".rsrc",
+        "text": "?<prereq_id_list> - specifies wich prerequisites to be installed"
+      },
+      {
+        "address": "0x71c28a",
+        "references": [],
+        "section": ".rsrc",
+        "text": "!- skips prerequisite installation9<instance_product_name> - uninstall an installed instance"
+      },
+      {
+        "address": "0x71c444",
+        "references": [],
+        "section": ".rsrc",
+        "text": "PThere is a newer version of %s (%s).\r\nWould you like to download and install it?"
+      },
+      {
+        "address": "0x71c4e8",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Checking for a newer version...mFailed to download newer version (Error: %s). Would you like to retry or proceed and install current version?(Failed to read from file \"%s\". Error: %s'Failed to write in file \"%s\". Error: %s"
+      }
+    ],
+    "total": 105
+  },
+  "summary": "105 strings match \"Install\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 100,
+    "total": 105,
+    "next_offset": 100
+  },
+  "locations": [],
+  "links": []
+}

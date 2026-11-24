@@ -1,0 +1,393 @@
+{
+  "id": "ev_1652f568d1b7543b0ea4ac64230cc9b02a6ed810690b219a2b08068fa56bf0d0",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "Extract"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x403000",
+        "name": "sub_403000",
+        "why": [
+          "uses string \"AI_ExtractPrereq\""
+        ]
+      },
+      {
+        "address": "0x547740",
+        "name": "sub_547740",
+        "why": [
+          "uses string \"Advinst_Extract_\"",
+          "uses string \"Advinst_Extract_\""
+        ]
+      },
+      {
+        "address": "0x54e4a0",
+        "name": "sub_54e4a0",
+        "why": [
+          "uses string \"AExtraction path set to:\""
+        ]
+      },
+      {
+        "address": "0x550ce0",
+        "name": "sub_550ce0",
+        "why": [
+          "uses string \"Not enough disk space to extract file:\"",
+          "uses string \"Failed to extract file:\""
+        ]
+      },
+      {
+        "address": "0x553e70",
+        "name": "sub_553e70",
+        "why": [
+          "uses string \"AExtraction path set to:\""
+        ]
+      },
+      {
+        "address": "0x554990",
+        "name": "sub_554990",
+        "why": [
+          "uses string \"Not enough disk space to extract file:\""
+        ]
+      },
+      {
+        "address": "0x558830",
+        "name": "sub_558830",
+        "why": [
+          "uses string \"ExtractionFolder\"",
+          "uses string \"ExtractionFolder\"",
+          "uses string \"FileExtractFirst\"",
+          "uses string \"FileExtractFirst\""
+        ]
+      },
+      {
+        "address": "0x59f8b0",
+        "name": "sub_59f8b0",
+        "why": [
+          "uses string \"FASTOEM denied: Install On other drive than extract drive\""
+        ]
+      },
+      {
+        "address": "0x5a5eb0",
+        "name": "sub_5a5eb0",
+        "why": [
+          "uses string \"AITEMPFILESEXTRACTED\"",
+          "uses string \"AI_ExtractTempFiles\""
+        ]
+      },
+      {
+        "address": "0x5ae260",
+        "name": "sub_5ae260",
+        "why": [
+          "uses string \"ExtractPrereq\""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "Extract",
+    "strings": [
+      {
+        "address": "0x691940",
+        "references": [
+          {
+            "from": "0x5477ab",
+            "function": "sub_547740",
+            "kind": "string"
+          },
+          {
+            "from": "0x5477ca",
+            "function": "sub_547740",
+            "kind": "string"
+          }
+        ],
+        "text": "Advinst_Extract_"
+      },
+      {
+        "address": "0x691c26",
+        "references": [
+          {
+            "from": "0x54e7bd",
+            "function": "sub_54e4a0",
+            "kind": "string"
+          },
+          {
+            "from": "0x553fe6",
+            "function": "sub_553e70",
+            "kind": "string"
+          }
+        ],
+        "text": "AExtraction path set to:"
+      },
+      {
+        "address": "0x691c58",
+        "references": [
+          {
+            "from": "0x550f65",
+            "function": "sub_550ce0",
+            "kind": "string"
+          },
+          {
+            "from": "0x554a5a",
+            "function": "sub_554990",
+            "kind": "string"
+          },
+          {
+            "from": "0x678118",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "Not enough disk space to extract file:"
+      },
+      {
+        "address": "0x691cd0",
+        "references": [
+          {
+            "from": "0x551136",
+            "function": "sub_550ce0",
+            "kind": "string"
+          },
+          {
+            "from": "0x678114",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "Failed to extract file:"
+      },
+      {
+        "address": "0x692fb8",
+        "references": [
+          {
+            "from": "0x558d6e",
+            "function": "sub_558830",
+            "kind": "string"
+          },
+          {
+            "from": "0x558d8a",
+            "function": "sub_558830",
+            "kind": "string"
+          }
+        ],
+        "text": "ExtractionFolder"
+      },
+      {
+        "address": "0x6930b0",
+        "references": [
+          {
+            "from": "0x5595e2",
+            "function": "sub_558830",
+            "kind": "string"
+          },
+          {
+            "from": "0x5595fe",
+            "function": "sub_558830",
+            "kind": "string"
+          }
+        ],
+        "text": "FileExtractFirst"
+      },
+      {
+        "address": "0x6933cc",
+        "references": [
+          {
+            "from": "0x6fcc78",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "/extract"
+      },
+      {
+        "address": "0x693434",
+        "references": [
+          {
+            "from": "0x6fcca0",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "/extractlzma"
+      },
+      {
+        "address": "0x6934e0",
+        "references": [
+          {
+            "from": "0x6fcd40",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "/groupsextract"
+      },
+      {
+        "address": "0x696d00",
+        "references": [
+          {
+            "from": "0x59fbe4",
+            "function": "sub_59f8b0",
+            "kind": "string"
+          }
+        ],
+        "text": "FASTOEM denied: Install On other drive than extract drive"
+      },
+      {
+        "address": "0x6973a8",
+        "references": [
+          {
+            "from": "0x5a63dc",
+            "function": "sub_5a5eb0",
+            "kind": "string"
+          },
+          {
+            "from": "0x678b1c",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "AITEMPFILESEXTRACTED"
+      },
+      {
+        "address": "0x6973d4",
+        "references": [
+          {
+            "from": "0x5a6498",
+            "function": "sub_5a5eb0",
+            "kind": "string"
+          }
+        ],
+        "text": "AI_ExtractTempFiles"
+      },
+      {
+        "address": "0x697d40",
+        "references": [
+          {
+            "from": "0x5ae564",
+            "function": "sub_5ae260",
+            "kind": "string"
+          }
+        ],
+        "text": "ExtractPrereq"
+      },
+      {
+        "address": "0x698d64",
+        "references": [
+          {
+            "from": "0x406b5a",
+            "function": "sub_403000",
+            "kind": "string"
+          }
+        ],
+        "text": "AI_ExtractPrereq"
+      },
+      {
+        "address": "0x6998ec",
+        "references": [
+          {
+            "from": "0x678b04",
+            "function": null,
+            "kind": "string"
+          }
+        ],
+        "text": "AI_EXTRACT_DIR"
+      },
+      {
+        "address": "0x71b1c2",
+        "references": [],
+        "text": "This archive is corrupted.(This archive has an unsupported version.'Windows Installer could not be started.)An error occurred while reading the file.#An error occurred while extracting."
+      },
+      {
+        "address": "0x71b376",
+        "references": [],
+        "text": "\n%s Options(Extracting the main application files..."
+      },
+      {
+        "address": "0x71b68c",
+        "references": [],
+        "text": "Downloading %s Extracting files from archive..."
+      },
+      {
+        "address": "0x71b6ec",
+        "references": [],
+        "text": "Extracting file to %s0The %s file can't be unpacked. Error message: %saThe Java Runtime Environment version 1.5 or later must be installed in order to unpack JAR files.-Another instance of setup is already running."
+      },
+      {
+        "address": "0x71b8d6",
+        "references": [],
+        "text": "- displays this dialog%<path> - extracts all files to <path>"
+      },
+      {
+        "address": "0x71c7e2",
+        "references": [],
+        "text": "Deleting extracted files..."
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"Extract\": 21 matching strings, 0 matching function names, 0 matching imports; 10 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x403000"
+    },
+    {
+      "kind": "address",
+      "value": "0x547740"
+    },
+    {
+      "kind": "address",
+      "value": "0x54e4a0"
+    },
+    {
+      "kind": "address",
+      "value": "0x550ce0"
+    },
+    {
+      "kind": "address",
+      "value": "0x553e70"
+    },
+    {
+      "kind": "address",
+      "value": "0x554990"
+    },
+    {
+      "kind": "address",
+      "value": "0x558830"
+    },
+    {
+      "kind": "address",
+      "value": "0x59f8b0"
+    },
+    {
+      "kind": "address",
+      "value": "0x5a5eb0"
+    },
+    {
+      "kind": "address",
+      "value": "0x5ae260"
+    }
+  ],
+  "links": []
+}

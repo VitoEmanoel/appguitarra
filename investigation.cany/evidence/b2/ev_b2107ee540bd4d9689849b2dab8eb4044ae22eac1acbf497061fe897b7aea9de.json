@@ -1,0 +1,47 @@
+{
+  "id": "ev_b2107ee540bd4d9689849b2dab8eb4044ae22eac1acbf497061fe897b7aea9de",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_functions_decompile",
+  "params": {
+    "addresses": [
+      "0x558830,0x550ce0,0x554990,0x413640,0x5a5eb0,0x5e0862"
+    ]
+  },
+  "result": {
+    "failed": 1,
+    "items": [
+      {
+        "error": "No function named or at 0x558830,0x550ce0,0x554990,0x413640,0x5a5eb0,0x5e0862",
+        "input": "0x558830,0x550ce0,0x554990,0x413640,0x5a5eb0,0x5e0862",
+        "ok": false
+      }
+    ],
+    "succeeded": 0
+  },
+  "summary": "Decompiled 0 of 1 functions.",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "pseudo_code_inferred",
+      "message": "pseudo-C from the clean-room lifter is register-level and approximate"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

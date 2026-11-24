@@ -1,0 +1,16 @@
+{
+  "id": "unk_0c1ea9060a2cd1ec",
+  "revision": 1,
+  "question": "What are the internal proprietary neural network weights, factory cabinet IR waveforms, and encrypted preset XML values inside the PACE/iLok-protected .text section (entropy 8.00) and encrypted preset files? (Estimated using clean-room DSP biquad/waveshaper models and representative preset curves based on the extracted parameter models and preset filenames.)",
+  "severity": "medium",
+  "domain": "dsp_weights_and_encrypted_presets",
+  "status": "open",
+  "probes": [
+    "Unpack PACE/iLok wrapper at runtime with a valid iLok license to dump decrypted DSP tables and preset XMLs."
+  ],
+  "evidence_for": [
+    "ev_7154429f49a7b9b2999382170220a353f24ce082cdeece4a387c8ac028c2c5ad",
+    "ev_535552754191c9f404a320d7d6c46f9a02d0dec257362c39cf1495379bbae3b4"
+  ],
+  "evidence_against": []
+}

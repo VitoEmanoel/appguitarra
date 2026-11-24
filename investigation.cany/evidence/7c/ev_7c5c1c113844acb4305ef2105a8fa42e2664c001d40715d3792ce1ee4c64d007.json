@@ -1,0 +1,146 @@
+{
+  "id": "ev_7c5c1c113844acb4305ef2105a8fa42e2664c001d40715d3792ce1ee4c64d007",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "Cabinet"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x413640",
+        "name": "sub_413640",
+        "why": [
+          "calls Cabinet#20",
+          "calls Cabinet#23",
+          "calls Cabinet#22"
+        ]
+      },
+      {
+        "address": "0x413920",
+        "name": "sub_413920",
+        "why": [
+          "calls Cabinet#23"
+        ]
+      },
+      {
+        "address": "0x4139b0",
+        "name": "sub_4139b0",
+        "why": [
+          "calls Cabinet#23"
+        ]
+      },
+      {
+        "address": "0x512db0",
+        "name": "sub_512db0",
+        "why": [
+          "uses string \"cabinet.dll\""
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "library": "Cabinet.dll",
+        "name": "Cabinet#20",
+        "slot": "0x6ff3c0",
+        "used_by": [
+          {
+            "address": "0x413640",
+            "function": "sub_413640"
+          }
+        ]
+      },
+      {
+        "library": "Cabinet.dll",
+        "name": "Cabinet#23",
+        "slot": "0x6ff3c4",
+        "used_by": [
+          {
+            "address": "0x413640",
+            "function": "sub_413640"
+          },
+          {
+            "address": "0x413920",
+            "function": "sub_413920"
+          },
+          {
+            "address": "0x4139b0",
+            "function": "sub_4139b0"
+          }
+        ]
+      },
+      {
+        "library": "Cabinet.dll",
+        "name": "Cabinet#22",
+        "slot": "0x6ff3c8",
+        "used_by": [
+          {
+            "address": "0x413640",
+            "function": "sub_413640"
+          }
+        ]
+      }
+    ],
+    "query": "Cabinet",
+    "strings": [
+      {
+        "address": "0x66c540",
+        "references": [],
+        "text": "Cabinet.dll"
+      },
+      {
+        "address": "0x68d64c",
+        "references": [
+          {
+            "from": "0x513098",
+            "function": "sub_512db0",
+            "kind": "string"
+          }
+        ],
+        "text": "cabinet.dll"
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"Cabinet\": 2 matching strings, 0 matching function names, 3 matching imports; 4 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x413640"
+    },
+    {
+      "kind": "address",
+      "value": "0x413920"
+    },
+    {
+      "kind": "address",
+      "value": "0x4139b0"
+    },
+    {
+      "kind": "address",
+      "value": "0x512db0"
+    }
+  ],
+  "links": []
+}

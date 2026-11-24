@@ -1,0 +1,40 @@
+{
+  "id": "ev_4c38d4cd06e7b8ce5377f439e5be1614989f5ba7bc4d5976f63fe1bf9c5f55ca",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_function_disassemble",
+  "params": {
+    "function": "0x14056fc86"
+  },
+  "result": {
+    "assembly": "loc_14056fc1b:\n  0x14056fc1b  a842                 test al, 0x42\n  0x14056fc1d  42282479             sub [rcx+r15*2], spl\n  0x14056fc21  8762d6               xchg [rdx-0x2a], esp\n  0x14056fc24  f2c0fecf             sar dh, 0xcf\n  0x14056fc28  0406                 add al, 6\n  0x14056fc2a  11ea                 adc edx, ebp\n  0x14056fc2c  867c5519             xchg [rbp+rdx*2+0x19], bh\n  0x14056fc2d  7c55                 jl 0x14056fc84\n  0x14056fc2f  19ed                 sbb ebp, ebp\n  0x14056fc30  ed                   in eax, dx\n  0x14056fc31  e0e8                 loopne 0x14056fc1b\nloc_14056fc75:\n  0x14056fc75  77b6                 ja 0x14056fc2d\nloc_14056fc84:\n  0x14056fc84  7a18                 jp 0x14056fc9e\nsub_14056fc86:\n  0x14056fc86  4758                 pop r8\n  0x14056fc88  0aadfeca7412         or ch, [rbp+0x1274cafe]\n  0x14056fc8e  493d45838577         cmp rax, 0x77858345\n  0x14056fc94  e2df                 loop 0x14056fc75\nloc_14056fc9e:\n  0x14056fc9e  bc9ff6eb44           mov esp, 0x44ebf69f\n  0x14056fca3  bcbf9f5c8f           mov esp, 0x8f5c9fbf\n  0x14056fca8  c9                   leave\n  0x14056fca9  c13d2ee1dd0118       sar dword ptr [0x14234ddde], 0x18  ; \"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<WORKBENCH VER=\"0.\"\n  0x14056fcb0  94                   xchg esp, eax\n  0x14056fcb1  089bec915891         or [rbx-0x6ea76e14], bl\n  0x14056fcb7  f742ed1de7e4af       test dword ptr [rdx-0x13], 0xafe4e71d\n  0x14056fcbe  7c4c                 jl 0x14056fd0c\nloc_14056fcc0:\n  0x14056fcc0  a5                   movsd [rdi], [rsi]\n  0x14056fcc1  9c                   pushfq\nloc_14056fd0c:\n  0x14056fd0c  db04d7               fild st, dword ptr [rdi+rdx*8]\n  0x14056fd0f  f5                   cmc\n  0x14056fd10  ec                   in al, dx\n  0x14056fd11  e4a3                 in al, 0xa3\n  0x14056fd13  a3cb3344dbcafaa1ac   mov [0xaca1facadb4433cb], eax\n  0x14056fd1c  7f2e                 jg 0x14056fd4c\n",
+    "entry": "0x14056fc86",
+    "function": "sub_14056fc86",
+    "instructions": 33
+  },
+  "summary": "33 instructions of sub_14056fc86.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 33,
+    "total": 33
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x14056fc86"
+    }
+  ],
+  "links": []
+}

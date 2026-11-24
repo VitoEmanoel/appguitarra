@@ -1,0 +1,48 @@
+{
+  "id": "ev_c1a513165a0a1117cdad1795dc6d47138618e1e9d1f12193fcce61d36311da8b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_xrefs_list",
+  "params": {
+    "address": "0x142346c50",
+    "limit": 200,
+    "offset": 0
+  },
+  "result": {
+    "address": "0x142346c50",
+    "name": null,
+    "references_from": [],
+    "references_to": [],
+    "total_to": 0
+  },
+  "summary": "0x142346c50 is referenced from 0 places and refers to 0.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "static_references",
+      "message": "references made through computed pointers at run time are not seen"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x142346c50"
+    }
+  ],
+  "links": []
+}

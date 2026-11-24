@@ -1,0 +1,45 @@
+{
+  "id": "ev_ade039d5f1b9082c130be310a3ea0d4e4b3c5814f5e488d27299de450429c960",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x5709d0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x5709d0",
+    "function": "FUN_005709d0",
+    "pseudo_code": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid __thiscall FUN_005709d0(int *param_1,uint *param_2,uint param_3)\r\n\r\n{\r\n  uint uVar1;\r\n  uint uVar2;\r\n  int iVar3;\r\n  uint *puVar4;\r\n  uint uVar5;\r\n  uint *puVar6;\r\n  uint uVar7;\r\n  uint uVar8;\r\n  uint uVar9;\r\n  uint uVar10;\r\n  \r\n  uVar7 = param_1[2];\r\n  uVar8 = param_1[1];\r\n  if (uVar7 < uVar8) {\r\n    iVar3 = *param_1 - uVar7;\r\n    puVar4 = (uint *)(iVar3 + (int)param_2);\r\n    if (iVar3 < 1) {\r\n      puVar4 = param_2;\r\n    }\r\n    uVar5 = param_3 - iVar3;\r\n    if (iVar3 < 1) {\r\n      uVar5 = param_3;\r\n    }\r\n    uVar7 = uVar7 + uVar5;\r\n    iVar3 = uVar7 - uVar8;\r\n    if (-1 < iVar3) {\r\n      uVar5 = uVar5 - iVar3;\r\n    }\r\n    if (iVar3 < 0) {\r\n      uVar8 = uVar7;\r\n    }\r\n    param_1[2] = uVar8;\r\n    uVar2 = _UNK_0069cf8c;\r\n    uVar1 = _UNK_0069cf88;\r\n    uVar8 = _UNK_0069cf84;\r\n    uVar7 = _DAT_0069cf80;\r\n    if (uVar5 != 0) {\r\n      puVar6 = (uint *)((int)puVar4 + (uVar5 & 0xfffffffc));\r\n      uVar9 = uVar5 & 3;\r\n      uVar5 = uVar5 >> 2;\r\n      uVar10 = 0;\r\n      if (puVar6 < puVar4) {\r\n        uVar5 = 0;\r\n      }\r\n      if ((uVar5 != 0) && (0xf < uVar5)) {\r\n        do {\r\n          uVar10 = uVar10 + 0x10;\r\n          *puVar4 = ~*puVar4 & uVar7;\r\n          puVar4[1] = ~puVar4[1] & uVar8;\r\n          puVar4[2] = ~puVar4[2] & uVar1;\r\n          puVar4[3] = ~puVar4[3] & uVar2;\r\n          puVar4[4] = ~puVar4[4] & uVar7;\r\n          puVar4[5] = ~puVar4[5] & uVar8;\r\n          puVar4[6] = ~puVar4[6] & uVar1;\r\n          puVar4[7] = ~puVar4[7] & uVar2;\r\n          puVar4[8] = ~puVar4[8] & uVar7;\r\n          puVar4[9] = ~puVar4[9] & uVar8;\r\n          puVar4[10] = ~puVar4[10] & uVar1;\r\n          puVar4[0xb] = ~puVar4[0xb] & uVar2;\r\n          puVar4[0xc] = ~puVar4[0xc] & uVar7;\r\n          puVar4[0xd] = ~puVar4[0xd] & uVar8;\r\n          puVar4[0xe] = ~puVar4[0xe] & uVar1;\r\n          puVar4[0xf] = ~puVar4[0xf] & uVar2;\r\n          puVar4 = puVar4 + 0x10;\r\n        } while (uVar10 < (uVar5 & 0xfffffff0));\r\n      }\r\n      for (; puVar4 < puVar6; puVar4 = puVar4 + 1) {\r\n        *puVar4 = ~*puVar4;\r\n      }\r\n      for (; uVar9 != 0; uVar9 = uVar9 - 1) {\r\n        *(byte *)puVar6 = ~(byte)*puVar6;\r\n        puVar6 = (uint *)((int)puVar6 + 1);\r\n      }\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "signature": "void __thiscall FUN_005709d0(int *param_1,uint *param_2,uint param_3);"
+  },
+  "summary": "Pseudo-C for FUN_005709d0 from the Deep engine (84 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x5709d0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

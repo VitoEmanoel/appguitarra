@@ -1,0 +1,19 @@
+{
+  "id": "unk_9f755669ccf40386",
+  "revision": 2,
+  "question": "What is stored inside the 483.7 MB PE overlay of Archetype Gojira X v1.0.2.exe after the .reloc section, and how does the bootstrapper extract it?",
+  "severity": "high",
+  "domain": "installer_payload",
+  "status": "resolved",
+  "probes": [
+    "Decompile FUN_00558830, FUN_00550ce0, FUN_005709d0, and FUN_005557b0 and inspect the ADVINSTSFX footer table before the Authenticode certificate."
+  ],
+  "evidence_for": [
+    "ev_314bafd5beed83e06bec38d609c0a0a26fe140d5e303809e7c63584c5ee8f6df",
+    "ev_233c1bad0161154ebec21951c7207d85106833d560ff6b855184b8b834e1761c",
+    "ev_ade039d5f1b9082c130be310a3ea0d4e4b3c5814f5e488d27299de450429c960",
+    "ev_549873d020861dd77a2649e02b0afbd8a700c0ffc312f00af86642ea78715848"
+  ],
+  "evidence_against": [],
+  "resolution": "Decompiling FUN_00550ce0 (0x550ce0), FUN_005709d0 (0x5709d0), FUN_00558830 (0x558830) and FUN_005557b0 (0x5557b0) showed an ADVINSTSFX footer table before the Authenticode certificate listing Archetype Gojira X.msi (offset 0x00358000, size 2,083,840 bytes), Archetype Gojira X1.cab (offset 0x00554C00, size 481,691,684 bytes), and Archetype Gojira X v1.0.2 RC1.ini (offset 0x1D0B5424, size 788 bytes). FUN_005709d0 bitwise-inverts (~byte) the first 512 bytes of the MSI and CAB headers. Un-inverting and expanding Archetype Gojira X1.cab yields ArchetypeGojiraX.exe (standalone app), VST2/VST3/AAX binaries, ArchetypeGojiraXv1.0.0.pdf manual, and 321 preset XML files."
+}

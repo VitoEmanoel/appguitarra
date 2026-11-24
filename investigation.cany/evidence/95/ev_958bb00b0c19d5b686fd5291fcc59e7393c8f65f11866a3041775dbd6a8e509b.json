@@ -1,0 +1,494 @@
+{
+  "id": "ev_958bb00b0c19d5b686fd5291fcc59e7393c8f65f11866a3041775dbd6a8e509b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_pe_resources_list",
+  "params": {
+    "max_entries": 16384,
+    "path": "C:\\Users\\Ve778\\Downloads\\Archetype Gojira X v1.0.2.exe"
+  },
+  "result": {
+    "entries": [
+      {
+        "codepage": 1252,
+        "file_offset": 3143240,
+        "language": 1033,
+        "name": "10106",
+        "rva": "0x30b248",
+        "sha256": "6e1084a05b9b8a00d2f8572cb70133f10d9ccbb1c6d6dcbbd9c4ae8a655add8a",
+        "size": 18600,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3161840,
+        "language": 1033,
+        "name": "10107",
+        "rva": "0x30faf0",
+        "sha256": "1bd86eecad0a5db654c729a450c8feeb821c41a06d4bca338d2121b7a010c603",
+        "size": 2666,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3164508,
+        "language": 1033,
+        "name": "10124",
+        "rva": "0x31055c",
+        "sha256": "faf9686e3bcbf27686fa92a97fee9c72db32240fef4295aad14403935c9bab8f",
+        "size": 338,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3164848,
+        "language": 1033,
+        "name": "10125",
+        "rva": "0x3106b0",
+        "sha256": "6ea607ae2e99a0d4d663d8f7d778228be0fcfc96f2f61b5e37641dc1512915bd",
+        "size": 2088,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3140832,
+        "language": 1033,
+        "name": "249",
+        "rva": "0x30a8e0",
+        "sha256": "32673976ffb81636486cd895a3e78e45d812109fdc5c773bcd551316d0b35182",
+        "size": 318,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3141152,
+        "language": 1033,
+        "name": "255",
+        "rva": "0x30aa20",
+        "sha256": "43175f041004354a75b7cc148dc6192777411006df824d83587098ae0e87959c",
+        "size": 2088,
+        "type": "RT_BITMAP"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3208552,
+        "language": 1033,
+        "name": "10123",
+        "rva": "0x31b168",
+        "sha256": "477c4e79c878015fb0f6d7fab9bb703bb9cc1a072fadb6bd2c8c73c91baf757e",
+        "size": 76,
+        "type": "RT_DIALOG"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3208240,
+        "language": 1033,
+        "name": "2000",
+        "rva": "0x31b030",
+        "sha256": "2fdf71fc373ceeb67cdba7abdb6181b0b0f1fc6394abde884def028c01df22e7",
+        "size": 310,
+        "type": "RT_DIALOG"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3207428,
+        "language": 1033,
+        "name": "201",
+        "rva": "0x31ad04",
+        "sha256": "fd13c023359af19820646f58138d7cba69a82b5a55ce2f42d7dfdb34098ebdf7",
+        "size": 172,
+        "type": "RT_DIALOG"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3207600,
+        "language": 1033,
+        "name": "216",
+        "rva": "0x31adb0",
+        "sha256": "2d383bc8ee9892418d03cba3ba938ebc11483ceec2923a171aba8148e31a5d74",
+        "size": 204,
+        "type": "RT_DIALOG"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3207804,
+        "language": 1033,
+        "name": "225",
+        "rva": "0x31ae7c",
+        "sha256": "ad6fda587ab7a3f8424d37499a31fe22a168ae4dc28a75d355515ca684918405",
+        "size": 436,
+        "type": "RT_DIALOG"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3219904,
+        "language": 1033,
+        "name": "128",
+        "rva": "0x31ddc0",
+        "sha256": "3d4b14cb1f208b8b4e1b0f92833aba76eccea332ac611deb9064429c72328c56",
+        "size": 20,
+        "type": "RT_GROUP_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3220760,
+        "language": 1033,
+        "name": "10108",
+        "rva": "0x31e118",
+        "sha256": "920c7c72d21cab3bcc563ec19337e98252981f56c4e20c7fff2eecbb46bff8c3",
+        "size": 14389,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3235152,
+        "language": 1033,
+        "name": "10109",
+        "rva": "0x321950",
+        "sha256": "8d41d39c7790dc907c5c653c54ec2c95b042bb2bc48f45a331d6a2677181a335",
+        "size": 4886,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3240040,
+        "language": 1033,
+        "name": "10110",
+        "rva": "0x322c68",
+        "sha256": "df166130b862a4cd5f7cf1f39a831c2683dd57bade9764d02eb276de81febeb1",
+        "size": 35959,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3276000,
+        "language": 1033,
+        "name": "10111",
+        "rva": "0x32b8e0",
+        "sha256": "f32c5950bc9f8893d23ccaf2d67fc5da94b20901bcc051c56eeaacb167c514b4",
+        "size": 27341,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3303344,
+        "language": 1033,
+        "name": "10112",
+        "rva": "0x3323b0",
+        "sha256": "0beffb625c46eba6a92c607db19acbc459859060f3f7acb8caed40bafb12b865",
+        "size": 1698,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3305044,
+        "language": 1033,
+        "name": "10113",
+        "rva": "0x332a54",
+        "sha256": "8ecba8b674ecdd6212086ef8efc8765f0e21c76339c78ef66954382892554073",
+        "size": 4170,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3309216,
+        "language": 1033,
+        "name": "10114",
+        "rva": "0x333aa0",
+        "sha256": "ba93cba243d57d052e53a82f42caf126951fb7391c32873447b9f5b0ae5e7f16",
+        "size": 5553,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3314772,
+        "language": 1033,
+        "name": "10115",
+        "rva": "0x335054",
+        "sha256": "31ff93bc3405ed6e2adaacc01f7e57ad47d00c721e03b44f824fcb1e9f4d8cea",
+        "size": 8284,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3323056,
+        "language": 1033,
+        "name": "10116",
+        "rva": "0x3370b0",
+        "sha256": "6e42108469eb461a4e47984c79f4165ea2bc6a18609d7b1d75c6f8680dba5ed1",
+        "size": 13965,
+        "type": "RT_HTML"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3166936,
+        "language": 1033,
+        "name": "1",
+        "rva": "0x310ed8",
+        "sha256": "8e5748bdc35f7a5ee5df837da74000de23d35f17f9a5e69fb36f06b7eb6e1648",
+        "size": 23018,
+        "type": "RT_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3189956,
+        "language": 1033,
+        "name": "2",
+        "rva": "0x3168c4",
+        "sha256": "03152f45985176922b1feeadc6a5e857241e47b9de4726255d807d63c82c8af3",
+        "size": 9640,
+        "type": "RT_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3199596,
+        "language": 1033,
+        "name": "3",
+        "rva": "0x318e6c",
+        "sha256": "b05e3f032934c675517875d952abf3dc4fbffa4498d3f61956bda7536f4fe02f",
+        "size": 4264,
+        "type": "RT_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3203860,
+        "language": 1033,
+        "name": "4",
+        "rva": "0x319f14",
+        "sha256": "15232fa9fa42419ee09bb158da11d11e2f5b85a2e35c9a9fe9a07372e6af97ee",
+        "size": 2440,
+        "type": "RT_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3206300,
+        "language": 1033,
+        "name": "5",
+        "rva": "0x31a89c",
+        "sha256": "ed6741188b3658d43f48e2c95e3205ebd32b840b2e0673eda29677befe1f5f01",
+        "size": 1128,
+        "type": "RT_ICON"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3337024,
+        "language": 1033,
+        "name": "1",
+        "rva": "0x33a740",
+        "sha256": "a24d49b4b6efd47b63c351d1135d2699ebf4e67bb863fc431949b830b698f1b2",
+        "size": 2067,
+        "type": "RT_MANIFEST"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3209192,
+        "language": 1033,
+        "name": "10",
+        "rva": "0x31b3e8",
+        "sha256": "94ef8b7659f8890e20f4d36be32e929b4f2c8b4ea7c717ca4af9e58d76e141a1",
+        "size": 386,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3209580,
+        "language": 1033,
+        "name": "11",
+        "rva": "0x31b56c",
+        "sha256": "6b0425c5e766c16b66f997894623d326791cda6c6098e4f1dc587a289366734a",
+        "size": 80,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3209660,
+        "language": 1033,
+        "name": "12",
+        "rva": "0x31b5bc",
+        "sha256": "d0520f7f654dd873e2f8017b03791fc0157658aa200d5eca04cb3a3ef81dad54",
+        "size": 154,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3209816,
+        "language": 1033,
+        "name": "13",
+        "rva": "0x31b658",
+        "sha256": "5cda79a5abb811d7a68ec7f88b60c3a69058b88230df5fb3cb6c83eabaaa6a22",
+        "size": 758,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3210576,
+        "language": 1033,
+        "name": "14",
+        "rva": "0x31b950",
+        "sha256": "4ac0a595dbd94f12d90eae1798128cfff16c2d4448a55e7aaae945d53cce5c12",
+        "size": 1472,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3212048,
+        "language": 1033,
+        "name": "15",
+        "rva": "0x31bf10",
+        "sha256": "ab090488bcc800a3deb057630e58a07578e3ed3bb29198777c1aa484e7e41c2f",
+        "size": 1076,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3213124,
+        "language": 1033,
+        "name": "16",
+        "rva": "0x31c344",
+        "sha256": "890745b859f381bdd38bbb3b4a0143c8831d8acfa533e4591e1b4ba3256f9f0a",
+        "size": 256,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3213380,
+        "language": 1033,
+        "name": "17",
+        "rva": "0x31c444",
+        "sha256": "d70e53d57af3d6d571e0b957f4c75b52c375e5bf669a8a37e5c9d75f532390e0",
+        "size": 1156,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3214536,
+        "language": 1033,
+        "name": "18",
+        "rva": "0x31c8c8",
+        "sha256": "4932c9247657d627bf8c00770288d2bf82b220e2e1d7eed96f0945d4a4cf71d3",
+        "size": 490,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3215424,
+        "language": 1033,
+        "name": "4063",
+        "rva": "0x31cc40",
+        "sha256": "783d14215f20390eed1996c78ed95e304b7d66bbd1bdd1f343eb9b9be9e5e2c1",
+        "size": 534,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3215960,
+        "language": 1033,
+        "name": "4064",
+        "rva": "0x31ce58",
+        "sha256": "24c8944339ae5b99fcadd9f82518b726bc8790639f5bc7cc4aa825c4f4c0f082",
+        "size": 1572,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3217532,
+        "language": 1033,
+        "name": "4065",
+        "rva": "0x31d47c",
+        "sha256": "3224f6542bed9e3e7bc42c754f4864fabfc03e531bf18f76f0f5a35cf2fdb193",
+        "size": 1632,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3219164,
+        "language": 1033,
+        "name": "4066",
+        "rva": "0x31dadc",
+        "sha256": "e3cc1abe3685f734b53b7a96a511ee4249f3f1c69ca12d60906676dd6aa23294",
+        "size": 738,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3215028,
+        "language": 1033,
+        "name": "634",
+        "rva": "0x31cab4",
+        "sha256": "4d6ee08852cf885069655460144391767a8153c29cfb97cb5f67f2bd87413e05",
+        "size": 394,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3208628,
+        "language": 1033,
+        "name": "9",
+        "rva": "0x31b1b4",
+        "sha256": "1939b4254dc307bdb113089ce5122907bab0b6f8a1f2549756941ce46a65106f",
+        "size": 564,
+        "type": "RT_STRING"
+      },
+      {
+        "codepage": 1252,
+        "file_offset": 3219924,
+        "language": 1033,
+        "name": "1",
+        "rva": "0x31ddd4",
+        "sha256": "b2f385b289e11757f3b4843af76c57ecb7dcccdeace8bc13b3cf0161480dba33",
+        "size": 836,
+        "type": "RT_VERSION"
+      }
+    ],
+    "icon_groups": [
+      {
+        "icons": [
+          {
+            "bit_count": 32,
+            "bytes": 23018,
+            "height": 256,
+            "icon_id": 1,
+            "width": 256
+          }
+        ],
+        "name": "128"
+      }
+    ],
+    "manifest": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<assembly manifestVersion=\"1.0\" xmlns=\"urn:schemas-microsoft-com:asm.v1\">\r\n\r\n  <!-- Enable Visual Styles -->\r\n  <dependency>\r\n    <dependentAssembly>\r\n      <assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\"/>\r\n    </dependentAssembly>\r\n  </dependency>\r\n\r\n  <!-- We set the current process as DPI aware (for Windows Vista or newer) using API since \r\n       we need different modes for WinUI (dpiAwareness-PerMonitorV2) and Win32 (dpiAware)-->\r\n  <asmv3:application xmlns:asmv3=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <asmv3:windowsSettings xmlns=\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\">\r\n      <dpiAware>true</dpiAware>\r\n    </asmv3:windowsSettings>\r\n  </asmv3:application>\r\n\r\n  <!-- Set OS compatibility -->\r\n  <compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\">\r\n    <application>\r\n      <!--The ID below indicates application support for Windows Vista -->\r\n      <supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"/>\r\n      <!--The ID below indicates application support for Windows 7 -->\r\n      <supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/>\r\n      <!--The ID below indicates application support for Windows 8 -->\r\n      <supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/>\r\n      <!--The ID below indicates application support for Windows 8.1 -->\r\n      <supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/>\r\n      <!--The ID below indicates application support for Windows 10 -->\r\n\t  <maxversiontested Id=\"10.0.18362.0\"/>\r\n      <supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/>\r\n    </application>\r\n  </compatibility>\r\n\r\n  <!-- Set UAC level -->\r\n  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n\r\n</assembly>\r\n",
+    "truncated": false,
+    "version": {
+      "file_version": "1.0.2.0",
+      "product_version": "1.0.2.0",
+      "strings": {
+        "CompanyName": "Neural DSP",
+        "FileDescription": "Archetype Gojira X Installer",
+        "FileVersion": "1.0.2",
+        "InternalName": "Archetype Gojira X v1.0.2 RC1",
+        "LegalCopyright": "Copyright (C) 2024 Neural DSP",
+        "OriginalFileName": "Archetype Gojira X v1.0.2 RC1.exe",
+        "ProductName": "Archetype Gojira X",
+        "ProductVersion": "1.0.2"
+      }
+    }
+  },
+  "summary": "43 resources, 1 icon groups, product \"Archetype Gojira X\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 43,
+    "total": 43
+  },
+  "locations": [],
+  "links": []
+}

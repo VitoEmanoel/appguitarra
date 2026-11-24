@@ -1,0 +1,644 @@
+{
+  "id": "ev_72b483328c3f9c14c26b895ffd5825f7b0d2afaf82f25caa8c0aab9b9d60a072",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 100,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "<"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x14230c58a",
+        "references": [],
+        "section": ".rdata",
+        "text": "oؙ\n<"
+      },
+      {
+        "address": "0x14230d866",
+        "references": [],
+        "section": ".rdata",
+        "text": "'< l"
+      },
+      {
+        "address": "0x14230daf0",
+        "references": [],
+        "section": ".rdata",
+        "text": "<QO2L"
+      },
+      {
+        "address": "0x14230ee60",
+        "references": [],
+        "section": ".rdata",
+        "text": "B<\rvp"
+      },
+      {
+        "address": "0x14230f3a5",
+        "references": [],
+        "section": ".rdata",
+        "text": "H޵a<"
+      },
+      {
+        "address": "0x1423102ca",
+        "references": [],
+        "section": ".rdata",
+        "text": "q<\t7"
+      },
+      {
+        "address": "0x142310714",
+        "references": [],
+        "section": ".rdata",
+        "text": ".8<,"
+      },
+      {
+        "address": "0x142311a20",
+        "references": [],
+        "section": ".rdata",
+        "text": "F<PI"
+      },
+      {
+        "address": "0x14231246b",
+        "references": [],
+        "section": ".rdata",
+        "text": "<vfe"
+      },
+      {
+        "address": "0x142312b98",
+        "references": [],
+        "section": ".rdata",
+        "text": "Nfn̤<"
+      },
+      {
+        "address": "0x142313284",
+        "references": [],
+        "section": ".rdata",
+        "text": ":<e7"
+      },
+      {
+        "address": "0x1423135dc",
+        "references": [],
+        "section": ".rdata",
+        "text": "{-<r"
+      },
+      {
+        "address": "0x142313912",
+        "references": [],
+        "section": ".rdata",
+        "text": "@s0<"
+      },
+      {
+        "address": "0x142313ee2",
+        "references": [],
+        "section": ".rdata",
+        "text": "!e<kW"
+      },
+      {
+        "address": "0x142314196",
+        "references": [],
+        "section": ".rdata",
+        "text": "F*\nWC<"
+      },
+      {
+        "address": "0x142314cae",
+        "references": [],
+        "section": ".rdata",
+        "text": "<yɉ%"
+      },
+      {
+        "address": "0x142314d7a",
+        "references": [],
+        "section": ".rdata",
+        "text": "QValO}<"
+      },
+      {
+        "address": "0x142315378",
+        "references": [],
+        "section": ".rdata",
+        "text": "<ϐBГ\tN"
+      },
+      {
+        "address": "0x142316204",
+        "references": [],
+        "section": ".rdata",
+        "text": "<NWu"
+      },
+      {
+        "address": "0x14231620f",
+        "references": [],
+        "section": ".rdata",
+        "text": "um<˸d"
+      },
+      {
+        "address": "0x1423169c7",
+        "references": [],
+        "section": ".rdata",
+        "text": "<$RRim-"
+      },
+      {
+        "address": "0x142316ac1",
+        "references": [],
+        "section": ".rdata",
+        "text": "L;1<N=P\n"
+      },
+      {
+        "address": "0x1423174e2",
+        "references": [],
+        "section": ".rdata",
+        "text": "0/<$ܔW/um"
+      },
+      {
+        "address": "0x14231772d",
+        "references": [],
+        "section": ".rdata",
+        "text": "!<SO-"
+      },
+      {
+        "address": "0x14231784c",
+        "references": [],
+        "section": ".rdata",
+        "text": "LGW-^R<"
+      },
+      {
+        "address": "0x14231791c",
+        "references": [],
+        "section": ".rdata",
+        "text": "<6s$b"
+      },
+      {
+        "address": "0x142317aa4",
+        "references": [],
+        "section": ".rdata",
+        "text": "dJM<2"
+      },
+      {
+        "address": "0x142318cd6",
+        "references": [],
+        "section": ".rdata",
+        "text": "@`/<z"
+      },
+      {
+        "address": "0x142318e9c",
+        "references": [],
+        "section": ".rdata",
+        "text": "BU%<"
+      },
+      {
+        "address": "0x1423190f9",
+        "references": [],
+        "section": ".rdata",
+        "text": "<;XT#"
+      },
+      {
+        "address": "0x142319b61",
+        "references": [],
+        "section": ".rdata",
+        "text": "WzȽA<4.I9"
+      },
+      {
+        "address": "0x142319c5a",
+        "references": [],
+        "section": ".rdata",
+        "text": "M<LTyNr"
+      },
+      {
+        "address": "0x14231abab",
+        "references": [],
+        "section": ".rdata",
+        "text": "0<A{<}P"
+      },
+      {
+        "address": "0x14231adef",
+        "references": [],
+        "section": ".rdata",
+        "text": "<cS,"
+      },
+      {
+        "address": "0x14231b355",
+        "references": [],
+        "section": ".rdata",
+        "text": "O=/ȸ<"
+      },
+      {
+        "address": "0x14231b468",
+        "references": [],
+        "section": ".rdata",
+        "text": "<7%b1"
+      },
+      {
+        "address": "0x14231b5f2",
+        "references": [],
+        "section": ".rdata",
+        "text": "+C<K "
+      },
+      {
+        "address": "0x14231ba8e",
+        "references": [],
+        "section": ".rdata",
+        "text": "ǁdf<X"
+      },
+      {
+        "address": "0x14231bc9b",
+        "references": [],
+        "section": ".rdata",
+        "text": "<lJ7Ngom"
+      },
+      {
+        "address": "0x14231bdc4",
+        "references": [],
+        "section": ".rdata",
+        "text": "ܠ<jZ(z"
+      },
+      {
+        "address": "0x14231c14b",
+        "references": [],
+        "section": ".rdata",
+        "text": "1!M<q"
+      },
+      {
+        "address": "0x14231c402",
+        "references": [],
+        "section": ".rdata",
+        "text": "<اMd6"
+      },
+      {
+        "address": "0x14231c5bd",
+        "references": [],
+        "section": ".rdata",
+        "text": "A<ĺ'bB"
+      },
+      {
+        "address": "0x14231c73c",
+        "references": [],
+        "section": ".rdata",
+        "text": "zX\r\\<]"
+      },
+      {
+        "address": "0x14231cb93",
+        "references": [],
+        "section": ".rdata",
+        "text": "i<]J7"
+      },
+      {
+        "address": "0x14231d3b3",
+        "references": [],
+        "section": ".rdata",
+        "text": "<H-k"
+      },
+      {
+        "address": "0x14231d8cb",
+        "references": [],
+        "section": ".rdata",
+        "text": "A4ڙ<b"
+      },
+      {
+        "address": "0x14231d91f",
+        "references": [],
+        "section": ".rdata",
+        "text": "<ڋ`s"
+      },
+      {
+        "address": "0x14231de70",
+        "references": [],
+        "section": ".rdata",
+        "text": "<Eh1"
+      },
+      {
+        "address": "0x14231dfa9",
+        "references": [],
+        "section": ".rdata",
+        "text": "#<ڜF"
+      },
+      {
+        "address": "0x14231e306",
+        "references": [],
+        "section": ".rdata",
+        "text": "<Yůs"
+      },
+      {
+        "address": "0x14231eeba",
+        "references": [],
+        "section": ".rdata",
+        "text": ";A<]"
+      },
+      {
+        "address": "0x14231f544",
+        "references": [],
+        "section": ".rdata",
+        "text": "P΍<UG)"
+      },
+      {
+        "address": "0x14231f7fe",
+        "references": [],
+        "section": ".rdata",
+        "text": "<O\"T"
+      },
+      {
+        "address": "0x14231f9aa",
+        "references": [],
+        "section": ".rdata",
+        "text": "<Uqj"
+      },
+      {
+        "address": "0x14231fbda",
+        "references": [],
+        "section": ".rdata",
+        "text": "ϥ<2^؀"
+      },
+      {
+        "address": "0x142320512",
+        "references": [],
+        "section": ".rdata",
+        "text": "<&=B/%"
+      },
+      {
+        "address": "0x1423209db",
+        "references": [],
+        "section": ".rdata",
+        "text": "<\\S(ְw"
+      },
+      {
+        "address": "0x1423212de",
+        "references": [],
+        "section": ".rdata",
+        "text": "l<S2W^ey;W"
+      },
+      {
+        "address": "0x142321354",
+        "references": [],
+        "section": ".rdata",
+        "text": "Dˁܑ[[92VL<aI"
+      },
+      {
+        "address": "0x14232228a",
+        "references": [],
+        "section": ".rdata",
+        "text": "ch<Kx"
+      },
+      {
+        "address": "0x1423227a1",
+        "references": [],
+        "section": ".rdata",
+        "text": "<*8з"
+      },
+      {
+        "address": "0x1423228aa",
+        "references": [],
+        "section": ".rdata",
+        "text": "BJ<̜"
+      },
+      {
+        "address": "0x1423228e9",
+        "references": [],
+        "section": ".rdata",
+        "text": "8Ry<t"
+      },
+      {
+        "address": "0x142322b3a",
+        "references": [],
+        "section": ".rdata",
+        "text": "<&'U"
+      },
+      {
+        "address": "0x142322e91",
+        "references": [],
+        "section": ".rdata",
+        "text": "<&9ξ"
+      },
+      {
+        "address": "0x14232314d",
+        "references": [],
+        "section": ".rdata",
+        "text": "ȇ/j<"
+      },
+      {
+        "address": "0x1423234a6",
+        "references": [],
+        "section": ".rdata",
+        "text": "B<&.m)\"x"
+      },
+      {
+        "address": "0x1423234fe",
+        "references": [],
+        "section": ".rdata",
+        "text": "a)<ߋݜ,"
+      },
+      {
+        "address": "0x14232380a",
+        "references": [],
+        "section": ".rdata",
+        "text": "f;d<~w"
+      },
+      {
+        "address": "0x142323f24",
+        "references": [],
+        "section": ".rdata",
+        "text": "4<בft6"
+      },
+      {
+        "address": "0x1423242a6",
+        "references": [],
+        "section": ".rdata",
+        "text": "<VaJ"
+      },
+      {
+        "address": "0x1423242dd",
+        "references": [],
+        "section": ".rdata",
+        "text": "Q<fEB"
+      },
+      {
+        "address": "0x14232458e",
+        "references": [],
+        "section": ".rdata",
+        "text": "u<(1"
+      },
+      {
+        "address": "0x142324726",
+        "references": [],
+        "section": ".rdata",
+        "text": "^<C>"
+      },
+      {
+        "address": "0x1423250c7",
+        "references": [],
+        "section": ".rdata",
+        "text": "<S;*"
+      },
+      {
+        "address": "0x14232576e",
+        "references": [],
+        "section": ".rdata",
+        "text": "<\t]Y"
+      },
+      {
+        "address": "0x1423259bd",
+        "references": [],
+        "section": ".rdata",
+        "text": "q<r-"
+      },
+      {
+        "address": "0x142325a59",
+        "references": [],
+        "section": ".rdata",
+        "text": "+\r*Y<@"
+      },
+      {
+        "address": "0x142325de9",
+        "references": [],
+        "section": ".rdata",
+        "text": "Eu9<"
+      },
+      {
+        "address": "0x14232623f",
+        "references": [],
+        "section": ".rdata",
+        "text": "߃yT<e"
+      },
+      {
+        "address": "0x1423264fe",
+        "references": [],
+        "section": ".rdata",
+        "text": "<b0Q0"
+      },
+      {
+        "address": "0x142326bd7",
+        "references": [],
+        "section": ".rdata",
+        "text": "/<B'W1"
+      },
+      {
+        "address": "0x142326fc1",
+        "references": [],
+        "section": ".rdata",
+        "text": "o<*U"
+      },
+      {
+        "address": "0x142327c67",
+        "references": [],
+        "section": ".rdata",
+        "text": "J^0b<"
+      },
+      {
+        "address": "0x142327df3",
+        "references": [],
+        "section": ".rdata",
+        "text": "G<IO٫"
+      },
+      {
+        "address": "0x142328512",
+        "references": [],
+        "section": ".rdata",
+        "text": "e</*"
+      },
+      {
+        "address": "0x1423291f9",
+        "references": [],
+        "section": ".rdata",
+        "text": "k|C<"
+      },
+      {
+        "address": "0x14232971e",
+        "references": [],
+        "section": ".rdata",
+        "text": "G;I6<1B=[-I"
+      },
+      {
+        "address": "0x142329ba8",
+        "references": [],
+        "section": ".rdata",
+        "text": "<aHĎfp%f"
+      },
+      {
+        "address": "0x142329ec6",
+        "references": [],
+        "section": ".rdata",
+        "text": "<uݢq"
+      },
+      {
+        "address": "0x14232a00f",
+        "references": [],
+        "section": ".rdata",
+        "text": "e_<7"
+      },
+      {
+        "address": "0x14232a1d9",
+        "references": [],
+        "section": ".rdata",
+        "text": "<iM*"
+      },
+      {
+        "address": "0x14232a428",
+        "references": [],
+        "section": ".rdata",
+        "text": "sZ<v"
+      },
+      {
+        "address": "0x14232acce",
+        "references": [],
+        "section": ".rdata",
+        "text": "<%#rq"
+      },
+      {
+        "address": "0x14232ad53",
+        "references": [],
+        "section": ".rdata",
+        "text": "=sU<"
+      },
+      {
+        "address": "0x14232b951",
+        "references": [],
+        "section": ".rdata",
+        "text": "UVG<r"
+      },
+      {
+        "address": "0x14232b9fb",
+        "references": [],
+        "section": ".rdata",
+        "text": "ak<1"
+      },
+      {
+        "address": "0x14232c00e",
+        "references": [],
+        "section": ".rdata",
+        "text": "<=qLw"
+      },
+      {
+        "address": "0x14232c21b",
+        "references": [],
+        "section": ".rdata",
+        "text": "<bIg"
+      }
+    ],
+    "total": 9128
+  },
+  "summary": "9128 strings match \"<\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 100,
+    "total": 9128,
+    "next_offset": 100
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,102 @@
+{
+  "id": "ev_4125a39a381c8b677e14d39e44d18d28e9e1b56221f12e9fcc76b510e3d21e19",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_sections_list",
+  "params": {},
+  "result": {
+    "sections": [
+      {
+        "end": "0x66bcb6",
+        "entropy": 6.453357696533203,
+        "exec": true,
+        "file_offset": 1024,
+        "file_size": 2534582,
+        "kind": "code",
+        "name": ".text",
+        "read": true,
+        "segment": null,
+        "size": 2534582,
+        "start": "0x401000",
+        "write": false
+      },
+      {
+        "end": "0x6fb55a",
+        "entropy": 4.604350566864014,
+        "exec": false,
+        "file_offset": 2535936,
+        "file_size": 587098,
+        "kind": "rodata",
+        "name": ".rdata",
+        "read": true,
+        "segment": null,
+        "size": 587098,
+        "start": "0x66c000",
+        "write": false
+      },
+      {
+        "end": "0x709240",
+        "entropy": 4.767050266265869,
+        "exec": false,
+        "file_offset": 3123200,
+        "file_size": 15360,
+        "kind": "data",
+        "name": ".data",
+        "read": true,
+        "segment": null,
+        "size": 53824,
+        "start": "0x6fc000",
+        "write": true
+      },
+      {
+        "end": "0x73af54",
+        "entropy": 5.694834232330322,
+        "exec": false,
+        "file_offset": 3138560,
+        "file_size": 200532,
+        "kind": "rodata",
+        "name": ".rsrc",
+        "read": true,
+        "segment": null,
+        "size": 200532,
+        "start": "0x70a000",
+        "write": false
+      },
+      {
+        "end": "0x763bf0",
+        "entropy": 6.51352596282959,
+        "exec": false,
+        "file_offset": 3339264,
+        "file_size": 166896,
+        "kind": "other",
+        "name": ".reloc",
+        "read": true,
+        "segment": null,
+        "size": 166896,
+        "start": "0x73b000",
+        "write": false
+      }
+    ],
+    "segments": []
+  },
+  "summary": "0 segments and 5 sections.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 5,
+    "total": 5
+  },
+  "locations": [],
+  "links": []
+}

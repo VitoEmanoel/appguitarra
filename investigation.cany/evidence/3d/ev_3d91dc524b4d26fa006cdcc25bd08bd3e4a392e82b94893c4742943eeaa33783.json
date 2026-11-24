@@ -1,0 +1,775 @@
+{
+  "id": "ev_3d91dc524b4d26fa006cdcc25bd08bd3e4a392e82b94893c4742943eeaa33783",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "_xml"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x142346c50",
+        "references": [],
+        "section": ".rdata",
+        "text": "configuration_xml"
+      },
+      {
+        "address": "0x142346c68",
+        "references": [],
+        "section": ".rdata",
+        "text": "customData_xml"
+      },
+      {
+        "address": "0x142346c78",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersMap_xml"
+      },
+      {
+        "address": "0x142346c90",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanAmpViewController_xml"
+      },
+      {
+        "address": "0x142346cb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadAmpViewController_xml"
+      },
+      {
+        "address": "0x142346cd0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmAmpViewController_xml"
+      },
+      {
+        "address": "0x142346cf0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanCabViewController_xml"
+      },
+      {
+        "address": "0x142346d10",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadCabViewController_xml"
+      },
+      {
+        "address": "0x142346d30",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftCabPanelViewController_xml"
+      },
+      {
+        "address": "0x142346d50",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftMicViewController_xml"
+      },
+      {
+        "address": "0x142346d70",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmCabViewController_xml"
+      },
+      {
+        "address": "0x142346d90",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightCabPanelViewController_xml"
+      },
+      {
+        "address": "0x142346db0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightMicViewController_xml"
+      },
+      {
+        "address": "0x142346dd0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanEQViewController_xml"
+      },
+      {
+        "address": "0x142346df0",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadEQViewController_xml"
+      },
+      {
+        "address": "0x142346e10",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmEQViewController_xml"
+      },
+      {
+        "address": "0x142346e30",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e50",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e70",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalViewController_xml"
+      },
+      {
+        "address": "0x142346e90",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalViewController_xml"
+      },
+      {
+        "address": "0x142346eb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalViewController_xml"
+      },
+      {
+        "address": "0x142346ed0",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalViewController_xml"
+      },
+      {
+        "address": "0x142346ef0",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalViewController_xml"
+      },
+      {
+        "address": "0x142346f10",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalViewController_xml"
+      },
+      {
+        "address": "0x142346f30",
+        "references": [],
+        "section": ".rdata",
+        "text": "ampSectionViewController_xml"
+      },
+      {
+        "address": "0x142346f50",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabSectionViewController_xml"
+      },
+      {
+        "address": "0x142346f70",
+        "references": [],
+        "section": ".rdata",
+        "text": "eqSectionViewController_xml"
+      },
+      {
+        "address": "0x142346f90",
+        "references": [],
+        "section": ".rdata",
+        "text": "fxSectionViewController_xml"
+      },
+      {
+        "address": "0x142346fb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionViewController_xml"
+      },
+      {
+        "address": "0x142346fd0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pitchSectionViewController_xml"
+      },
+      {
+        "address": "0x142346ff0",
+        "references": [],
+        "section": ".rdata",
+        "text": "applicationViewController_xml"
+      },
+      {
+        "address": "0x142347010",
+        "references": [],
+        "section": ".rdata",
+        "text": "sectionsViewController_xml"
+      },
+      {
+        "address": "0x142347030",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347050",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347070",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmAmpParametersModel_xml"
+      },
+      {
+        "address": "0x142347090",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmEQParametersModel_xml"
+      },
+      {
+        "address": "0x1423470f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347110",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347130",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347150",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347170",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalParametersModel_xml"
+      },
+      {
+        "address": "0x142347190",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423471f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "ampParametersModel_xml"
+      },
+      {
+        "address": "0x142347208",
+        "references": [],
+        "section": ".rdata",
+        "text": "applicationModel_xml"
+      },
+      {
+        "address": "0x142347220",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabParametersModel_xml"
+      },
+      {
+        "address": "0x142347238",
+        "references": [],
+        "section": ".rdata",
+        "text": "eqParametersModel_xml"
+      },
+      {
+        "address": "0x142347250",
+        "references": [],
+        "section": ".rdata",
+        "text": "fixedParametersModel_xml"
+      },
+      {
+        "address": "0x142347270",
+        "references": [],
+        "section": ".rdata",
+        "text": "fxParametersModel_xml"
+      },
+      {
+        "address": "0x142347288",
+        "references": [],
+        "section": ".rdata",
+        "text": "parametersModel_xml"
+      },
+      {
+        "address": "0x1423472a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalParametersModel_xml"
+      },
+      {
+        "address": "0x1423472c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "pitchParametersModel_xml"
+      },
+      {
+        "address": "0x1423472e0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanAmpView_xml"
+      },
+      {
+        "address": "0x1423472f8",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadAmpView_xml"
+      },
+      {
+        "address": "0x142347308",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmAmpView_xml"
+      },
+      {
+        "address": "0x142347320",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanCabView_xml"
+      },
+      {
+        "address": "0x142347338",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadCabView_xml"
+      },
+      {
+        "address": "0x142347348",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftCabPanelView_xml"
+      },
+      {
+        "address": "0x142347360",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftMicView_xml"
+      },
+      {
+        "address": "0x142347370",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmCabView_xml"
+      },
+      {
+        "address": "0x142347388",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightCabPanelView_xml"
+      },
+      {
+        "address": "0x1423473a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightMicView_xml"
+      },
+      {
+        "address": "0x1423473b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanEQView_xml"
+      },
+      {
+        "address": "0x1423473c8",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadEQView_xml"
+      },
+      {
+        "address": "0x1423473d8",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmEQView_xml"
+      },
+      {
+        "address": "0x1423473f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "delayPedalView_xml"
+      },
+      {
+        "address": "0x142347408",
+        "references": [],
+        "section": ".rdata",
+        "text": "reverbPedalView_xml"
+      },
+      {
+        "address": "0x142347420",
+        "references": [],
+        "section": ".rdata",
+        "text": "chrPedalView_xml"
+      },
+      {
+        "address": "0x142347438",
+        "references": [],
+        "section": ".rdata",
+        "text": "drtPedalView_xml"
+      },
+      {
+        "address": "0x142347450",
+        "references": [],
+        "section": ".rdata",
+        "text": "odPedalView_xml"
+      },
+      {
+        "address": "0x142347460",
+        "references": [],
+        "section": ".rdata",
+        "text": "phsrPedalView_xml"
+      },
+      {
+        "address": "0x142347478",
+        "references": [],
+        "section": ".rdata",
+        "text": "octaverPedalView_xml"
+      },
+      {
+        "address": "0x142347490",
+        "references": [],
+        "section": ".rdata",
+        "text": "whammyPedalView_xml"
+      },
+      {
+        "address": "0x1423474a8",
+        "references": [],
+        "section": ".rdata",
+        "text": "ampSectionView_xml"
+      },
+      {
+        "address": "0x1423474c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabSectionView_xml"
+      },
+      {
+        "address": "0x1423474d8",
+        "references": [],
+        "section": ".rdata",
+        "text": "eqSectionView_xml"
+      },
+      {
+        "address": "0x1423474f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "fxSectionView_xml"
+      },
+      {
+        "address": "0x142347508",
+        "references": [],
+        "section": ".rdata",
+        "text": "pedalSectionView_xml"
+      },
+      {
+        "address": "0x142347520",
+        "references": [],
+        "section": ".rdata",
+        "text": "pitchSectionView_xml"
+      },
+      {
+        "address": "0x142347538",
+        "references": [],
+        "section": ".rdata",
+        "text": "applicationView_xml"
+      },
+      {
+        "address": "0x142347550",
+        "references": [],
+        "section": ".rdata",
+        "text": "styles_xml"
+      },
+      {
+        "address": "0x142347560",
+        "references": [],
+        "section": ".rdata",
+        "text": "topBarView_xml"
+      },
+      {
+        "address": "0x142347d58",
+        "references": [],
+        "section": ".rdata",
+        "text": "applicationViewController_xml2"
+      },
+      {
+        "address": "0x142347d78",
+        "references": [],
+        "section": ".rdata",
+        "text": "bottomBarViewController_xml"
+      },
+      {
+        "address": "0x142347d98",
+        "references": [],
+        "section": ".rdata",
+        "text": "metronomeViewController_xml"
+      },
+      {
+        "address": "0x142347db8",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetBarViewController_xml"
+      },
+      {
+        "address": "0x142347dd8",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetSaveDialogViewController_xml"
+      },
+      {
+        "address": "0x142347e00",
+        "references": [],
+        "section": ".rdata",
+        "text": "toastViewController_xml"
+      },
+      {
+        "address": "0x142347e18",
+        "references": [],
+        "section": ".rdata",
+        "text": "topBarViewController_xml"
+      },
+      {
+        "address": "0x142347e38",
+        "references": [],
+        "section": ".rdata",
+        "text": "tunerViewController_xml"
+      },
+      {
+        "address": "0x142347e50",
+        "references": [],
+        "section": ".rdata",
+        "text": "archetypeAppModel_xml"
+      },
+      {
+        "address": "0x142347e68",
+        "references": [],
+        "section": ".rdata",
+        "text": "metersModel_xml"
+      },
+      {
+        "address": "0x142347e78",
+        "references": [],
+        "section": ".rdata",
+        "text": "metronomeParametersModel_xml"
+      },
+      {
+        "address": "0x142347e98",
+        "references": [],
+        "section": ".rdata",
+        "text": "midiRoutingListModel_xml"
+      },
+      {
+        "address": "0x142347eb8",
+        "references": [],
+        "section": ".rdata",
+        "text": "midiRoutingModel_xml"
+      },
+      {
+        "address": "0x142347ed0",
+        "references": [],
+        "section": ".rdata",
+        "text": "tunerParametersModel_xml"
+      },
+      {
+        "address": "0x142347ef0",
+        "references": [],
+        "section": ".rdata",
+        "text": "aboutView_xml"
+      },
+      {
+        "address": "0x142347f00",
+        "references": [],
+        "section": ".rdata",
+        "text": "archetypeStyles_xml"
+      },
+      {
+        "address": "0x142347f18",
+        "references": [],
+        "section": ".rdata",
+        "text": "audioSettingsView_xml"
+      },
+      {
+        "address": "0x142347f30",
+        "references": [],
+        "section": ".rdata",
+        "text": "bottomBarView_xml"
+      },
+      {
+        "address": "0x142347f48",
+        "references": [],
+        "section": ".rdata",
+        "text": "debugInfoView_xml"
+      },
+      {
+        "address": "0x142347f60",
+        "references": [],
+        "section": ".rdata",
+        "text": "irLoaderItemView_xml"
+      },
+      {
+        "address": "0x142347f78",
+        "references": [],
+        "section": ".rdata",
+        "text": "metronomeView_xml"
+      },
+      {
+        "address": "0x142347f90",
+        "references": [],
+        "section": ".rdata",
+        "text": "midiMappingsItemView_xml"
+      },
+      {
+        "address": "0x142347fb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "midiMappingsView_xml"
+      },
+      {
+        "address": "0x142347fc8",
+        "references": [],
+        "section": ".rdata",
+        "text": "missingIRView_xml"
+      },
+      {
+        "address": "0x142347fe0",
+        "references": [],
+        "section": ".rdata",
+        "text": "missingUserManualFileDialogView_xml"
+      },
+      {
+        "address": "0x142348008",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetBarView_xml"
+      },
+      {
+        "address": "0x142348020",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetDeleteDialogView_xml"
+      },
+      {
+        "address": "0x142348040",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetFolderErrorDialogView_xml"
+      },
+      {
+        "address": "0x142348060",
+        "references": [],
+        "section": ".rdata",
+        "text": "presetSaveDialogView_xml"
+      },
+      {
+        "address": "0x142348080",
+        "references": [],
+        "section": ".rdata",
+        "text": "sectionsView_xml"
+      },
+      {
+        "address": "0x142348098",
+        "references": [],
+        "section": ".rdata",
+        "text": "toastView_xml"
+      },
+      {
+        "address": "0x1423480a8",
+        "references": [],
+        "section": ".rdata",
+        "text": "tunerView_xml"
+      },
+      {
+        "address": "0x1423480b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "MonoToMono_xml"
+      },
+      {
+        "address": "0x1423480c8",
+        "references": [],
+        "section": ".rdata",
+        "text": "MonoToStereo_xml"
+      },
+      {
+        "address": "0x1423480e0",
+        "references": [],
+        "section": ".rdata",
+        "text": "StereoToMono_xml"
+      },
+      {
+        "address": "0x1423480f8",
+        "references": [],
+        "section": ".rdata",
+        "text": "StereoToStereoDual_xml"
+      },
+      {
+        "address": "0x142348110",
+        "references": [],
+        "section": ".rdata",
+        "text": "StereoToStereoSummed_xml"
+      }
+    ],
+    "total": 122
+  },
+  "summary": "122 strings match \"_xml\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 122,
+    "total": 122
+  },
+  "locations": [],
+  "links": []
+}

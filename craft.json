@@ -1,0 +1,57 @@
+{
+  "version": 5,
+  "name": "Archetype Gojira X v1.0.2",
+  "request": "analise o aplicativo por completo e reecrie ele o mesmo aplicativo",
+  "target": {
+    "kind": "local",
+    "path": "C:\\Users\\Ve778\\Downloads\\Archetype Gojira X v1.0.2.exe"
+  },
+  "stack": "Rust + egui (eframe)",
+  "status": "ready",
+  "note": "Ready: 2 of 3 checks pass; 1 comparison remains unverified. 1 question about the original is still open.",
+  "created_ms": 1795522959558,
+  "updated_ms": 1795528072783,
+  "checks": [
+    {
+      "round": 1,
+      "check": "build",
+      "passed": true,
+      "similarity": null,
+      "note": "`python3 -m compileall -q -f -x [\\\\/](\\.?venv|node_modules|\\.git)[\\\\/] .` passed.",
+      "artifacts": [],
+      "at_ms": 1795526516487
+    },
+    {
+      "round": 1,
+      "check": "app-screenshot",
+      "passed": true,
+      "similarity": null,
+      "note": "The program starts and draws (1024×782).",
+      "artifacts": [
+        "checks\\round-0\\screenshot.png"
+      ],
+      "at_ms": 1795526519721
+    },
+    {
+      "round": 1,
+      "check": "mechanics",
+      "passed": true,
+      "similarity": null,
+      "note": "app/mechanics.json has 61 values (60 with a source, 1 estimated). The sheet is readable; its behavior is unverified. No runtime measurement was compared with these values. A source literal or a core-loop self-test alone cannot establish that the build uses them.",
+      "artifacts": [],
+      "at_ms": 1795526519763,
+      "unknowns": [
+        "Mechanics behavior has not been measured against app/mechanics.json."
+      ]
+    }
+  ],
+  "agent_session": "5486da78-dfac-4001-aa31-fe49d70d7238",
+  "agent_session_by": "antigravity",
+  "agent_session_deep": true,
+  "capture_deep": true,
+  "allowed_actions": [],
+  "last_reply": "Estou verificando a configuração interna de descompilação e aguardando a conclusão da leitura dos registros.",
+  "asset_budget_usd": 5.0,
+  "generate_assets": false,
+  "builder": "Antigravity"
+}

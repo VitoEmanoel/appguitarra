@@ -1,0 +1,45 @@
+{
+  "id": "ev_549873d020861dd77a2649e02b0afbd8a700c0ffc312f00af86642ea78715848",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x5557b0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x5557b0",
+    "function": "FUN_005557b0",
+    "pseudo_code": "\r\nundefined1 __thiscall FUN_005557b0(int param_1,int param_2)\r\n\r\n{\r\n  LPCWSTR pWVar1;\r\n  uint uVar2;\r\n  int *piVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  undefined4 uVar6;\r\n  HMODULE pHVar7;\r\n  undefined1 uVar8;\r\n  undefined4 local_28;\r\n  undefined4 local_24;\r\n  undefined4 local_20;\r\n  int local_1c;\r\n  LPCWSTR local_18;\r\n  int local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_006540f5;\r\n  local_10 = ExceptionList;\r\n  uVar2 = DAT_006fc024 ^ (uint)&stack0xfffffffc;\r\n  ExceptionList = &local_10;\r\n  local_1c = param_1;\r\n  piVar3 = (int *)FUN_0040acf0(uVar2);\r\n  if (piVar3 == (int *)0x0) {\r\nLAB_00555934:\r\n                    /* WARNING: Subroutine does not return */\r\n    FUN_0040a9b0(0x80004005);\r\n  }\r\n  iVar4 = (**(code **)(*piVar3 + 0xc))();\r\n  local_18 = (LPCWSTR)(iVar4 + 0x10);\r\n  local_8 = 1;\r\n  iVar4 = *(int *)(param_1 + 4);\r\n  piVar3 = (int *)FUN_0040acf0(uVar2);\r\n  if (piVar3 == (int *)0x0) goto LAB_00555934;\r\n  local_14 = (**(code **)(*piVar3 + 0xc))();\r\n  local_14 = local_14 + 0x10;\r\n  local_8._0_1_ = 3;\r\n  FUN_00409d10(&local_14,L\"%d.dll\",param_2);\r\n  iVar5 = FUN_00550c70(&local_14,0xb);\r\n  if ((iVar5 < 0) || (*(int *)(iVar4 + 0x7c) <= iVar5)) {\r\n                    /* WARNING: Subroutine does not return */\r\n    FUN_0040a9b0(0x8000000b);\r\n  }\r\n  uVar6 = FUN_00527090(iVar5 * 0x20 + 0x18 + *(int *)(iVar4 + 0x78));\r\n  local_8._0_1_ = 4;\r\n  FUN_00422b70(uVar6);\r\n  local_8._0_1_ = 3;\r\n  LOCK();\r\n  piVar3 = (int *)(param_2 + -4);\r\n  iVar4 = *piVar3;\r\n  *piVar3 = *piVar3 + -1;\r\n  UNLOCK();\r\n  if (iVar4 == 1 || iVar4 + -1 < 0) {\r\n    (**(code **)(**(int **)(param_2 + -0x10) + 4))((undefined4 *)(param_2 + -0x10));\r\n  }\r\n  local_28 = 0;\r\n  local_24 = 0;\r\n  local_20 = 0;\r\n  iVar5 = FUN_00550ce0(iVar5,&local_28);\r\n  local_8 = CONCAT31(local_8._1_3_,1);\r\n  LOCK();\r\n  piVar3 = (int *)(local_14 + -4);\r\n  iVar4 = *piVar3;\r\n  *piVar3 = *piVar3 + -1;\r\n  UNLOCK();\r\n  if (iVar4 == 1 || iVar4 + -1 < 0) {\r\n    (**(code **)(**(int **)(local_14 + -0x10) + 4))((undefined4 *)(local_14 + -0x10));\r\n  }\r\n  if (iVar5 == 0) {\r\n    pHVar7 = LoadLibraryExW(local_18,(HANDLE)0x0,1);\r\n    if (pHVar7 != (HMODULE)0x0) {\r\n      FUN_005559f0(pHVar7);\r\n      uVar8 = 1;\r\n      goto LAB_005558ff;\r\n    }\r\n  }\r\n  uVar8 = 0;\r\nLAB_005558ff:\r\n  local_8 = 0xffffffff;\r\n  LOCK();\r\n  pWVar1 = local_18 + -2;\r\n  iVar4 = *(int *)pWVar1;\r\n  *(int *)pWVar1 = *(int *)pWVar1 + -1;\r\n  UNLOCK();\r\n  if (iVar4 == 1 || iVar4 + -1 < 0) {\r\n    (**(code **)(**(int **)(local_18 + -8) + 4))(local_18 + -8);\r\n  }\r\n  ExceptionList = local_10;\r\n  return uVar8;\r\n}\r\n\r\n",
+    "signature": "undefined1 __thiscall FUN_005557b0(int param_1,int param_2);"
+  },
+  "summary": "Pseudo-C for FUN_005557b0 from the Deep engine (97 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x5557b0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

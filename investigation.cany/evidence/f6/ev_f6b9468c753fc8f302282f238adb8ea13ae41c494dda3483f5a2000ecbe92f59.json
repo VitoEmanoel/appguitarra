@@ -1,0 +1,524 @@
+{
+  "id": "ev_f6b9468c753fc8f302282f238adb8ea13ae41c494dda3483f5a2000ecbe92f59",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d8c80a371db8b9bd084b6437720a0f1c2c5bb602a8cb5fbfd33364188c9c9841",
+    "name": "ArchetypeGojiraX.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 80,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Cab"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x142345cb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkHover_svg"
+      },
+      {
+        "address": "0x142345cd0",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkSelected_svg"
+      },
+      {
+        "address": "0x142345cf0",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkUnselected_svg"
+      },
+      {
+        "address": "0x142345d18",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabHover_svg"
+      },
+      {
+        "address": "0x142345d30",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabNotSelected_svg"
+      },
+      {
+        "address": "0x142345d50",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabSelected_svg"
+      },
+      {
+        "address": "0x142345fb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabsimBypassButton_svg"
+      },
+      {
+        "address": "0x142346160",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpLabels_svg"
+      },
+      {
+        "address": "0x142346188",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpLabels_svg"
+      },
+      {
+        "address": "0x1423461b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmAmpLabels_svg"
+      },
+      {
+        "address": "0x1423466b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionCleanCab_png"
+      },
+      {
+        "address": "0x1423467f0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionLeadCab_png"
+      },
+      {
+        "address": "0x1423468c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionRhythmCab_png"
+      },
+      {
+        "address": "0x142346960",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpOff_png"
+      },
+      {
+        "address": "0x142346988",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpOn_png"
+      },
+      {
+        "address": "0x1423469a8",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanCab_png"
+      },
+      {
+        "address": "0x1423469c8",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanKnob_png"
+      },
+      {
+        "address": "0x1423469e8",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanPowerSwitchOff_png"
+      },
+      {
+        "address": "0x142346a18",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanPowerSwitchOn_png"
+      },
+      {
+        "address": "0x142346a40",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanToggleSwitchDown_png"
+      },
+      {
+        "address": "0x142346a70",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanToggleSwitchUp_png"
+      },
+      {
+        "address": "0x142346aa0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpOff_png"
+      },
+      {
+        "address": "0x142346ac0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpOn_png"
+      },
+      {
+        "address": "0x142346ae0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadCab_png"
+      },
+      {
+        "address": "0x142346b00",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadKnob_png"
+      },
+      {
+        "address": "0x142346b20",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadPowerSwitchOff_png"
+      },
+      {
+        "address": "0x142346b48",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadPowerSwitchOn_png"
+      },
+      {
+        "address": "0x142346b70",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLedOn_png"
+      },
+      {
+        "address": "0x142346b90",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmAmp_png"
+      },
+      {
+        "address": "0x142346bb0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmCab_png"
+      },
+      {
+        "address": "0x142346bd0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmKnob_png"
+      },
+      {
+        "address": "0x142346bf0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmPowerSwitchOff_png"
+      },
+      {
+        "address": "0x142346c20",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmPowerSwitchOn_png"
+      },
+      {
+        "address": "0x142346cf0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanCabViewController_xml"
+      },
+      {
+        "address": "0x142346d10",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadCabViewController_xml"
+      },
+      {
+        "address": "0x142346d30",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftCabPanelViewController_xml"
+      },
+      {
+        "address": "0x142346d70",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmCabViewController_xml"
+      },
+      {
+        "address": "0x142346d90",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightCabPanelViewController_xml"
+      },
+      {
+        "address": "0x142346f50",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabSectionViewController_xml"
+      },
+      {
+        "address": "0x142347220",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabParametersModel_xml"
+      },
+      {
+        "address": "0x142347320",
+        "references": [],
+        "section": ".rdata",
+        "text": "cleanCabView_xml"
+      },
+      {
+        "address": "0x142347338",
+        "references": [],
+        "section": ".rdata",
+        "text": "leadCabView_xml"
+      },
+      {
+        "address": "0x142347348",
+        "references": [],
+        "section": ".rdata",
+        "text": "leftCabPanelView_xml"
+      },
+      {
+        "address": "0x142347370",
+        "references": [],
+        "section": ".rdata",
+        "text": "rhythmCabView_xml"
+      },
+      {
+        "address": "0x142347388",
+        "references": [],
+        "section": ".rdata",
+        "text": "rightCabPanelView_xml"
+      },
+      {
+        "address": "0x1423474c0",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabSectionView_xml"
+      },
+      {
+        "address": "0x1423475b8",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabSectionIcon_svg"
+      },
+      {
+        "address": "0x142348130",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkHover.svg"
+      },
+      {
+        "address": "0x142348150",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkSelected.svg"
+      },
+      {
+        "address": "0x142348170",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorAmpCabLinkUnselected.svg"
+      },
+      {
+        "address": "0x142348198",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabHover.svg"
+      },
+      {
+        "address": "0x1423481b0",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabNotSelected.svg"
+      },
+      {
+        "address": "0x1423481d0",
+        "references": [],
+        "section": ".rdata",
+        "text": "SelectorCabSelected.svg"
+      },
+      {
+        "address": "0x142348430",
+        "references": [],
+        "section": ".rdata",
+        "text": "cabsimBypassButton.svg"
+      },
+      {
+        "address": "0x1423485e0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpLabels.svg"
+      },
+      {
+        "address": "0x142348608",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpLabels.svg"
+      },
+      {
+        "address": "0x142348630",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmAmpLabels.svg"
+      },
+      {
+        "address": "0x142348b38",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionCleanCab.png"
+      },
+      {
+        "address": "0x142348c70",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionLeadCab.png"
+      },
+      {
+        "address": "0x142348d40",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXAmpSectionRhythmCab.png"
+      },
+      {
+        "address": "0x142348de0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpOff.png"
+      },
+      {
+        "address": "0x142348e08",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanAmpOn.png"
+      },
+      {
+        "address": "0x142348e28",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanCab.png"
+      },
+      {
+        "address": "0x142348e48",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanKnob.png"
+      },
+      {
+        "address": "0x142348e68",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanPowerSwitchOff.png"
+      },
+      {
+        "address": "0x142348e98",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanPowerSwitchOn.png"
+      },
+      {
+        "address": "0x142348ec0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanToggleSwitchDown.png"
+      },
+      {
+        "address": "0x142348ef0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionCleanToggleSwitchUp.png"
+      },
+      {
+        "address": "0x142348f20",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpOff.png"
+      },
+      {
+        "address": "0x142348f40",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadAmpOn.png"
+      },
+      {
+        "address": "0x142348f60",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadCab.png"
+      },
+      {
+        "address": "0x142348f80",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadKnob.png"
+      },
+      {
+        "address": "0x142348fa0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadPowerSwitchOff.png"
+      },
+      {
+        "address": "0x142348fc8",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLeadPowerSwitchOn.png"
+      },
+      {
+        "address": "0x142348ff0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionLedOn.png"
+      },
+      {
+        "address": "0x142349010",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmAmp.png"
+      },
+      {
+        "address": "0x142349030",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmCab.png"
+      },
+      {
+        "address": "0x142349050",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmKnob.png"
+      },
+      {
+        "address": "0x142349070",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmPowerSwitchOff.png"
+      },
+      {
+        "address": "0x1423490a0",
+        "references": [],
+        "section": ".rdata",
+        "text": "GojiraXCabSectionRhythmPowerSwitchOn.png"
+      }
+    ],
+    "total": 99
+  },
+  "summary": "99 strings match \"Cab\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 80,
+    "total": 99,
+    "next_offset": 80
+  },
+  "locations": [],
+  "links": []
+}

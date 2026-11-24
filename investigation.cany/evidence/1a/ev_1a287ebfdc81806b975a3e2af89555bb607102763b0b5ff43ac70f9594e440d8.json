@@ -1,0 +1,45 @@
+{
+  "id": "ev_1a287ebfdc81806b975a3e2af89555bb607102763b0b5ff43ac70f9594e440d8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x413640"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x413640",
+    "function": "FUN_00413640",
+    "pseudo_code": "\r\n/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */\r\n\r\nvoid __thiscall FUN_00413640(int param_1,undefined4 *param_2)\r\n\r\n{\r\n  undefined4 *puVar1;\r\n  uint uVar2;\r\n  uint uVar3;\r\n  int iVar4;\r\n  uint uVar5;\r\n  undefined4 ***pppuVar6;\r\n  undefined4 ****ppppuVar7;\r\n  undefined4 ****ppppuVar8;\r\n  undefined4 ***local_54;\r\n  undefined8 local_50;\r\n  undefined4 local_48;\r\n  undefined4 ***local_44 [4];\r\n  int local_34;\r\n  uint local_30;\r\n  undefined4 ***local_2c;\r\n  undefined4 uStack_28;\r\n  undefined4 uStack_24;\r\n  undefined4 uStack_20;\r\n  int local_1c;\r\n  uint local_18;\r\n  uint local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  int local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_0060a775;\r\n  local_10 = ExceptionList;\r\n  uVar3 = DAT_006fc024 ^ (uint)&stack0xfffffffc;\r\n  ExceptionList = &local_10;\r\n  local_14 = uVar3;\r\n  if (param_2 != &DAT_006fd120) {\r\n    puVar1 = param_2 + 4;\r\n    if (7 < (uint)param_2[5]) {\r\n      param_2 = (undefined4 *)*param_2;\r\n    }\r\n    FUN_0040d630(param_2,*puVar1);\r\n  }\r\n  local_48 = 0;\r\n  local_50 = 0;\r\n  iVar4 = FDICreate(&LAB_004133d0,thunk_FUN_005e9c89,FUN_004133f0,&LAB_00413510,&LAB_00413540,\r\n                    FUN_004135b0,&LAB_00413580,0xffffffff,&local_50,uVar3);\r\n  local_8 = 0;\r\n  if (iVar4 == 0) goto LAB_004138a4;\r\n  FUN_00520310(param_1,param_1 >> 0x1f);\r\n  local_8._0_1_ = 1;\r\n  ppppuVar7 = local_44;\r\n  if (7 < local_30) {\r\n    ppppuVar7 = (undefined4 ****)local_44[0];\r\n  }\r\n  local_2c = (undefined4 ****)0x0;\r\n  uStack_28 = 0;\r\n  uStack_24 = 0;\r\n  uStack_20 = 0;\r\n  ppppuVar7 = (undefined4 ****)((int)ppppuVar7 + local_34 * 2);\r\n  local_1c = 0;\r\n  local_18 = 0xf;\r\n  local_54 = local_44;\r\n  if (7 < local_30) {\r\n    local_54 = local_44[0];\r\n  }\r\n  if ((undefined4 ****)local_54 == ppppuVar7) {\r\n    local_2c = (undefined4 ****)0x0;\r\n  }\r\n  else {\r\n    uVar3 = (int)ppppuVar7 - (int)local_54 >> 1;\r\n    if (0x7fffffff < uVar3) {\r\n                    /* WARNING: Subroutine does not return */\r\n      FUN_004088b0();\r\n    }\r\n    if (0xf < uVar3) {\r\n      uVar3 = uVar3 | 0xf;\r\n      if (uVar3 < 0x80000000) {\r\n        if (uVar3 < 0x16) {\r\n          uVar3 = 0x16;\r\n        }\r\n        uVar2 = uVar3 + 1;\r\n        if (0xfff < uVar2) {\r\n          uVar5 = uVar3 + 0x24;\r\n          if (uVar5 <= uVar2) {\r\n                    /* WARNING: Subroutine does not return */\r\n            FUN_00408830();\r\n          }\r\n          goto LAB_00413778;\r\n        }\r\n        if (uVar2 == 0) {\r\n          local_2c = (undefined4 ****)0x0;\r\n        }\r\n        else {\r\n          local_2c = (undefined4 ***)FUN_005dfd94(uVar2);\r\n        }\r\n      }\r\n      else {\r\n        uVar3 = 0x7fffffff;\r\n        uVar5 = 0x80000023;\r\nLAB_00413778:\r\n        pppuVar6 = (undefined4 ***)FUN_005dfd94(uVar5);\r\n        if (pppuVar6 == (undefined4 ***)0x0) goto LAB_004138ee;\r\n        local_2c = (undefined4 ***)((int)pppuVar6 + 0x23U & 0xffffffe0);\r\n        local_2c[-1] = pppuVar6;\r\n      }\r\n      local_18 = uVar3;\r\n    }\r\n    local_8._0_1_ = 2;\r\n    do {\r\n      ppppuVar8 = &local_2c;\r\n      if (0xf < local_18) {\r\n        ppppuVar8 = (undefined4 ****)local_2c;\r\n      }\r\n      *(undefined1 *)(local_1c + (int)ppppuVar8) = *(undefined1 *)local_54;\r\n      local_54 = (undefined4 ***)((int)local_54 + 2);\r\n      local_1c = local_1c + 1;\r\n    } while ((undefined4 ****)local_54 != ppppuVar7);\r\n    ppppuVar7 = &local_2c;\r\n    if (0xf < local_18) {\r\n      ppppuVar7 = (undefined4 ****)local_2c;\r\n    }\r\n    *(undefined1 *)(local_1c + (int)ppppuVar7) = 0;\r\n  }\r\n  local_8._0_1_ = 3;\r\n  ppppuVar7 = &local_2c;\r\n  if (0xf < local_18) {\r\n    ppppuVar7 = (undefined4 ****)local_2c;\r\n  }\r\n  FDICopy(iVar4,&DAT_006792c8,ppppuVar7,0,&LAB_004135c0,0,&DAT_006792c8);\r\n  local_8._0_1_ = 1;\r\n  if (0xf < local_18) {\r\n    uVar3 = local_18 + 1;\r\n    ppppuVar7 = (undefined4 ****)local_2c;\r\n    if (0xfff < uVar3) {\r\n      ppppuVar7 = (undefined4 ****)local_2c[-1];\r\n      uVar3 = local_18 + 0x24;\r\n      if (0x1f < (uint)((int)local_2c + (-4 - (int)ppppuVar7))) {\r\nLAB_004138ee:\r\n                    /* WARNING: Subroutine does not return */\r\n        FUN_005e51ef();\r\n      }\r\n    }\r\n    FUN_005dfd63(ppppuVar7,uVar3);\r\n  }\r\n  local_1c = 0;\r\n  local_18 = 0xf;\r\n  local_2c = (undefined4 ***)((uint)local_2c & 0xffffff00);\r\n  local_8 = (uint)local_8._1_3_ << 8;\r\n  FUN_00408960();\r\nLAB_004138a4:\r\n  local_8 = 0xffffffff;\r\n  if (iVar4 != 0) {\r\n    FDIDestroy(iVar4);\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n",
+    "signature": "void __thiscall FUN_00413640(int param_1,undefined4 *param_2);"
+  },
+  "summary": "Pseudo-C for FUN_00413640 from the Deep engine (160 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x413640"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

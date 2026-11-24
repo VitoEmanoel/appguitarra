@@ -1,0 +1,45 @@
+{
+  "id": "ev_f77f60eaa7f3cc3973b330b8e804e7cc40a292dc2bb7522d71c4c03b45445bc0",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x554990"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x554990",
+    "function": "FUN_00554990",
+    "pseudo_code": "\r\nundefined4 __thiscall FUN_00554990(int param_1,longlong param_2,LPCWSTR param_3)\r\n\r\n{\r\n  short sVar1;\r\n  code *pcVar2;\r\n  short *psVar3;\r\n  char cVar4;\r\n  uint uVar5;\r\n  LPCWSTR pWVar6;\r\n  int iVar7;\r\n  int *piVar8;\r\n  int *piVar9;\r\n  HANDLE hFile;\r\n  short *psVar10;\r\n  LPCWSTR pWVar11;\r\n  bool bVar12;\r\n  int local_1c;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_00653e3d;\r\n  local_10 = ExceptionList;\r\n  uVar5 = DAT_006fc024 ^ (uint)&stack0xfffffffc;\r\n  ExceptionList = &local_10;\r\n  piVar9 = (int *)(param_1 + 0x68);\r\n  if (1 < *(int *)(*piVar9 + -4)) {\r\n    FUN_0040a6b0(*(undefined4 *)(*piVar9 + -0xc));\r\n  }\r\n  cVar4 = FUN_0055e970((uint)param_2,param_2._4_4_,uVar5);\r\n  if (cVar4 != '\\0') {\r\nLAB_00554ad2:\r\n    uVar5 = (uint)param_2;\r\n    if ((param_2 < 0) || ((param_2._4_4_ < 1 && ((uint)param_2 == 0)))) {\r\n      local_1c = 0;\r\n      if ((uint)param_2 == 0 && param_2._4_4_ == 0) {\r\n        ExceptionList = local_10;\r\n        return 0;\r\n      }\r\n    }\r\n    else {\r\n      FUN_0052c310(param_1 + 0xb0);\r\n      local_1c = 0;\r\n    }\r\n    while (piVar9 = (int *)FUN_0040acf0(), piVar9 != (int *)0x0) {\r\n      iVar7 = (**(code **)(*piVar9 + 0xc))();\r\n      param_3 = (LPCWSTR)(iVar7 + 0x10);\r\n      local_8 = 6;\r\n      FUN_00409d10(&param_3,L\"%sholder%d.aiph\",*(undefined4 *)(param_1 + 0x68),local_1c);\r\n      pWVar6 = param_3;\r\n      hFile = CreateFileW(param_3,0x40000000,1,(LPSECURITY_ATTRIBUTES)0x0,2,0x80,(HANDLE)0x0);\r\n      local_8._0_1_ = 7;\r\n      FUN_00529ea0(&param_3);\r\n      if ((param_2._4_4_ < 1) && ((param_2._4_4_ < 0 || (uVar5 < 0x80000000)))) {\r\n        param_2._4_4_ = 0;\r\n        param_2._0_4_ = 0;\r\n      }\r\n      else {\r\n        bVar12 = 0x7ffffffe < uVar5;\r\n        param_2._0_4_ = uVar5 + 0x80000001;\r\n        uVar5 = 0x7fffffff;\r\n        param_2._4_4_ = param_2._4_4_ + -1 + (uint)bVar12;\r\n      }\r\n      SetFilePointer(hFile,uVar5,(PLONG)0x0,0);\r\n      SetEndOfFile(hFile);\r\n      local_8 = CONCAT31(local_8._1_3_,6);\r\n      if (hFile != (HANDLE)0x0) {\r\n        CloseHandle(hFile);\r\n      }\r\n      local_8 = 0xffffffff;\r\n      pWVar11 = pWVar6 + -8;\r\n      LOCK();\r\n      pWVar6 = pWVar6 + -2;\r\n      iVar7 = *(int *)pWVar6;\r\n      *(int *)pWVar6 = *(int *)pWVar6 + -1;\r\n      UNLOCK();\r\n      if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n        (**(code **)(**(int **)pWVar11 + 4))(pWVar11);\r\n      }\r\n      local_1c = local_1c + 1;\r\n      uVar5 = (uint)param_2;\r\n      if ((uint)param_2 == 0 && param_2._4_4_ == 0) {\r\n        ExceptionList = local_10;\r\n        return 0;\r\n      }\r\n    }\r\nLAB_00554c2a:\r\n                    /* WARNING: Subroutine does not return */\r\n    FUN_0040a9b0(0x80004005);\r\n  }\r\n  if (*(undefined4 **)(param_3 + 2) != (undefined4 *)0x0) {\r\n    pcVar2 = *(code **)**(undefined4 **)(param_3 + 2);\r\n    param_3 = (LPCWSTR)*piVar9;\r\n    cVar4 = FUN_0052bee0();\r\n    pWVar6 = param_3;\r\n    if (cVar4 != '\\0') {\r\n      pWVar6 = param_3 + 4;\r\n    }\r\n    iVar7 = (*pcVar2)(pWVar6,(uint)param_2,param_2._4_4_);\r\n    if (iVar7 != 0) goto LAB_00554ad2;\r\n  }\r\n  if (DAT_007016e4 != '\\0') {\r\n    piVar8 = (int *)FUN_0040acf0();\r\n    if (piVar8 == (int *)0x0) goto LAB_00554c2a;\r\n    iVar7 = (**(code **)(*piVar8 + 0xc))();\r\n    param_3 = (LPCWSTR)(iVar7 + 0x10);\r\n    local_8 = 2;\r\n    FUN_00422290(L\"Not enough disk space to extract file:\",0x26);\r\n    psVar3 = (short *)*piVar9;\r\n    if (psVar3 != (short *)0x0) {\r\n      psVar10 = psVar3;\r\n      do {\r\n        sVar1 = *psVar10;\r\n        psVar10 = psVar10 + 1;\r\n      } while (sVar1 != 0);\r\n      FUN_00422290(psVar3,(int)psVar10 - (int)(psVar3 + 1) >> 1);\r\n    }\r\n    FUN_00560070(&param_3);\r\n    local_8 = 0xffffffff;\r\n    LOCK();\r\n    piVar9 = (int *)((int)param_3 + -4);\r\n    iVar7 = *piVar9;\r\n    *piVar9 = *piVar9 + -1;\r\n    UNLOCK();\r\n    if (iVar7 == 1 || iVar7 + -1 < 0) {\r\n      (**(code **)(**(int **)((int)param_3 + -0x10) + 4))((undefined4 *)((int)param_3 + -0x10));\r\n    }\r\n  }\r\n  ExceptionList = local_10;\r\n  return 10;\r\n}\r\n\r\n",
+    "signature": "undefined4 __thiscall FUN_00554990(int param_1,longlong param_2,LPCWSTR param_3);"
+  },
+  "summary": "Pseudo-C for FUN_00554990 from the Deep engine (134 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x554990"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

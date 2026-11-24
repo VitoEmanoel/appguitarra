@@ -1,0 +1,86 @@
+{
+  "id": "ev_7987b487515c16185cdd78184446243daac9fa2e7ce88070f12521b295cd96b2",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_function_callers_list",
+  "params": {
+    "function": "0x550ce0"
+  },
+  "result": {
+    "address_taken": 0,
+    "callers": [
+      {
+        "caller": "0x54f3b0",
+        "name": "sub_54f3b0",
+        "site": "0x54f45d"
+      },
+      {
+        "caller": "0x54fcd0",
+        "name": "sub_54fcd0",
+        "site": "0x54fe20"
+      },
+      {
+        "caller": "0x54ff40",
+        "name": "sub_54ff40",
+        "site": "0x55006a"
+      },
+      {
+        "caller": "0x54ff40",
+        "name": "sub_54ff40",
+        "site": "0x550139"
+      },
+      {
+        "caller": "0x54ff40",
+        "name": "sub_54ff40",
+        "site": "0x550286"
+      },
+      {
+        "caller": "0x550360",
+        "name": "sub_550360",
+        "site": "0x55041d"
+      },
+      {
+        "caller": "0x5557b0",
+        "name": "sub_5557b0",
+        "site": "0x5558b7"
+      },
+      {
+        "caller": "0x571bc0",
+        "name": "sub_571bc0",
+        "site": "0x571c30"
+      }
+    ],
+    "entry": "0x550ce0",
+    "function": "sub_550ce0"
+  },
+  "summary": "sub_550ce0 is called from 8 places.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "direct_calls_only",
+      "message": "callers that reach it through function pointers are not listed (see address_taken)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 8,
+    "total": 8
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x550ce0"
+    }
+  ],
+  "links": []
+}

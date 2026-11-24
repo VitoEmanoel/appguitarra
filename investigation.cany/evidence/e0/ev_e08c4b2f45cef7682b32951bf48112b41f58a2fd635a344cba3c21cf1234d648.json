@@ -1,0 +1,67 @@
+{
+  "id": "ev_e08c4b2f45cef7682b32951bf48112b41f58a2fd635a344cba3c21cf1234d648",
+  "subject": {
+    "kind": "pe",
+    "sha256": "d3903e86a701c149ef5a59e0e726e908307147a67b99b44f80816f09b239879d",
+    "name": "Archetype Gojira X v1.0.2.exe"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 200,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Gojira"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x71decc",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Archetype Gojira X Installer"
+      },
+      {
+        "address": "0x71df54",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Archetype Gojira X v1.0.2 RC1"
+      },
+      {
+        "address": "0x71e018",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Archetype Gojira X v1.0.2 RC1.exe"
+      },
+      {
+        "address": "0x71e07c",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Archetype Gojira X"
+      }
+    ],
+    "total": 4
+  },
+  "summary": "4 strings match \"Gojira\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.6.1",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 4,
+    "total": 4
+  },
+  "locations": [],
+  "links": []
+}
