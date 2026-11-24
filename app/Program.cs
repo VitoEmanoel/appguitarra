@@ -235,11 +235,9 @@ namespace ArchetypeGojiraX
         // MIDI Mappings
         private List<MidiMappingRow> midiMappings = new List<MidiMappingRow>();
 
-        // Audio Settings
-        private string audioDeviceType = "ASIO";
-        private string audioDeviceName = "Neural DSP USB Audio ASIO Driver";
-        private int sampleRate = 48000;
-        private int bufferSize = 128;
+        private readonly GuitarAudio guitarAudio = new GuitarAudio();
+        private readonly AudioSelection audioSelection = new AudioSelection();
+        private bool showingLiveMeters;
 
         // Interaction Hotspots
         private List<UiHotspot> hotspots = new List<UiHotspot>();
@@ -304,9 +302,9 @@ namespace ArchetypeGojiraX
 
             backBuffer = new Bitmap(LOGICAL_WIDTH, LOGICAL_HEIGHT, PixelFormat.Format32bppArgb);
 
-            InitPresets();
+            int startupPresetIndex = InitPresets();
             InitMidiMappings();
-            LoadPreset(0);
+            LoadPreset(startupPresetIndex);
 
             this.MouseDown += OnCanvasMouseDown;
             this.MouseMove += OnCanvasMouseMove;
@@ -347,7 +345,7 @@ namespace ArchetypeGojiraX
             }
         }
 
-        private void InitPresets()
+        private int InitPresets()
         {
             // 1. Default.xml_1 (Extracted from Archetype Gojira X1.cab)
             PresetData def = new PresetData
@@ -448,6 +446,25 @@ namespace ArchetypeGojiraX
             silvera.RevActive = true;
             silvera.RevMix = 0.34f;
             presets.Add(silvera);
+
+            PresetData solo = def.Clone();
+            solo.Category = "User";
+            solo.Name = "Solo Lead";
+            solo.GateThresholdDb = -74.0f;
+            solo.OdDist = 0.08f;
+            solo.OdTone = 0.49f;
+            solo.AmpGain[2] = 0.64f;
+            solo.AmpBass[2] = 0.43f;
+            solo.AmpMid[2] = 0.76f;
+            solo.AmpTreble[2] = 0.52f;
+            solo.AmpMaster[2] = 0.56f;
+            solo.AmpPresence[2] = 0.53f;
+            solo.AmpDepth[2] = 0.42f;
+            solo.AmpLevel[2] = 0.56f;
+            solo.OutputGainDb = 2.0f;
+            solo.RevActive = false;
+            presets.Add(solo);
+            return presets.Count - 1;
         }
 
         private void InitMidiMappings()
@@ -465,12 +482,39 @@ namespace ArchetypeGojiraX
             if (index >= presets.Count) index = 0;
             currentPresetIndex = index;
             state = presets[currentPresetIndex].Clone();
+            UpdateAudioParameters();
             presetDirty = false;
         }
 
         private void MarkDirty()
         {
             presetDirty = true;
+            UpdateAudioParameters();
+        }
+
+        private GuitarSettings GetAudioParameters() { return new GuitarSettings(state, tunerMuted); }
+
+        private void UpdateAudioParameters()
+        {
+            if (guitarAudio.Running || guitarAudio.Starting)
+                guitarAudio.SetParameters(GetAudioParameters());
+        }
+
+        private void ShowAudioSettings()
+        {
+            using (var dialog = new AudioSettingsDialog(guitarAudio, audioSelection, GetAudioParameters))
+                activeModal = dialog.ShowDialog(this) == DialogResult.Yes ? 4 : 0;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (frameTimer != null) frameTimer.Dispose();
+                guitarAudio.Dispose();
+                if (backBuffer != null) backBuffer.Dispose();
+            }
+            base.Dispose(disposing);
         }
 
         private void ApplyScale(int index)
@@ -531,7 +575,25 @@ namespace ArchetypeGojiraX
                 currentBeatStep = (currentBeatStep + 1) % numBeats;
             }
 
-            // Simulate 8-string guitar riff through the decompiled Gojira X signal chain
+            bool live = guitarAudio.Running || guitarAudio.Starting;
+            if (live != showingLiveMeters)
+            {
+                showingLiveMeters = live;
+                inputPeakDb = outputPeakLDb = outputPeakRDb = -60;
+                inputClipLatched = outputClipLatched = false;
+            }
+            if (live)
+            {
+                float input, output;
+                guitarAudio.CopyMeters(liveWaveform, out input, out output, out gateOpen);
+                inputMeterDb = PeakToDb(input);
+                outputMeterLDb = outputMeterRDb = PeakToDb(output);
+                UpdateInputPeak();
+                UpdateOutputPeaks();
+                return;
+            }
+
+            // Simulate an 8-string guitar riff for the visual demo.
             double riffBeat = (dspTime * beatsPerSec) % 8.0;
             double[] riffFreqs = new double[] { 73.42, 73.42, 82.41, 73.42, 87.31, 82.41, 73.42, 110.00 }; // D2, E2, F2, A2
             string[] riffNotes = new string[] { "D2", "D2", "E2", "D2", "F2", "E2", "D2", "A2" };
@@ -557,9 +619,7 @@ namespace ArchetypeGojiraX
 
             float inDb = (float)(20.0 * Math.Log10(Math.Max(0.0001, env * 0.45))) + state.InputGainDb;
             inputMeterDb = Math.Max(-60.0f, Math.Min(0.0f, inDb));
-            if (inputMeterDb > inputPeakDb) inputPeakDb = inputMeterDb;
-            else inputPeakDb = Math.Max(inputMeterDb, inputPeakDb - 0.15f);
-            if (inputMeterDb >= -0.2f) inputClipLatched = true;
+            UpdateInputPeak();
 
             gateOpen = !state.GateActive || (inputMeterDb >= state.GateThresholdDb);
 
@@ -594,6 +654,22 @@ namespace ArchetypeGojiraX
                 outputMeterRDb = Math.Max(-60.0f, Math.Min(0.0f, ampOutDb + stereoSpread + (float)(Math.Cos(dspTime * 8.5) * 1.8f)));
             }
 
+            UpdateOutputPeaks();
+        }
+
+        private static float PeakToDb(float peak)
+        {
+            return (float)(20 * Math.Log10(Math.Max(0.001f, Math.Min(1, peak))));
+        }
+
+        private void UpdateInputPeak()
+        {
+            inputPeakDb = Math.Max(inputMeterDb, inputPeakDb - 0.15f);
+            if (inputMeterDb >= -0.2f) inputClipLatched = true;
+        }
+
+        private void UpdateOutputPeaks()
+        {
             if (outputMeterLDb > outputPeakLDb) outputPeakLDb = outputMeterLDb;
             else outputPeakLDb = Math.Max(outputMeterLDb, outputPeakLDb - 0.15f);
 
@@ -721,16 +797,24 @@ namespace ArchetypeGojiraX
                 g.DrawString(chainStr, subFont, accentBr, 18, 50);
             }
 
-            // Top-Right Demo Riff & Engine Status Pill
+            // Top-right source status.
             RectangleF demoBtn = new RectangleF(840, 16, 166, 40);
-            DrawButtonPill(g, demoBtn, demoRiffEnabled ? "LIVE RIFF INPUT: ON" : "LIVE RIFF INPUT: MUTED",
-                demoRiffEnabled ? Color.FromArgb(35, 69, 248, 98) : Color.FromArgb(32, 32, 36),
-                demoRiffEnabled ? Color.FromArgb(69, 248, 98) : Color.FromArgb(140, 140, 148), 8f);
+            bool audioError = guitarAudio.Error != null;
+            bool active = guitarAudio.Running || (!showingLiveMeters && !audioError && demoRiffEnabled);
+            string source = guitarAudio.Running ? "GUITARRA AO VIVO" : showingLiveMeters ? "ABRINDO ÁUDIO"
+                : audioError ? "ERRO DE ÁUDIO" : demoRiffEnabled ? "DEMO VISUAL: ON" : "DEMO VISUAL: OFF";
+            DrawButtonPill(g, demoBtn, source,
+                active ? Color.FromArgb(35, 69, 248, 98) : Color.FromArgb(32, 32, 36),
+                active ? Color.FromArgb(69, 248, 98) : Color.FromArgb(165, 165, 176), 8f);
             hotspots.Add(new UiHotspot
             {
                 Id = "toggle_demo_riff",
                 Bounds = demoBtn,
-                OnClick = () => { demoRiffEnabled = !demoRiffEnabled; }
+                OnClick = () =>
+                {
+                    if (showingLiveMeters || audioError) ShowAudioSettings();
+                    else demoRiffEnabled = !demoRiffEnabled;
+                }
             });
 
             // Row 1: 6 Section Buttons centered (x: 345, 401, 457, 513, 569, 625 from ArchetypeTopBarView.xml)
@@ -941,7 +1025,9 @@ namespace ArchetypeGojiraX
             using (Brush catB = new SolidBrush(Color.FromArgb(228, 122, 23)))
             using (Brush nameB = new SolidBrush(Color.FromArgb(240, 242, 245)))
             {
-                g.DrawString(state.Category.ToUpperInvariant() + "  (321 CAB PRESETS)", catF, catB, dropBtn.X + 10, dropBtn.Y + 5);
+                string category = state.Category.ToUpperInvariant();
+                if (state.Category != "User") category += "  (321 CAB PRESETS)";
+                g.DrawString(category, catF, catB, dropBtn.X + 10, dropBtn.Y + 5);
                 string dispName = state.Name + (presetDirty ? " *" : "");
                 g.DrawString(dispName, nameF, nameB, dropBtn.X + 10, dropBtn.Y + 19);
                 g.DrawString("▼", catF, nameB, dropBtn.Right - 20, dropBtn.Y + 14);
@@ -2053,7 +2139,7 @@ namespace ArchetypeGojiraX
                 activeModal == 1 ? Color.Black : Color.FromArgb(200, 202, 210), 7.5f);
             hotspots.Add(new UiHotspot { Id = "util_tuner", Bounds = tunerBtn, OnClick = () => { activeModal = (activeModal == 1) ? 0 : 1; } });
 
-            if (liveTunerEnabled)
+            if (liveTunerEnabled && !showingLiveMeters)
             {
                 RectangleF livePill = new RectangleF(84, 754, 108, 24);
                 DrawButtonPill(g, livePill, string.Format("● {0}  {1:+0.0;-0.0;0.0} ct", detectedNoteName, detectedCents),
@@ -2095,11 +2181,10 @@ namespace ArchetypeGojiraX
                 metronomePlaying ? Color.Black : Color.FromArgb(200, 202, 210), 7.5f);
             hotspots.Add(new UiHotspot { Id = "util_metro_play", Bounds = metroPlay, OnClick = () => { metronomePlaying = !metronomePlaying; } });
 
-            // 5. SETTINGS / DSP INSPECTOR Button
+            // 5. Audio settings button.
             RectangleF setBtn = new RectangleF(552, 754, 114, 24);
-            DrawButtonPill(g, setBtn, "SETTINGS / DSP", activeModal == 4 ? Color.FromArgb(10, 116, 224) : Color.FromArgb(26, 26, 30),
-                activeModal == 4 ? Color.White : Color.FromArgb(200, 202, 210), 7.5f);
-            hotspots.Add(new UiHotspot { Id = "util_settings", Bounds = setBtn, OnClick = () => { activeModal = (activeModal == 4) ? 0 : 4; } });
+            DrawButtonPill(g, setBtn, "ÁUDIO", Color.FromArgb(26, 26, 30), Color.FromArgb(200, 202, 210), 8f);
+            hotspots.Add(new UiHotspot { Id = "util_settings", Bounds = setBtn, OnClick = ShowAudioSettings });
 
             // 6. About / Credits Button
             RectangleF aboutBtn = new RectangleF(676, 754, 210, 24);
@@ -2126,7 +2211,7 @@ namespace ArchetypeGojiraX
             if (activeModal == 6)
             {
                 // Preset Browser Dropdown Menu
-                RectangleF menuRect = new RectangleF(352, 172, 320, 232);
+                RectangleF menuRect = new RectangleF(352, 172, 320, 16 + presets.Count * 35);
                 using (GraphicsPath mp = RoundedRect(menuRect, 8f))
                 using (Brush mb = new SolidBrush(Color.FromArgb(245, 18, 19, 24)))
                 using (Pen mpen = new Pen(Color.FromArgb(228, 122, 23), 1.5f))
@@ -2202,15 +2287,18 @@ namespace ArchetypeGojiraX
 
                 float centerX = meterBar.X + meterBar.Width * 0.5f;
                 float needleX = centerX + (detectedCents / 50f) * (meterBar.Width * 0.45f);
-                using (Pen nPen = new Pen(Color.FromArgb(69, 248, 98), 3f))
+                if (!showingLiveMeters)
                 {
-                    g.DrawLine(nPen, needleX, meterBar.Y + 4, needleX, meterBar.Bottom - 4);
+                    using (Pen nPen = new Pen(Color.FromArgb(69, 248, 98), 3f))
+                    {
+                        g.DrawLine(nPen, needleX, meterBar.Y + 4, needleX, meterBar.Bottom - 4);
+                    }
+                    g.FillEllipse(gb, centerX - 8, meterBar.Y - 18, 16, 16);
                 }
-                g.FillEllipse(gb, centerX - 8, meterBar.Y - 18, 16, 16);
 
                 // Large Detected Note Name & Readout
-                g.DrawString(detectedNoteName, bigNote, gb, new RectangleF(box.X, box.Y + 160, box.Width, 90), sf);
-                string pitchText = tunerDisplayHz
+                g.DrawString(showingLiveMeters ? "–" : detectedNoteName, bigNote, gb, new RectangleF(box.X, box.Y + 160, box.Width, 90), sf);
+                string pitchText = showingLiveMeters ? "Afinador disponível no modo de demonstração." : tunerDisplayHz
                     ? string.Format("{0:0.00} Hz   (REF A4 = {1:0.0} Hz)", detectedFreqHz, tunerRefPitchHz)
                     : string.Format("{0:+0.0;-0.0;0.0} CENTS   ({1:0.00} Hz)", detectedCents, detectedFreqHz);
                 g.DrawString(pitchText, subF, wb, new RectangleF(box.X, box.Y + 260, box.Width, 28), sf);
@@ -2220,7 +2308,7 @@ namespace ArchetypeGojiraX
             RectangleF muteBtn = new RectangleF(box.X + 80, box.Y + 360, 130, 36);
             DrawButtonPill(g, muteBtn, tunerMuted ? "OUTPUT: MUTED" : "MUTE OUTPUT",
                 tunerMuted ? Color.FromArgb(255, 48, 58) : Color.FromArgb(36, 38, 46), Color.White, 8.5f);
-            hotspots.Add(new UiHotspot { Id = "tuner_mute", Bounds = muteBtn, OnClick = () => { tunerMuted = !tunerMuted; } });
+            hotspots.Add(new UiHotspot { Id = "tuner_mute", Bounds = muteBtn, OnClick = () => { tunerMuted = !tunerMuted; UpdateAudioParameters(); } });
 
             RectangleF unitBtn = new RectangleF(box.X + 230, box.Y + 360, 130, 36);
             DrawButtonPill(g, unitBtn, tunerDisplayHz ? "DISPLAY: HZ" : "DISPLAY: CENTS",
@@ -2397,12 +2485,9 @@ namespace ArchetypeGojiraX
             using (Brush ab = new SolidBrush(Color.FromArgb(228, 122, 23)))
             using (Brush gb = new SolidBrush(Color.FromArgb(69, 248, 98)))
             {
-                g.DrawString("AUDIO SETTINGS & DECOMPILED PACKAGE / KONE DSP ARCHITECTURE", tf, wb, box.X + 20, box.Y + 16);
+                g.DrawString("DSP INSPECTOR", tf, wb, box.X + 20, box.Y + 16);
 
                 string info =
-                    "=== AUDIO ENGINE CONFIGURATION ===\n" +
-                    "Driver Type : " + audioDeviceType + "   |   Device : " + audioDeviceName + "\n" +
-                    "Sample Rate : " + sampleRate + " Hz       |   Buffer : " + bufferSize + " Samples (2.7 ms Latency)\n\n" +
                     "=== DECOMPILED ADVINSTSFX INSTALLER & PAYLOAD TABLE ===\n" +
                     "Bootstrap Loader : WinMain @ 0x00413640  ->  SFX Controller @ 0x00558830\n" +
                     "Header Stream    : FUN_005709d0 @ 0x005709d0 (Bitwise NOT ~byte on first 512 bytes)\n" +
