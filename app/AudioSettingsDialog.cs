@@ -18,7 +18,8 @@ namespace ArchetypeGojiraX
         private readonly Func<GuitarSettings> getParameters;
         private readonly ComboBox input = new ComboBox(), output = new ComboBox(), channel = new ComboBox();
         private readonly Button start = new Button(), refresh = new Button();
-        private readonly Label status = new Label();
+        private readonly Label status = new Label(), irName = new Label();
+        private readonly Button clearIr = new Button();
         private readonly Timer timer = new Timer();
         private string deviceError;
 
@@ -31,7 +32,7 @@ namespace ArchetypeGojiraX
             Text = "Áudio da guitarra";
             Font = new Font("Segoe UI", 9);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(492, 310);
+            ClientSize = new Size(492, 356);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = MinimizeBox = ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
@@ -48,15 +49,28 @@ namespace ArchetypeGojiraX
             AddList(output, 153);
             output.AccessibleName = "Saída de áudio";
 
-            status.Bounds = new Rectangle(18, 191, 456, 60);
+            AddLabel("Caixa (IR)", 191);
+            irName.Bounds = new Rectangle(18, 216, 240, 22);
+            irName.AutoEllipsis = true;
+            irName.AccessibleName = "IR da caixa em uso";
+            Controls.Add(irName);
+            ConfigureButton(new Button(), "Carregar IR...", 265, 118, 210, LoadImpulse);
+            ConfigureButton(clearIr, "Usar interna", 391, 83, 210, (sender, args) =>
+            {
+                CabinetIrLibrary.ClearCustom();
+                ApplyImpulse();
+            });
+            UpdateImpulseName();
+
+            status.Bounds = new Rectangle(18, 249, 456, 52);
             status.AccessibleName = "Status da monitoração";
             Controls.Add(status);
 
-            ConfigureButton(refresh, "Atualizar lista", 18, 112, (sender, args) => RefreshDevices());
-            ConfigureButton(new Button(), "Inspecionar DSP", 136, 114, (sender, args) => { DialogResult = DialogResult.Yes; });
-            ConfigureButton(start, "Ouvir guitarra", 265, 118, ToggleMonitoring);
+            ConfigureButton(refresh, "Atualizar lista", 18, 112, 309, (sender, args) => RefreshDevices());
+            ConfigureButton(new Button(), "Inspecionar DSP", 136, 114, 309, (sender, args) => { DialogResult = DialogResult.Yes; });
+            ConfigureButton(start, "Ouvir guitarra", 265, 118, 309, ToggleMonitoring);
             var close = new Button { DialogResult = DialogResult.Cancel };
-            ConfigureButton(close, "Fechar", 391, 83, null);
+            ConfigureButton(close, "Fechar", 391, 83, 309, null);
             CancelButton = close;
 
             input.SelectedIndexChanged += SelectionChanged;
@@ -79,12 +93,48 @@ namespace ArchetypeGojiraX
             Controls.Add(list);
         }
 
-        private void ConfigureButton(Button button, string text, int x, int width, EventHandler click)
+        private void ConfigureButton(Button button, string text, int x, int width, int y, EventHandler click)
         {
             button.Text = text;
-            button.Bounds = new Rectangle(x, 263, width, 30);
+            button.Bounds = new Rectangle(x, y, width, 30);
             if (click != null) button.Click += click;
             Controls.Add(button);
+        }
+
+        private void LoadImpulse(object sender, EventArgs args)
+        {
+            using (var dialog = new OpenFileDialog())
+            {
+                dialog.Title = "Escolha a IR da caixa";
+                dialog.Filter = "Resposta de impulso (*.wav)|*.wav";
+                if (dialog.ShowDialog(this) != DialogResult.OK) return;
+                try
+                {
+                    CabinetIrLibrary.LoadCustom(dialog.FileName);
+                }
+                catch (Exception ex)
+                {
+                    if (!(ex is System.IO.IOException || ex is System.IO.InvalidDataException || ex is UnauthorizedAccessException
+                        || ex is ArgumentException || ex is OverflowException || ex is OutOfMemoryException)) throw;
+                    MessageBox.Show(this, "Não foi possível usar esta IR: " + ex.Message, Text,
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            ApplyImpulse();
+        }
+
+        private void ApplyImpulse()
+        {
+            if (audio.Running || audio.Starting) audio.SetParameters(getParameters());
+            UpdateImpulseName();
+        }
+
+        private void UpdateImpulseName()
+        {
+            string custom = CabinetIrLibrary.CustomName;
+            irName.Text = custom ?? "Interna (segue a caixa e os microfones do preset)";
+            clearIr.Enabled = custom != null;
         }
 
         private void RefreshDevices()
